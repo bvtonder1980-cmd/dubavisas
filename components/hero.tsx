@@ -11,19 +11,35 @@ export function Hero() {
       <div className="absolute inset-0">
         <Image
           src="/images/hero-dubai.png"
-          alt="Aerial view of the Dubai skyline at golden hour"
+          alt="Bright view of the Dubai skyline with the Burj Khalifa, palm trees and turquoise water"
           fill
           priority
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-ink/80 via-ink/55 to-ink/85" />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(28,23,19,0.92) 0%, rgba(28,23,19,0.7) 45%, rgba(28,23,19,0.35) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(180deg, rgba(28,23,19,0.55) 0%, rgba(28,23,19,0) 35%, rgba(28,23,19,0.6) 100%)",
+          }}
+        />
       </div>
 
       <Container className="relative">
         <div className="flex min-h-[88vh] flex-col justify-center py-20">
           <div className="max-w-2xl">
-            <span className="inline-flex items-center gap-2 rounded-full border border-ink-foreground/20 bg-ink-foreground/10 px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-foreground/90 backdrop-blur-sm">
+            <span
+              className="inline-flex items-center gap-2 rounded-full border px-4 py-1.5 text-xs font-medium uppercase tracking-[0.18em] text-ink-foreground backdrop-blur-sm"
+              style={{ borderColor: "rgba(244,241,234,0.25)", backgroundColor: "rgba(244,241,234,0.12)" }}
+            >
               <Star className="h-3.5 w-3.5 fill-brand text-brand" />
               {siteConfig.stats.trustpilotRating} rating · {siteConfig.stats.trustpilotReviews} reviews
             </span>
@@ -32,7 +48,7 @@ export function Hero() {
               Your UAE visa, sorted online in minutes
             </h1>
 
-            <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-foreground/80">
+            <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-foreground">
               Apply for your Dubai tourist or transit visa with minimal documents and expert support.
               Fly any airline, with most visas approved in {siteConfig.stats.avgProcessing}.
             </p>
@@ -46,7 +62,7 @@ export function Hero() {
                 href="#prices"
                 variant="outline"
                 size="lg"
-                className="border-ink-foreground/30 text-ink-foreground hover:bg-ink-foreground hover:text-ink"
+                className="border-ink-foreground text-ink-foreground hover:bg-ink-foreground hover:text-ink"
               >
                 View pricing
               </ButtonLink>
@@ -59,7 +75,7 @@ export function Hero() {
                 { icon: Clock, label: `Processed in ${siteConfig.stats.avgProcessing}` },
                 { icon: Star, label: `${siteConfig.stats.visasProcessed} visas processed` },
               ].map((item) => (
-                <div key={item.label} className="flex items-center gap-2 text-sm text-ink-foreground/85">
+                <div key={item.label} className="flex items-center gap-2 text-sm text-ink-foreground">
                   <item.icon className="h-4 w-4 text-brand" />
                   {item.label}
                 </div>
