@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
 import { PageHeader } from "@/components/page-header"
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { VisaPlanCard } from "@/components/visa-plan-card"
@@ -26,12 +24,12 @@ export default function VisaTypesPage() {
           { name: "Visa Types", href: "/visa-types" },
         ]}
       />
-      <SiteHeader />
       <main>
         <PageHeader
           eyebrow="Visa types"
           title="Find the right UAE visa for your trip"
           description="Whether you're stopping over for a few days or staying a couple of months, we have a visa to match. All prices include government fees and our hands-on support."
+          breadcrumbs={[{ name: "Home", href: "/" }, { name: "Visa Types" }]}
         />
 
         <Section className="bg-background">
@@ -78,7 +76,6 @@ export default function VisaTypesPage() {
           description="Start your application and we'll guide you to the right visa based on your travel dates and nationality."
         />
       </main>
-      <SiteFooter />
     </>
   )
 }

@@ -1,6 +1,4 @@
 import type { Metadata } from "next"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
 import { PageHeader } from "@/components/page-header"
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { CtaBand } from "@/components/cta-band"
@@ -62,7 +60,6 @@ export default function DocumentsPage() {
           { name: "Documents", href: "/documents" },
         ]}
       />
-      <SiteHeader />
       <main>
         <PageHeader
           eyebrow="Document requirements"
@@ -145,7 +142,6 @@ export default function DocumentsPage() {
           description="Upload your documents securely and our team will review everything before submission."
         />
       </main>
-      <SiteFooter />
     </>
   )
 }

@@ -41,7 +41,7 @@ export const mainNav: { label: string; href: string }[] = [
   { label: "Apply", href: "/#apply" },
   { label: "Visa Types", href: "/visa-types" },
   { label: "Documents", href: "/documents" },
-  { label: "Pricing", href: "/#pricing" },
+  { label: "Pricing", href: "/#prices" },
   { label: "FAQ", href: "/faq" },
   { label: "Travel Guides", href: "/articles" },
   { label: "About", href: "/about" },
@@ -53,7 +53,7 @@ export const footerNav: { title: string; links: { label: string; href: string }[
     links: [
       { label: "Apply Now", href: "/#apply" },
       { label: "Visa Types", href: "/visa-types" },
-      { label: "Pricing", href: "/#pricing" },
+      { label: "Pricing", href: "/#prices" },
       { label: "Document Requirements", href: "/documents" },
       { label: "Track Application", href: "/track" },
     ],

@@ -3,6 +3,8 @@ import { Inter, Fraunces } from "next/font/google"
 import "./globals.css"
 import { siteConfig } from "@/lib/site-config"
 import { OrganizationSchema, WebSiteSchema } from "@/components/json-ld"
+import { SiteHeader } from "@/components/site-header"
+import { SiteFooter } from "@/components/site-footer"
 
 const inter = Inter({
   subsets: ["latin"],
@@ -63,7 +65,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${fraunces.variable} font-sans antialiased`}>
         <OrganizationSchema />
         <WebSiteSchema />
+        <SiteHeader />
         {children}
+        <SiteFooter />
       </body>
     </html>
   )
