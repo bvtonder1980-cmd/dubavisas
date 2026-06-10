@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { ArrowRight, CalendarDays, Globe, MapPin, Star } from "lucide-react"
 import { countries } from "@/lib/countries"
-import { Container, SectionHeading } from "@/components/ui/layout"
+import { Container } from "@/components/ui/layout"
 import { siteConfig } from "@/lib/site-config"
 
 const days = Array.from({ length: 31 }, (_, i) => String(i + 1).padStart(2, "0"))
@@ -42,15 +42,49 @@ export function Assist() {
   )}&depart=${year}-${month}-${day}`
 
   return (
-    <section id="apply" className="scroll-mt-24 py-20 sm:py-24">
-      <Container>
-        <SectionHeading
-          eyebrow="Start here"
-          title="Let's start your application"
-          description="Tell us a few details and we'll guide you to the right visa. The whole process is online — no embassy visits, no queues."
-        />
+    <section
+      id="apply"
+      className="relative scroll-mt-24 overflow-hidden py-20 sm:py-24"
+      style={{ backgroundColor: "#16110d" }}
+    >
+      {/* classic Emirati gold pattern overlay */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/arabesque-gold.svg')",
+          backgroundSize: "120px 120px",
+          opacity: 0.18,
+        }}
+      />
+      {/* subtle vignette so the centre stays focused */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(22,17,13,0) 35%, rgba(22,17,13,0.85) 100%)",
+        }}
+      />
 
-        <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface shadow-[0_24px_60px_-30px_rgba(34,29,24,0.4)]">
+      <Container className="relative">
+        <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+            Start here
+          </span>
+          <h2
+            className="text-balance font-serif text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.75rem]"
+            style={{ color: "#f4f1ea" }}
+          >
+            Let&apos;s start your application
+          </h2>
+          <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
+            Tell us a few details and we&apos;ll guide you to the right visa. The whole process is online — no
+            embassy visits, no queues.
+          </p>
+        </div>
+
+        <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]">
           {/* top trust strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-b border-border bg-surface-muted/60 px-6 py-3 text-xs font-medium text-ink-muted">
             <span className="flex items-center gap-1.5">

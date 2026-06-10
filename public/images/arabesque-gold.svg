@@ -1,0 +1,23 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" stroke="#b8893b" stroke-width="1.1" stroke-linejoin="round">
+    <!-- centre eight-pointed star (two overlapping squares) -->
+    <rect x="36" y="36" width="48" height="48" transform="rotate(0 60 60)" />
+    <rect x="36" y="36" width="48" height="48" transform="rotate(45 60 60)" />
+    <!-- corner eight-pointed stars -->
+    <rect x="-24" y="-24" width="48" height="48" transform="rotate(0 0 0)" />
+    <rect x="-24" y="-24" width="48" height="48" transform="rotate(45 0 0)" />
+    <rect x="96" y="-24" width="48" height="48" transform="rotate(0 120 0)" />
+    <rect x="96" y="-24" width="48" height="48" transform="rotate(45 120 0)" />
+    <rect x="-24" y="96" width="48" height="48" transform="rotate(0 0 120)" />
+    <rect x="-24" y="96" width="48" height="48" transform="rotate(45 0 120)" />
+    <rect x="96" y="96" width="48" height="48" transform="rotate(0 120 120)" />
+    <rect x="96" y="96" width="48" height="48" transform="rotate(45 120 120)" />
+    <!-- connecting diamonds -->
+    <path d="M60 12 L84 36 L60 60 L36 36 Z" />
+    <path d="M60 60 L84 84 L60 108 L36 84 Z" />
+    <path d="M12 60 L36 36 L60 60 L36 84 Z" />
+    <path d="M60 60 L84 36 L108 60 L84 84 Z" />
+    <!-- small centre dot -->
+    <circle cx="60" cy="60" r="3" fill="#b8893b" stroke="none" />
+  </g>
+</svg>
