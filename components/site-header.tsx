@@ -8,14 +8,6 @@ import { ButtonLink } from "@/components/ui/button"
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 16)
-    onScroll()
-    window.addEventListener("scroll", onScroll, { passive: true })
-    return () => window.removeEventListener("scroll", onScroll)
-  }, [])
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : ""
@@ -26,9 +18,8 @@ export function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-colors duration-300 ${
-        scrolled ? "border-b border-border bg-background/90 backdrop-blur-md" : "bg-transparent"
-      }`}
+      className="sticky top-0 z-50 border-b border-border"
+      style={{ backgroundColor: "#f4f1ea" }}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
