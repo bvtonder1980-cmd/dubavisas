@@ -1,5 +1,21 @@
 import type { ReactNode } from "react"
 
+export function Section({
+  children,
+  className,
+  id,
+}: {
+  children: ReactNode
+  className?: string
+  id?: string
+}) {
+  return (
+    <section id={id} className={`py-16 sm:py-20 lg:py-24 ${className ?? ""}`}>
+      {children}
+    </section>
+  )
+}
+
 export function Container({
   children,
   className,
@@ -16,7 +32,7 @@ export function Container({
 
 export function Eyebrow({ children }: { children: ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+    <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-accent">
       {children}
     </span>
   )
@@ -39,11 +55,11 @@ export function SectionHeading({
   return (
     <div className={`flex max-w-2xl flex-col gap-4 ${alignment} ${className ?? ""}`}>
       {eyebrow ? <Eyebrow>{eyebrow}</Eyebrow> : null}
-      <h2 className="text-balance font-serif text-3xl font-semibold leading-tight text-ink sm:text-4xl md:text-[2.75rem]">
+      <h2 className="text-balance font-serif text-3xl font-semibold leading-tight text-foreground sm:text-4xl md:text-[2.75rem]">
         {title}
       </h2>
       {description ? (
-        <p className="text-pretty text-base leading-relaxed text-ink-muted sm:text-lg">
+        <p className="text-pretty text-base leading-relaxed text-muted-foreground sm:text-lg">
           {description}
         </p>
       ) : null}

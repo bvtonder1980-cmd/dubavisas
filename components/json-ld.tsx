@@ -50,16 +50,16 @@ export function WebSiteSchema() {
 }
 
 export function ServiceSchema({
-  name,
-  description,
-  price,
-  currency = "USD",
+  name = "UAE / Dubai Visa Application Service",
+  description = siteConfig.description,
+  price = "",
+  currency = "ZAR",
 }: {
-  name: string
-  description: string
-  price: string
+  name?: string
+  description?: string
+  price?: string
   currency?: string
-}) {
+} = {}) {
   return (
     <JsonLd
       data={{
@@ -69,11 +69,15 @@ export function ServiceSchema({
         provider: { "@type": "Organization", name: siteConfig.name },
         description,
         areaServed: "AE",
-        offers: {
-          "@type": "Offer",
-          price: price.replace(/[^\d.]/g, ""),
-          priceCurrency: currency,
-        },
+        ...(price
+          ? {
+              offers: {
+                "@type": "Offer",
+                price: price.replace(/[^\d.]/g, ""),
+                priceCurrency: currency,
+              },
+            }
+          : {}),
       }}
     />
   )

@@ -1,30 +1,41 @@
-"use client"
-
-import { useState } from "react"
 import { SiteHeader } from "@/components/site-header"
 import { Hero } from "@/components/hero"
+import { TrustBar } from "@/components/trust-bar"
 import { Assist } from "@/components/assist"
-import { Reviews } from "@/components/reviews"
 import { HowItWorks } from "@/components/how-it-works"
 import { Prices } from "@/components/prices"
+import { WhyUs } from "@/components/why-us"
+import { Reviews } from "@/components/reviews"
+import { ArticlesPreview } from "@/components/articles-preview"
+import { FaqPreview } from "@/components/faq-preview"
 import { Contact } from "@/components/contact"
+import { CtaBand } from "@/components/cta-band"
 import { SiteFooter } from "@/components/site-footer"
-import { LoginModal } from "@/components/login-modal"
+import { OrganizationSchema, WebSiteSchema, ServiceSchema, FaqSchema } from "@/components/json-ld"
+import { faqs } from "@/lib/faqs"
 
 export default function HomePage() {
-  const [loginOpen, setLoginOpen] = useState(false)
-
   return (
-    <main>
-      <SiteHeader onSignIn={() => setLoginOpen(true)} />
-      <Hero />
-      <Assist onApply={() => setLoginOpen(true)} />
-      <Reviews />
-      <HowItWorks />
-      <Prices />
-      <Contact />
+    <>
+      <OrganizationSchema />
+      <WebSiteSchema />
+      <ServiceSchema />
+      <FaqSchema items={faqs.slice(0, 6)} />
+      <SiteHeader />
+      <main>
+        <Hero />
+        <TrustBar />
+        <Assist />
+        <HowItWorks />
+        <Prices />
+        <WhyUs />
+        <Reviews />
+        <ArticlesPreview />
+        <FaqPreview />
+        <Contact />
+        <CtaBand />
+      </main>
       <SiteFooter />
-      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
-    </main>
+    </>
   )
 }

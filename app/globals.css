@@ -28,6 +28,18 @@
 
   --danger: #c0392b;
 
+  /* Aliases used across components */
+  --card: #ffffff;
+  --card-foreground: #221d18;
+  --secondary: #ece6da;
+  --secondary-foreground: #221d18;
+  --muted: #ece6da;
+  --muted-foreground: #6f655a;
+  --accent: #b8893b;
+  --accent-foreground: #ffffff;
+  --primary: #221d18;
+  --primary-foreground: #f4f1ea;
+
   --radius: 0.875rem;
 }
 

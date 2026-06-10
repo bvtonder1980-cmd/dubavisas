@@ -43,7 +43,7 @@ export function Hero() {
                 <ArrowRight className="h-4 w-4" />
               </ButtonLink>
               <ButtonLink
-                href="#pricing"
+                href="#prices"
                 variant="outline"
                 size="lg"
                 className="border-ink-foreground/30 text-ink-foreground hover:bg-ink-foreground hover:text-ink"

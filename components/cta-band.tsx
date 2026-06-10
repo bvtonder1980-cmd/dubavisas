@@ -8,7 +8,7 @@ export function CtaBand({
   primaryLabel = "Apply Now",
   primaryHref = "/#apply",
   secondaryLabel = "View Pricing",
-  secondaryHref = "/#pricing",
+  secondaryHref = "/#prices",
 }: {
   title?: string
   description?: string
