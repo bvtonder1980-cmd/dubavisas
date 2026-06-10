@@ -3,22 +3,32 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #484848;
+  /* Warm editorial sand/cream palette */
+  --background: #f4f1ea;
+  --foreground: #221d18;
 
-  /* Brand gold from original site (#EECB00) */
-  --brand: #eecb00;
-  --brand-foreground: #484848;
+  /* Surfaces */
+  --surface: #ffffff;
+  --surface-muted: #ece6da;
+  --border: #ddd4c4;
 
-  /* Trustpilot/success green (#00B67A) */
-  --success: #00b67a;
+  /* Refined premium gold (replaces neon #EECB00) */
+  --brand: #b8893b;
+  --brand-foreground: #ffffff;
+  --brand-soft: #e9dcc2;
+
+  /* Dark espresso CTA ink */
+  --ink: #221d18;
+  --ink-foreground: #f4f1ea;
+  --ink-muted: #6f655a;
+
+  /* Trust green */
+  --success: #1f9d6b;
   --success-foreground: #ffffff;
 
-  --ink: #484848;
-  --ink-muted: #6c757d;
+  --danger: #c0392b;
 
-  --surface: #f2f3f3;
-  --danger: #fe0002;
+  --radius: 0.875rem;
 }
 
 html {
@@ -29,4 +39,10 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background-color: var(--brand);
+  color: var(--brand-foreground);
 }

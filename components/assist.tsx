@@ -1,30 +1,35 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight, CalendarDays, Globe, MapPin, Star } from "lucide-react"
 import { countries } from "@/lib/countries"
+import { Container, SectionHeading } from "@/components/ui/layout"
+import { siteConfig } from "@/lib/site-config"
 
 const days = Array.from({ length: 31 }, (_, i) => String(i + 1).padStart(2, "0"))
 const months = [
-  { value: "01", label: "Jan" },
-  { value: "02", label: "Feb" },
-  { value: "03", label: "Mar" },
-  { value: "04", label: "Apr" },
+  { value: "01", label: "January" },
+  { value: "02", label: "February" },
+  { value: "03", label: "March" },
+  { value: "04", label: "April" },
   { value: "05", label: "May" },
-  { value: "06", label: "Jun" },
-  { value: "07", label: "Jul" },
-  { value: "08", label: "Aug" },
-  { value: "09", label: "Sep" },
-  { value: "10", label: "Oct" },
-  { value: "11", label: "Nov" },
-  { value: "12", label: "Dec" },
+  { value: "06", label: "June" },
+  { value: "07", label: "July" },
+  { value: "08", label: "August" },
+  { value: "09", label: "September" },
+  { value: "10", label: "October" },
+  { value: "11", label: "November" },
+  { value: "12", label: "December" },
 ]
 const years = ["2026", "2027"]
 
-const selectClass =
-  "rounded border border-neutral-300 bg-white px-2 py-1.5 text-sm text-ink focus:border-brand focus:outline-none focus:ring-1 focus:ring-brand"
+const fieldClass =
+  "h-11 w-full rounded-lg border border-border bg-background px-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30"
 
-export function Assist({ onApply }: { onApply: () => void }) {
+const labelClass = "mb-1.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-ink-muted"
+
+export function Assist() {
   const [day, setDay] = useState("01")
   const [month, setMonth] = useState("01")
   const [year, setYear] = useState("2026")
@@ -32,129 +37,116 @@ export function Assist({ onApply }: { onApply: () => void }) {
   const [livingIn, setLivingIn] = useState("-")
 
   const ready = citizen !== "-" && citizen !== "--" && livingIn !== "-" && livingIn !== "--"
+  const query = `?citizen=${encodeURIComponent(citizen)}&residence=${encodeURIComponent(
+    livingIn,
+  )}&depart=${year}-${month}-${day}`
 
   return (
-    <section id="Assist" className="py-16">
-      <div className="mx-auto max-w-6xl px-4">
-        {/* Trustpilot logos row */}
-        <div className="mb-6 flex flex-wrap items-center justify-center gap-3">
-          <a
-            href="https://www.trustpilot.com/review/dubaivisa.co.za"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center"
-          >
-            <Image src="/images/text.png" alt="Check out our reviews" width={140} height={20} style={{ height: "auto" }} className="h-5 w-auto" />
-          </a>
-          <a
-            href="https://www.trustpilot.com/review/dubaivisa.co.za"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center"
-          >
-            <Image src="/images/stars.png" alt="Trustpilot rating stars" width={120} height={20} style={{ height: "auto" }} className="h-5 w-auto" />
-          </a>
-          <a
-            href="https://www.trustpilot.com/review/dubaivisa.co.za"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center"
-          >
-            <Image src="/images/logo.png" alt="Trustpilot" width={90} height={20} style={{ height: "auto" }} className="h-5 w-auto" />
-          </a>
-        </div>
+    <section id="apply" className="scroll-mt-24 py-20 sm:py-24">
+      <Container>
+        <SectionHeading
+          eyebrow="Start here"
+          title="Let's start your application"
+          description="Tell us a few details and we'll guide you to the right visa. The whole process is online — no embassy visits, no queues."
+        />
 
-        <h2 className="text-balance text-center text-3xl font-bold text-ink">Let&apos;s Start Your Application</h2>
+        <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface shadow-[0_24px_60px_-30px_rgba(34,29,24,0.4)]">
+          {/* top trust strip */}
+          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-b border-border bg-surface-muted/60 px-6 py-3 text-xs font-medium text-ink-muted">
+            <span className="flex items-center gap-1.5">
+              <Star className="h-3.5 w-3.5 fill-brand text-brand" /> {siteConfig.stats.trustpilotRating} on Trustpilot
+            </span>
+            <span className="hidden sm:inline">Fly any airline</span>
+            <span>Minimal documents</span>
+            <span className="hidden sm:inline">Expert assistance</span>
+          </div>
 
-        <p className="mt-3 flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-center text-sm font-semibold text-ink">
-          <span>Online Application</span>
-          <span className="text-brand">&bull;</span>
-          <span>Fly Any Airline</span>
-          <span className="text-brand">&bull;</span>
-          <span>Minimal Documents Required</span>
-          <span className="text-brand">&bull;</span>
-          <span>Expert Assistance</span>
-        </p>
+          <div className="p-6 sm:p-9">
+            <div className="grid gap-5 sm:grid-cols-2">
+              <div className="sm:col-span-2">
+                <span className={labelClass}>
+                  <CalendarDays className="h-3.5 w-3.5" /> I plan to travel on
+                </span>
+                <div className="grid grid-cols-3 gap-2">
+                  <select aria-label="Day" className={fieldClass} value={day} onChange={(e) => setDay(e.target.value)}>
+                    {days.map((d) => (
+                      <option key={d} value={d}>
+                        {d}
+                      </option>
+                    ))}
+                  </select>
+                  <select aria-label="Month" className={fieldClass} value={month} onChange={(e) => setMonth(e.target.value)}>
+                    {months.map((m) => (
+                      <option key={m.value} value={m.value}>
+                        {m.label}
+                      </option>
+                    ))}
+                  </select>
+                  <select aria-label="Year" className={fieldClass} value={year} onChange={(e) => setYear(e.target.value)}>
+                    {years.map((y) => (
+                      <option key={y} value={y}>
+                        {y}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
 
-        <div className="mx-auto mt-8 max-w-3xl rounded-lg border border-neutral-200 bg-surface p-6 shadow-sm">
-          <div className="grid gap-6 md:grid-cols-2">
-            <div className="text-center">
-              <div className="mb-2 text-sm text-ink">I plan to leave on</div>
-              <div className="flex items-center justify-center gap-2">
-                <select aria-label="Day" className={selectClass} value={day} onChange={(e) => setDay(e.target.value)}>
-                  {days.map((d) => (
-                    <option key={d} value={d}>
-                      {d}
+              <div>
+                <span className={labelClass}>
+                  <Globe className="h-3.5 w-3.5" /> I am a citizen of
+                </span>
+                <select
+                  aria-label="Country of citizenship"
+                  className={fieldClass}
+                  value={citizen}
+                  onChange={(e) => setCitizen(e.target.value)}
+                >
+                  {countries.map((c, i) => (
+                    <option key={`citizen-${i}-${c.code}`} value={c.code}>
+                      {c.name}
                     </option>
                   ))}
                 </select>
-                <select aria-label="Month" className={selectClass} value={month} onChange={(e) => setMonth(e.target.value)}>
-                  {months.map((m) => (
-                    <option key={m.value} value={m.value}>
-                      {m.label}
-                    </option>
-                  ))}
-                </select>
-                <select aria-label="Year" className={selectClass} value={year} onChange={(e) => setYear(e.target.value)}>
-                  {years.map((y) => (
-                    <option key={y} value={y}>
-                      {y}
+              </div>
+
+              <div>
+                <span className={labelClass}>
+                  <MapPin className="h-3.5 w-3.5" /> I am currently living in
+                </span>
+                <select
+                  aria-label="Country of residence"
+                  className={fieldClass}
+                  value={livingIn}
+                  onChange={(e) => setLivingIn(e.target.value)}
+                >
+                  {countries.map((c, i) => (
+                    <option key={`live-${i}-${c.code}`} value={c.code}>
+                      {c.name}
                     </option>
                   ))}
                 </select>
               </div>
             </div>
 
-            <div className="text-center">
-              <div className="mb-2 text-sm text-ink">I am a citizen of</div>
-              <select
-                aria-label="Country of citizenship"
-                className={`${selectClass} w-full max-w-xs`}
-                value={citizen}
-                onChange={(e) => setCitizen(e.target.value)}
-              >
-                {countries.map((c, i) => (
-                  <option key={`citizen-${i}-${c.code}`} value={c.code}>
-                    {c.name}
-                  </option>
-                ))}
-              </select>
+            <div className="mt-7">
+              {ready ? (
+                <Link
+                  href={`/apply${query}`}
+                  className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand px-8 text-base font-medium text-brand-foreground transition-colors hover:bg-brand/90"
+                >
+                  Continue to application
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              ) : (
+                <div className="flex h-14 w-full items-center justify-center rounded-full bg-surface-muted px-8 text-sm font-medium text-ink-muted">
+                  Select your citizenship and residence to continue
+                </div>
+              )}
             </div>
-
-            <div className="text-center md:col-span-2">
-              <div className="mb-2 text-sm text-ink">I am currently living in</div>
-              <select
-                aria-label="Country of residence"
-                className={`${selectClass} w-full max-w-xs`}
-                value={livingIn}
-                onChange={(e) => setLivingIn(e.target.value)}
-              >
-                {countries.map((c, i) => (
-                  <option key={`live-${i}-${c.code}`} value={c.code}>
-                    {c.name}
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          <div className="mt-6 text-center">
-            <button
-              type="button"
-              onClick={onApply}
-              disabled={!ready}
-              className="rounded bg-success px-8 py-2.5 text-sm font-semibold text-success-foreground transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-50"
-            >
-              Apply Now
-            </button>
-            {!ready && (
-              <p className="mt-2 text-xs text-ink-muted">
-                Select your citizenship and country of residence to continue.
-              </p>
-            )}
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   )
 }
