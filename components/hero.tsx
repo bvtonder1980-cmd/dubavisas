@@ -17,6 +17,13 @@ export function Hero() {
           sizes="100vw"
           className="object-cover object-center"
         />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, rgba(28,23,19,0.78) 0%, rgba(28,23,19,0.45) 35%, rgba(28,23,19,0) 65%)",
+          }}
+        />
       </div>
 
       <Container className="relative">
