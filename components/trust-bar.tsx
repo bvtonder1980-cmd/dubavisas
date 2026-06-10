@@ -31,24 +31,17 @@ const stats = [
 
 export function TrustBar() {
   return (
-    <Section className="py-10" style={{ backgroundColor: "#1c1713" }}>
+    <Section className="border-y border-border bg-card py-10">
       <Container>
         <ul className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-4">
           {stats.map((s) => (
             <li key={s.label} className="flex items-center gap-3">
-              <span
-                className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full"
-                style={{ backgroundColor: "rgba(184,137,59,0.18)" }}
-              >
-                <s.icon className="h-5 w-5 text-brand" aria-hidden="true" />
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent-foreground">
+                <s.icon className="h-5 w-5 text-accent" aria-hidden="true" />
               </span>
               <span className="flex flex-col">
-                <span className="font-serif text-lg font-semibold leading-tight" style={{ color: "#f4f1ea" }}>
-                  {s.value}
-                </span>
-                <span className="text-sm leading-tight" style={{ color: "rgba(244,241,234,0.65)" }}>
-                  {s.label}
-                </span>
+                <span className="font-serif text-lg font-semibold leading-tight text-foreground">{s.value}</span>
+                <span className="text-sm leading-tight text-muted-foreground">{s.label}</span>
               </span>
             </li>
           ))}
