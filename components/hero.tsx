@@ -10,8 +10,8 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-dubai.png"
-          alt="Bright view of the Dubai skyline with the Burj Khalifa, palm trees and turquoise water"
+          src="/images/hero-dubai-night.jpg"
+          alt="Dubai Business Bay skyline at night with illuminated skyscrapers reflecting on the water"
           fill
           priority
           sizes="100vw"
