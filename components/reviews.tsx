@@ -23,7 +23,7 @@ export function Reviews() {
         <SectionHeading
           eyebrow="Reviews"
           title="Loved by thousands of travellers"
-          description={`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()} verified reviews on ${reviewSummary.source}.`}
+          description={`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()}+ verified reviews on ${reviewSummary.source}.`}
         />
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">

@@ -50,7 +50,7 @@ export const testimonials: Testimonial[] = [
 
 // [PLACEHOLDER] Replace with your real aggregate rating and review count
 export const reviewSummary = {
-  rating: 4.9,
-  count: 1280,
+  rating: 4.8,
+  count: 350,
   source: "Trustpilot",
 }
