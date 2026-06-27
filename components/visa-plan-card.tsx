@@ -55,7 +55,7 @@ export function VisaPlanCard({ plan }: { plan: VisaPlan }) {
       </ul>
 
       <ButtonLink
-        href={`/apply?plan=${plan.slug}`}
+        href="/#apply"
         variant={plan.popular ? "primary" : "outline"}
         className={`mt-7 w-full ${plan.popular ? "" : "border-accent text-accent hover:bg-accent hover:text-accent-foreground"}`}
       >

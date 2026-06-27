@@ -52,7 +52,7 @@ export function HowItWorks() {
           ))}
         </ol>
         <div className="mt-10 flex justify-center">
-          <ButtonLink href="/apply" size="lg">
+          <ButtonLink href="/#apply" size="lg">
             Start your application
           </ButtonLink>
         </div>
