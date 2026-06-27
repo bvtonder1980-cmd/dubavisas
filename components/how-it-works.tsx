@@ -32,7 +32,7 @@ export function HowItWorks() {
         <SectionHeading
           eyebrow="How it works"
           title="Your visa, in four simple steps"
-          description="We've removed the paperwork, the queues and the guesswork. Here's the entire journey from start to boarding gate."
+          description="With minimal paperwork and no queues or guesswork, here's the entire journey from the start all the way to the boarding gate."
         />
         <ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
