@@ -52,8 +52,8 @@ export function WhyUs() {
         <div className="mt-[30px] grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r) => (
             <div key={r.title} className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
-              <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15">
-                <r.icon className="h-5 w-5 text-accent" aria-hidden="true" />
+              <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-accent/15">
+                <r.icon className="h-8 w-8 text-accent" aria-hidden="true" />
               </span>
               <h3 className="mb-2 font-serif text-lg font-semibold text-foreground">{r.title}</h3>
               <p className="text-pretty leading-relaxed text-muted-foreground">{r.body}</p>
