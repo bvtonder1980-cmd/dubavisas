@@ -49,7 +49,7 @@ export function WhyUs() {
               <span className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15">
                 <r.icon className="h-5 w-5 text-accent" aria-hidden="true" />
               </span>
-              <h3 className="mb-2 font-serif text-lg font-semibold text-foreground">{r.title}</h3>
+              <h3 className="mb-2 whitespace-nowrap font-serif text-lg font-semibold text-foreground">{r.title}</h3>
               <p className="text-pretty leading-relaxed text-muted-foreground">{r.body}</p>
             </div>
           ))}
