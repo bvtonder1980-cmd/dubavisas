@@ -6,8 +6,18 @@ import { faqs } from "@/lib/faqs"
 export function FaqPreview() {
   const preview = faqs.slice(0, 6)
   return (
-    <Section id="faq" className="bg-secondary">
-      <Container className="max-w-3xl">
+    <Section id="faq" className="relative overflow-hidden bg-secondary">
+      {/* gold jali floral lattice pattern */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/jali-gold-soft.svg')",
+          backgroundSize: "110px 190px",
+          opacity: 0.16,
+        }}
+      />
+      <Container className="relative max-w-3xl">
         <SectionHeading
           eyebrow="Common questions"
           title="Answers before you apply"
