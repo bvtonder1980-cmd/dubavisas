@@ -11,7 +11,7 @@ const steps = [
   {
     icon: CreditCard,
     title: "Upload & pay securely",
-    body: "Upload the required documents and make payment through our secure checkout. Our experts are here to guide you each step of the way, with no hidden fees, ever.",
+    body: "Upload the required documents and make payment through our secure checkout. Our experts are here to guide you each step of the way.",
   },
   {
     icon: Send,
