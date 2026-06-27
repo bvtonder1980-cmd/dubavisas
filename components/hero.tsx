@@ -42,8 +42,9 @@ export function Hero() {
             </h1>
 
             <p className="mt-6 max-w-xl text-pretty text-lg leading-relaxed text-ink-foreground">
-              Apply for your Dubai tourist or transit visa with minimal documents and expert support.
-              Fly any airline, with most visas approved in {siteConfig.stats.avgProcessing}.
+              Apply for your Dubai &amp; Abu Dhabi business or tourist visa with minimal documents while
+              getting expert support. With Dubai Visas Online, you can fly any airline and with most visas
+              approved in {siteConfig.stats.avgProcessing}, we&apos;ll have you ready for departure in no time.
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
