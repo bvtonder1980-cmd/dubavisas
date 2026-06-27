@@ -16,9 +16,9 @@ export function Prices() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: "url('/images/jali-gold-sharp.svg')",
-          backgroundSize: "104px 90px",
-          opacity: 0.18,
+          backgroundImage: "url('/images/jali-gold-soft.svg')",
+          backgroundSize: "110px 190px",
+          opacity: 0.16,
         }}
       />
       <Container className="relative">
