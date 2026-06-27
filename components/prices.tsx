@@ -15,7 +15,7 @@ export function Prices() {
         <SectionHeading
           eyebrow="Pricing"
           title="Transparent visa pricing"
-          description="One flat price per visa — government fees, processing and our hands-on support all included. No surprises at checkout."
+          description="Transparent pricing that includes government fees, processing and our hands-on expert support. No surprises at checkout."
         />
 
         <div className="mb-10 flex justify-center">
