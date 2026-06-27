@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { ArrowRight, Star, ShieldCheck, Clock } from "lucide-react"
+import { ArrowRight, Star, ShieldCheck, Clock, CreditCard } from "lucide-react"
 import { Container } from "@/components/ui/layout"
 import { ButtonLink } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
@@ -68,6 +68,7 @@ export function Hero() {
                 { icon: ShieldCheck, label: `${siteConfig.stats.approvalRate} approval rate` },
                 { icon: Clock, label: `Processed in ${siteConfig.stats.avgProcessing}` },
                 { icon: Star, label: `${siteConfig.stats.visasProcessed} visas processed` },
+                { icon: CreditCard, label: "Secure online payment" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-2 text-sm text-ink-foreground">
                   <item.icon className="h-4 w-4 text-brand" />
