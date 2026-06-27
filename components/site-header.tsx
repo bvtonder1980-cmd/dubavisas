@@ -1,6 +1,7 @@
 "use client"
 
 import { useState, useEffect } from "react"
+import Image from "next/image"
 import Link from "next/link"
 import { Menu, X, Phone } from "lucide-react"
 import { mainNav, siteConfig } from "@/lib/site-config"
@@ -22,13 +23,15 @@ export function SiteHeader() {
       style={{ backgroundColor: "#f4f1ea" }}
     >
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-8">
-        <Link href="/" className="flex items-center gap-2" aria-label={`${siteConfig.name} home`}>
-          <span className="font-serif text-xl font-semibold tracking-tight text-ink sm:text-2xl">
-            Dubai Visas
-          </span>
-          <span className="rounded-full bg-brand px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-brand-foreground">
-            Online
-          </span>
+        <Link href="/" className="flex items-center" aria-label={`${siteConfig.name} home`}>
+          <Image
+            src="/images/dubai-visas-online-logo.png"
+            alt={siteConfig.name}
+            width={260}
+            height={37}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Main">
