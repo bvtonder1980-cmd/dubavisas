@@ -10,9 +10,9 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           {/* Brand */}
           <div className="flex flex-col gap-5">
-            <Link href="/" className="inline-flex w-fit items-center rounded-lg bg-background px-4 py-3">
+            <Link href="/" className="inline-flex w-fit items-center">
               <Image
-                src="/images/dubai-visas-online-logo.png"
+                src="/images/dubai-visas-online-logo-white.png"
                 alt={siteConfig.name}
                 width={260}
                 height={37}
