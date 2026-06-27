@@ -1,10 +1,23 @@
 /**
  * TRAVEL GUIDES / ARTICLES
  *
- * [PLACEHOLDER] These articles use realistic, sensible placeholder copy so the
- * structure and design are complete. Replace the `body` content (and any facts
- * like prices, fines, dates) with your own verified, official information.
- * Each `[PLACEHOLDER]` note marks something you may want to confirm.
+ * [PLACEHOLDER] This file contains 20 guide "slots". The topics were chosen
+ * from the questions South African travellers most commonly search for about
+ * Dubai/UAE visas and travel, so the set is built for topical authority and
+ * AI-search visibility.
+ *
+ * HOW TO EDIT:
+ *   - Edit a guide here once and it updates everywhere: the /articles index,
+ *     the individual /articles/[slug] page, AND the homepage "Travel guides"
+ *     section (which shows the FIRST THREE guides in this list).
+ *   - To feature a guide on the homepage, move it into the first three spots.
+ *   - Replace each `body` with your own verified, real-world content. The
+ *     `[PLACEHOLDER]` notes mark facts to confirm or sections to write.
+ *
+ * IMAGES:
+ *   - Each guide points to an image in /public/images/articles/. Several new
+ *     slots reuse existing images for now — replace with unique images per
+ *     guide when ready (just drop a file in that folder and update `image`).
  *
  * Body supports a tiny markdown-ish format handled by the renderer:
  *   "## Heading"      -> section heading
@@ -24,7 +37,25 @@ export type Article = {
   body: string
 }
 
+const PLACEHOLDER_BODY = `[PLACEHOLDER] Write this guide using your own real-world experience and verified, official information.
+
+## Introduction
+Open with the question this guide answers and who it's for. Speak from your first-hand experience helping South African travellers — that real expertise is exactly what makes this guide authoritative and quotable by search engines.
+
+## Key points to cover
+- The main answer, stated clearly and early
+- The most common mistakes you see customers make
+- Practical, step-by-step guidance
+- Up-to-date facts (prices, timeframes, rules) — confirm against official UAE sources
+
+## Helpful details
+Add the specifics travellers ask you about most. Use short paragraphs and bullet lists so the content is easy to scan and easy for AI engines to extract.
+
+## Summary
+Close with a short recap and a clear next step (e.g. apply now or contact your team for advice).`
+
 export const articles: Article[] = [
+  // ── EXISTING GUIDES ─────────────────────────────────────────────
   {
     slug: "do-south-africans-need-a-visa-for-dubai",
     title: "Do South African Citizens Need a Visa for Dubai?",
@@ -43,7 +74,6 @@ The UAE grants visa-on-arrival access to a specific list of nationalities. South
 ## Which visa should you choose?
 The right visa depends on how long you plan to stay and whether you need to enter the country more than once:
 
-- 96 Hour Transit Visa — for short layovers and stopovers
 - 14 or 30 Day Single Entry — for holidays and short visits
 - 60 Day Single Entry — for longer stays
 - Multiple Entry visas — if you plan to leave and re-enter the UAE
@@ -167,10 +197,10 @@ Whenever you choose to go, make sure your visa is sorted well in advance so you 
     author: "Dubai Visas Online",
     datePublished: "2026-02-18",
     readingMinutes: 4,
-    body: `A long layover in Dubai doesn't have to mean hours stuck in the terminal. With a transit visa, you can step out and experience the city before your next flight.
+    body: `A long layover in Dubai doesn't have to mean hours stuck in the terminal. With the right short-stay visa, you can step out and experience the city before your next flight.
 
-## Do you need a transit visa?
-If you want to leave the airport during your layover, you'll typically need a transit or short-stay visa. A 96 Hour Transit Visa is designed exactly for this. [PLACEHOLDER: confirm minimum layover time and eligibility.]
+## Do you need a visa to leave the airport?
+If you want to leave the airport during your layover, you'll typically need a tourist or short-stay visa arranged before you travel. [PLACEHOLDER: confirm the best visa option and minimum layover time for stepping out.]
 
 ## What you can do in a few hours
 - Visit the Burj Khalifa and Dubai Mall
@@ -183,7 +213,225 @@ If you want to leave the airport during your layover, you'll typically need a tr
 - Keep your visa and onward ticket handy
 - Watch the clock — don't cut it too fine before your connecting flight
 
-A transit visa is a simple way to turn dead time into a mini adventure. Apply online before you travel and make your layover count.`,
+A short-stay visa is a simple way to turn dead time into a mini adventure. Apply online before you travel and make your layover count.`,
+  },
+
+  // ── NEW GUIDE SLOTS (search-informed topics) ────────────────────
+  {
+    slug: "dubai-visa-types-explained",
+    title: "Dubai Visa Types Explained: Which One Do You Need?",
+    excerpt:
+      "A plain-English comparison of every UAE tourist visa — validity, entries and who each one suits best.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-01",
+    readingMinutes: 6,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "30-day-vs-60-day-dubai-visa",
+    title: "30-Day vs 60-Day Dubai Visa: Which Should You Choose?",
+    excerpt:
+      "How to decide between a 30-day and 60-day UAE tourist visa based on your trip length, budget and plans.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-04",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "single-entry-vs-multiple-entry-dubai-visa",
+    title: "Single Entry vs Multiple Entry Dubai Visas",
+    excerpt:
+      "What's the difference, and when is a multiple-entry UAE visa worth the extra cost? A simple breakdown.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-07",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visa-overstay-fines-grace-period",
+    title: "Dubai Visa Overstay Fines, Grace Periods & Extensions",
+    excerpt:
+      "What happens if you overstay your UAE visa, how daily fines work, and how to avoid penalties at the airport.",
+    category: "Visa Rules",
+    image: "/images/articles/overstay-fines.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-10",
+    readingMinutes: 6,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "how-to-extend-dubai-tourist-visa",
+    title: "How to Extend Your Dubai Tourist Visa",
+    excerpt:
+      "Your options for extending a UAE tourist visa without leaving the country, plus what it costs and when to apply.",
+    category: "Visa Rules",
+    image: "/images/articles/overstay-fines.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-13",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visas-for-children-and-families",
+    title: "Dubai Visas for Children & Families",
+    excerpt:
+      "Travelling to Dubai with kids? Here's how visas work for minors, including the documents families often miss.",
+    category: "Visa Requirements",
+    image: "/images/articles/dubai-layover.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-16",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visa-cost-price-breakdown",
+    title: "Dubai Visa Cost: A Complete Price Breakdown",
+    excerpt:
+      "Exactly what you pay for a UAE tourist visa — government fees, service fees and how to avoid hidden charges.",
+    category: "Pricing",
+    image: "/images/articles/overstay-fines.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-19",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visa-application-step-by-step",
+    title: "Dubai Visa for South Africans: Step-by-Step Application Guide",
+    excerpt:
+      "A complete walkthrough of applying for a Dubai visa from South Africa, from documents to approval.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-22",
+    readingMinutes: 7,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "documents-needed-for-dubai-visa",
+    title: "What Documents Do You Need for a Dubai Visa?",
+    excerpt:
+      "A simple checklist of everything you need to apply for a UAE tourist visa and get approved first time.",
+    category: "Documents",
+    image: "/images/articles/photo-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-25",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visa-on-arrival-myths",
+    title: "Dubai Visa on Arrival: Myths vs Reality for South Africans",
+    excerpt:
+      "Can South Africans get a Dubai visa on arrival? We clear up the confusion and explain what's actually required.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-28",
+    readingMinutes: 4,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "arriving-at-dubai-airport",
+    title: "Arriving at Dubai Airport: Immigration & What to Expect",
+    excerpt:
+      "From landing to baggage claim — how UAE immigration works and how to breeze through with your e-visa.",
+    category: "Travel Guide",
+    image: "/images/articles/dubai-layover.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-03-31",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-dress-code-and-customs",
+    title: "Dubai Dress Code & Local Customs Every Visitor Should Know",
+    excerpt:
+      "Respect local culture and avoid awkward moments with this practical guide to dressing and behaving in Dubai.",
+    category: "Travel Guide",
+    image: "/images/articles/best-time-to-visit.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-03",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-money-currency-getting-around",
+    title: "Dubai on a Budget: Money, Currency & Getting Around",
+    excerpt:
+      "Currency, tipping, the Dubai Metro, taxis and apps — everything you need to manage money and travel smart.",
+    category: "Travel Guide",
+    image: "/images/articles/best-time-to-visit.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-06",
+    readingMinutes: 6,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "things-to-do-in-dubai-first-time",
+    title: "Top Things to Do in Dubai for First-Time Visitors",
+    excerpt:
+      "The must-see attractions and experiences for your first trip to Dubai, from the Burj Khalifa to desert safaris.",
+    category: "Travel Guide",
+    image: "/images/articles/best-time-to-visit.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-09",
+    readingMinutes: 7,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-during-ramadan-and-holidays",
+    title: "Visiting Dubai During Ramadan & Public Holidays",
+    excerpt:
+      "What changes during Ramadan and UAE public holidays, and how it affects your trip, dining and visa timing.",
+    category: "Travel Guide",
+    image: "/images/articles/best-time-to-visit.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-12",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-visa-rejection-reasons",
+    title: "Why Dubai Visas Get Rejected — and How to Avoid It",
+    excerpt:
+      "The most common reasons UAE visa applications are refused, and the simple steps that prevent delays.",
+    category: "Visa Rules",
+    image: "/images/articles/photo-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-15",
+    readingMinutes: 5,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-passport-validity-rules",
+    title: "Passport Validity Rules for Travelling to Dubai",
+    excerpt:
+      "How much passport validity you need for the UAE, and why a near-expiry passport can stop you boarding.",
+    category: "Documents",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-18",
+    readingMinutes: 4,
+    body: PLACEHOLDER_BODY,
+  },
+  {
+    slug: "dubai-travel-insurance-guide",
+    title: "Do You Need Travel Insurance for Dubai?",
+    excerpt:
+      "Whether travel and medical insurance is required for the UAE, and what cover South African travellers should look for.",
+    category: "Travel Guide",
+    image: "/images/articles/dubai-layover.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-04-21",
+    readingMinutes: 4,
+    body: PLACEHOLDER_BODY,
   },
 ]
 
