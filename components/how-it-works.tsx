@@ -16,7 +16,7 @@ const steps = [
   {
     icon: Send,
     title: "We process your visa",
-    body: "Our team reviews every application by hand and submits it directly to UAE immigration on your behalf.",
+    body: "Our team reviews and prepares every application manually and submits it directly to UAE immigration on your behalf for processing.",
   },
   {
     icon: PlaneTakeoff,
