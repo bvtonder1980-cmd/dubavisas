@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, Phone, MapPin } from "lucide-react"
 import { footerNav, siteConfig } from "@/lib/site-config"
 
@@ -9,11 +10,14 @@ export function SiteFooter() {
         <div className="grid gap-12 lg:grid-cols-[1.4fr_2fr]">
           {/* Brand */}
           <div className="flex flex-col gap-5">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="font-serif text-2xl font-semibold tracking-tight">Dubai Visas</span>
-              <span className="rounded-full bg-brand px-2 py-0.5 text-xs font-semibold uppercase tracking-wider text-brand-foreground">
-                Online
-              </span>
+            <Link href="/" className="inline-flex w-fit items-center rounded-lg bg-background px-4 py-3">
+              <Image
+                src="/images/dubai-visas-online-logo.png"
+                alt={siteConfig.name}
+                width={260}
+                height={37}
+                className="h-9 w-auto"
+              />
             </Link>
             <p className="max-w-sm text-sm leading-relaxed text-ink-foreground/70">
               {siteConfig.description}
