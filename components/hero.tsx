@@ -34,7 +34,7 @@ export function Hero() {
               style={{ borderColor: "rgba(244,241,234,0.25)", backgroundColor: "rgba(244,241,234,0.12)" }}
             >
               <Star className="h-3.5 w-3.5 fill-brand text-brand" />
-              {siteConfig.stats.trustpilotRating} rating · {siteConfig.stats.trustpilotReviews} reviews
+              {siteConfig.stats.trustpilotRating} rating on Trustpilot
             </span>
 
             <h1 className="mt-6 text-balance font-serif text-4xl font-semibold leading-[1.05] text-ink-foreground sm:text-5xl lg:text-6xl">

@@ -26,7 +26,7 @@ export const siteConfig = {
     visasProcessed: "50,000+",
     approvalRate: "99%",
     avgProcessing: "24–72 hours",
-    trustpilotRating: "4.8",
+    trustpilotRating: "4.9",
     trustpilotReviews: "2,400+",
   },
 
