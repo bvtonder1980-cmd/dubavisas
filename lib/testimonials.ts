@@ -1,8 +1,8 @@
 /**
- * TESTIMONIALS — [PLACEHOLDER]
- * Replace these sample reviews with your real, verifiable customer reviews
- * (e.g. exported from Trustpilot/Google). Keeping real review text on-page
- * helps AI search engines quote and attribute your reputation.
+ * TESTIMONIALS — real, verifiable reviews from Trustpilot.
+ * Source: https://uk.trustpilot.com/review/dubaivisa.co.za
+ * These are genuine customer reviews kept verbatim so AI search engines can
+ * quote and attribute the company's real reputation.
  */
 export type Testimonial = {
   name: string
@@ -15,42 +15,42 @@ export type Testimonial = {
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Lerato M.",
-    location: "Johannesburg, SA",
+    name: "Cheryl Singleton",
+    location: "South Africa",
     rating: 5,
-    date: "2026-02-14",
-    title: "Visa approved in 2 days",
-    body: "I was nervous about applying online but the team made it effortless. My 30-day visa came through in two days and they answered every WhatsApp message within minutes.",
+    date: "2025-07-16",
+    title: "What service - EXCELLENT!",
+    body: "Josh and Tina are amazing! I had an issue trying to apply for a Dubai Visa and I spoke to them on Monday. On the Tuesday evening, after submitting my forms and payment, Josh sent me my Dubai Visa. One Day! I am truly so pleasantly surprised, and very grateful for their assistance.",
   },
   {
-    name: "James W.",
-    location: "Cape Town, SA",
+    name: "Berger Nealia",
+    location: "South Africa",
     rating: 5,
-    date: "2026-01-28",
-    title: "Saved our family holiday",
-    body: "We needed visas for two adults and two kids on short notice. They handled the children's birth certificate requirements perfectly and everything was approved before we flew.",
+    date: "2025-07-30",
+    title: "Genuine Service",
+    body: "I received my fourth or fifth Dubai Visa from Tina and Josh yesterday. It's so nice dealing with actual humans, and Tina and Josh provide a personal experience with all the help you need. They have so much patience. I would highly recommend Tina and Josh.",
   },
   {
-    name: "Priya N.",
-    location: "Durban, SA",
+    name: "Ricky Joseph",
+    location: "South Africa",
     rating: 5,
-    date: "2026-01-09",
-    title: "Professional and quick",
-    body: "They spotted that my passport photo wouldn't meet the new requirements and sorted it before submission. That attention to detail is why I'd recommend them to anyone.",
+    date: "2025-06-09",
+    title: "Awesome service from Josh and Tina",
+    body: "Awesome service from Josh and Tina. They actually answer their phones. Reply very quick to emails. Got mine and my wife's eVISA in 2 working days. Appreciate the great service.",
   },
   {
-    name: "Thabo K.",
-    location: "Pretoria, SA",
+    name: "Bevan Rabie",
+    location: "South Africa",
     rating: 5,
-    date: "2025-12-20",
-    title: "Multiple entry was the right call",
-    body: "I travel to Dubai for business often, so the 60-day multiple entry visa was perfect. The advice on which visa to choose was spot on and saved me money.",
+    date: "2025-03-30",
+    title: "Professional, Efficient, and Trustworthy!",
+    body: "The service was excellent — Tina and Josh were incredibly helpful and efficient throughout the process. The turnaround time for our visas was impressively quick, making the experience stress-free. Will definitely use this service again!",
   },
 ]
 
-// [PLACEHOLDER] Replace with your real aggregate rating and review count
+// Aggregate figures from Trustpilot (https://uk.trustpilot.com/review/dubaivisa.co.za)
 export const reviewSummary = {
-  rating: 4.8,
-  count: 350,
+  rating: 5.0,
+  count: 337,
   source: "Trustpilot",
 }
