@@ -15,7 +15,7 @@ const reasons = [
   {
     icon: Wallet,
     title: "One flat, honest price",
-    body: "The price you see includes government fees and our service. No hidden charges added at checkout.",
+    body: "The price you see is what you'll pay. It includes government fees and our personalised service. No hidden charges added at checkout.",
   },
   {
     icon: MessagesSquare,
