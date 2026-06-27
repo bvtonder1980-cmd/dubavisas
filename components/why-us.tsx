@@ -10,7 +10,7 @@ const reasons = [
   {
     icon: UserCheck,
     title: "A real person on your file",
-    body: "Every application is reviewed by hand by an experienced specialist — not an automated bot that misses errors.",
+    body: "Every application is reviewed by one of our experienced specialists. Have a question? Let us know so we can give you the best advice.",
   },
   {
     icon: Wallet,
