@@ -3,9 +3,13 @@
 import { Plus } from "lucide-react"
 import { type FaqItem } from "@/lib/faqs"
 
-export function FaqAccordion({ items }: { items: FaqItem[] }) {
+export function FaqAccordion({ items, className }: { items: FaqItem[]; className?: string }) {
   return (
-    <div className="divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card">
+    <div
+      className={`divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card${
+        className ? ` ${className}` : ""
+      }`}
+    >
       {items.map((item) => (
         <details key={item.question} className="group">
           <summary className="flex cursor-pointer list-none items-center justify-between gap-4 px-6 py-5 text-left font-medium text-foreground transition-colors hover:bg-secondary [&::-webkit-details-marker]:hidden">

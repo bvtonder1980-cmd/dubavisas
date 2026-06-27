@@ -29,7 +29,7 @@ export function FaqPreview() {
             </>
           }
         />
-        <FaqAccordion items={preview} />
+        <FaqAccordion items={preview} className="mt-[30px]" />
         <div className="mt-10 flex justify-center">
           <ButtonLink href="/faq" variant="outline" size="lg">
             See all FAQs
