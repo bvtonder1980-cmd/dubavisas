@@ -79,7 +79,7 @@ export function Assist() {
             Let&apos;s start your application
           </h2>
           <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
-            Tell us a few details and we&apos;ll guide you to the right visa. The whole process is online — no
+            Tell us when you would like to travel and let&apos;s start your application. It&apos;s fully online — no
             embassy visits, no queues.
           </p>
         </div>
