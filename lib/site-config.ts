@@ -23,7 +23,7 @@ export const siteConfig = {
   // [PLACEHOLDER] Confirm / replace with your real numbers
   stats: {
     yearFounded: 2018,
-    visasProcessed: "50,000+",
+    visasProcessed: "20,000+",
     approvalRate: "99%",
     avgProcessing: "24–72 hours",
     trustpilotRating: "4.8",
