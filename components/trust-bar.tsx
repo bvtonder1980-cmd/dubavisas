@@ -33,7 +33,7 @@ export function TrustBar() {
   return (
     <Section className="border-y border-border bg-card py-7">
       <Container>
-        <ul className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-4">
+        <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-4">
           {stats.map((s) => (
             <li key={s.label} className="flex items-center gap-3">
               <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent-foreground">
