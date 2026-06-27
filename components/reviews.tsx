@@ -1,4 +1,4 @@
-import { Section, Container, SectionHeading } from "@/components/ui/layout"
+import { Container } from "@/components/ui/layout"
 import { testimonials, reviewSummary } from "@/lib/testimonials"
 import { Star } from "lucide-react"
 
@@ -18,13 +18,46 @@ function Stars({ rating }: { rating: number }) {
 
 export function Reviews() {
   return (
-    <Section id="reviews" className="bg-secondary">
-      <Container>
-        <SectionHeading
-          eyebrow="Reviews"
-          title="Loved by thousands of travellers"
-          description={`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()}+ verified reviews on ${reviewSummary.source}.`}
-        />
+    <section
+      id="reviews"
+      className="relative scroll-mt-24 overflow-hidden py-16 sm:py-20 lg:py-24"
+      style={{ backgroundColor: "#16110d" }}
+    >
+      {/* classic Emirati gold pattern overlay */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          backgroundImage: "url('/images/arabesque-gold.svg')",
+          backgroundSize: "120px 120px",
+          opacity: 0.18,
+        }}
+      />
+      {/* subtle vignette so the centre stays focused */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(ellipse at center, rgba(22,17,13,0) 35%, rgba(22,17,13,0.85) 100%)",
+        }}
+      />
+
+      <Container className="relative">
+        <div className="mx-auto mb-12 flex max-w-2xl flex-col items-center gap-4 text-center">
+          <span className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-brand">
+            Reviews
+          </span>
+          <h2
+            className="text-balance font-serif text-3xl font-semibold leading-tight sm:text-4xl md:text-[2.75rem]"
+            style={{ color: "#f4f1ea" }}
+          >
+            Loved by thousands of travellers
+          </h2>
+          <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
+            {`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()}+ verified reviews on ${reviewSummary.source}.`}
+          </p>
+        </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {testimonials.map((t) => (
@@ -53,6 +86,6 @@ export function Reviews() {
           />
         </div>
       </Container>
-    </Section>
+    </section>
   )
 }
