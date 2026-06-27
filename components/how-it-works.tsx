@@ -6,7 +6,7 @@ const steps = [
   {
     icon: FileText,
     title: "Tell us about your trip",
-    body: "Choose your visa type, travel dates and nationality. The whole form takes about three minutes to complete.",
+    body: "Choose your visa type, travel dates and nationality. Then complete the easy online form. It usually takes about three to five minutes per passenger to complete.",
   },
   {
     icon: CreditCard,
