@@ -64,8 +64,7 @@ export function Prices() {
         </div>
 
         <p className="mt-8 text-center text-sm text-muted-foreground">
-          {/* [PLACEHOLDER] Confirm your refund / approval guarantee wording */}
-          Not approved? We refund the visa fee. Prices shown in South African Rand (ZAR).
+          Prices shown in South African Rand (ZAR).
         </p>
       </Container>
     </Section>
