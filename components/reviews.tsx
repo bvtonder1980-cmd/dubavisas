@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { Container } from "@/components/ui/layout"
 import { testimonials, reviewSummary } from "@/lib/testimonials"
 import { Star } from "lucide-react"
@@ -54,8 +55,18 @@ export function Reviews() {
           >
             Loved by thousands of travellers
           </h2>
-          <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
-            {`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()}+ verified reviews on ${reviewSummary.source}.`}
+          <p
+            className="inline-flex flex-wrap items-center justify-center gap-x-1.5 text-pretty text-base leading-relaxed sm:text-lg"
+            style={{ color: "rgba(244,241,234,0.7)" }}
+          >
+            <span>{`Rated ${reviewSummary.rating} out of 5 from ${reviewSummary.count.toLocaleString()}+ verified reviews on`}</span>
+            <Image
+              src="/images/trustpilot-logo.svg"
+              alt={reviewSummary.source}
+              width={92}
+              height={23}
+              className="inline-block h-5 w-auto translate-y-[1px] sm:h-[1.35rem]"
+            />
           </p>
         </div>
 
