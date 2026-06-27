@@ -36,8 +36,8 @@ export function TrustBar() {
         <ul className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-4">
           {stats.map((s) => (
             <li key={s.label} className="flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent-foreground">
-                <s.icon className="h-5 w-5 text-accent" aria-hidden="true" />
+              <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-accent/15 text-accent-foreground">
+                <s.icon className="h-8 w-8 text-accent" aria-hidden="true" />
               </span>
               <span className="flex flex-col">
                 <span className="font-serif text-lg font-semibold leading-tight text-foreground">{s.value}</span>
