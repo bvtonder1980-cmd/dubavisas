@@ -63,7 +63,7 @@ export function Hero() {
             </div>
 
             {/* Inline trust points */}
-            <div className="mt-12 grid max-w-md grid-cols-2 gap-x-8 gap-y-4">
+            <div className="mt-12 grid max-w-md grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2">
               {[
                 { icon: ShieldCheck, label: `${siteConfig.stats.approvalRate} approval rate` },
                 { icon: Clock, label: `Processed in ${siteConfig.stats.avgProcessing}` },
