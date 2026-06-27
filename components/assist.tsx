@@ -87,7 +87,7 @@ export function Assist() {
 
         <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]">
           {/* top trust strip */}
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 border-b border-border bg-surface-muted/60 px-6 py-3 text-xs font-medium text-ink-muted">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-b border-border bg-surface-muted/60 px-6 py-3 text-xs font-medium text-ink-muted sm:gap-x-6">
             <span className="flex items-center gap-1.5">
               <Star className="h-3.5 w-3.5 fill-brand text-brand" /> {siteConfig.stats.trustpilotRating} on Trustpilot
             </span>
