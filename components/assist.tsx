@@ -91,8 +91,11 @@ export function Assist() {
             <span className="flex items-center gap-1.5">
               <Star className="h-3.5 w-3.5 fill-brand text-brand" /> {siteConfig.stats.trustpilotRating} on Trustpilot
             </span>
+            <span aria-hidden="true" className="hidden h-3 w-px bg-brand sm:inline-block" />
             <span className="hidden sm:inline">Fly any airline</span>
+            <span aria-hidden="true" className="hidden h-3 w-px bg-brand sm:inline-block" />
             <span>Minimal documents</span>
+            <span aria-hidden="true" className="hidden h-3 w-px bg-brand sm:inline-block" />
             <span className="hidden sm:inline">Expert assistance</span>
           </div>
 
