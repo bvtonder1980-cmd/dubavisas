@@ -21,7 +21,7 @@ const steps = [
   {
     icon: PlaneTakeoff,
     title: "Receive your visa & travel",
-    body: "Your approved e-visa arrives by email. Print it or keep it on your phone, then pack your bags.",
+    body: "Your approved e-visa arrives by email and our team verifies it's correctly issued. Print it or keep it on your phone, then pack your bags.",
   },
 ]
 
