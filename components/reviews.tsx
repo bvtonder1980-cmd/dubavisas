@@ -68,6 +68,17 @@ export function Reviews() {
               className="inline-block h-5 w-auto translate-y-[1px] sm:h-[1.35rem]"
             />
           </p>
+          <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
+            Read &amp; confirm our reviews{" "}
+            <a
+              href="https://uk.trustpilot.com/review/dubaivisa.co.za"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-brand underline underline-offset-4 transition-colors hover:text-brand/80"
+            >
+              here
+            </a>
+          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
