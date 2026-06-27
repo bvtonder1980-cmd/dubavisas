@@ -5,7 +5,7 @@ const reasons = [
   {
     icon: FileCheck2,
     title: "We catch mistakes before they cost you",
-    body: "Wrong photo or document? We flag it before submission so your visa isn't delayed or rejected.",
+    body: "Wrong photo or document? We flag it before submission so your application has the best possible chance of success.",
   },
   {
     icon: UserCheck,
