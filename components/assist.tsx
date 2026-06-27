@@ -22,7 +22,8 @@ const months = [
   { value: "11", label: "November" },
   { value: "12", label: "December" },
 ]
-const years = ["2026", "2027"]
+const currentYear = new Date().getFullYear()
+const years = [String(currentYear), String(currentYear + 1)]
 
 const fieldClass =
   "h-11 w-full rounded-lg border border-border bg-background px-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30"
@@ -30,9 +31,10 @@ const fieldClass =
 const labelClass = "mb-1.5 flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wide text-ink-muted"
 
 export function Assist() {
-  const [day, setDay] = useState("01")
-  const [month, setMonth] = useState("01")
-  const [year, setYear] = useState("2026")
+  const today = new Date()
+  const [day, setDay] = useState(String(today.getDate()).padStart(2, "0"))
+  const [month, setMonth] = useState(String(today.getMonth() + 1).padStart(2, "0"))
+  const [year, setYear] = useState(String(today.getFullYear()))
   const [citizen, setCitizen] = useState("-")
   const [livingIn, setLivingIn] = useState("-")
 
