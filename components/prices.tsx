@@ -18,7 +18,7 @@ export function Prices() {
           description="Transparent pricing that includes government fees, processing and our hands-on expert support. No surprises at checkout."
         />
 
-        <div className="mb-10 flex justify-center">
+        <div className="mb-10 mt-10 flex justify-center">
           <div className="inline-flex rounded-full border border-border bg-card p-1">
             <button
               type="button"
