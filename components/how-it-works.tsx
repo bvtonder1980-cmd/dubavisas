@@ -1,6 +1,6 @@
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { ButtonLink } from "@/components/ui/button"
-import { FileText, Globe, Send, PlaneTakeoff } from "lucide-react"
+import { FileText, Globe, Stamp, PlaneTakeoff } from "lucide-react"
 
 const steps = [
   {
@@ -14,7 +14,7 @@ const steps = [
     body: "Upload the required documents and make payment through our secure checkout. Our experts are here to guide you each step of the way.",
   },
   {
-    icon: Send,
+    icon: Stamp,
     title: "We process your visa application",
     body: "Our team reviews and prepares every application manually and submits it directly to UAE immigration on your behalf for processing.",
   },
