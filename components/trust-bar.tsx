@@ -31,7 +31,7 @@ const stats = [
 
 export function TrustBar() {
   return (
-    <Section className="border-y border-border bg-card py-10">
+    <Section className="border-y border-border bg-card py-7">
       <Container>
         <ul className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-4">
           {stats.map((s) => (
