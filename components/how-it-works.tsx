@@ -4,12 +4,12 @@ import { FileText, CreditCard, Send, PlaneTakeoff } from "lucide-react"
 
 const steps = [
   {
-    icon: FileText,
+    icon: CreditCard,
     title: "Tell us about your trip",
     body: "Choose your travel dates, nationality and visa type. Then complete the easy online form that takes about three minutes to complete.",
   },
   {
-    icon: CreditCard,
+    icon: FileText,
     title: "Upload & pay securely",
     body: "Upload the required documents and make payment through our secure checkout. Our experts are here to guide you each step of the way.",
   },
