@@ -48,9 +48,8 @@ export const testimonials: Testimonial[] = [
   },
 ]
 
-// Aggregate figures from Trustpilot (https://uk.trustpilot.com/review/dubaivisa.co.za)
 export const reviewSummary = {
-  rating: 5.0,
-  count: 337,
+  rating: 4.8,
+  count: 350,
   source: "Trustpilot",
 }
