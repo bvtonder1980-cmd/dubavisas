@@ -41,7 +41,13 @@ export function WhyUs() {
         <SectionHeading
           eyebrow="Why travellers choose us"
           title="The reassuring way to get your Dubai visa"
-          description="Applying for a visa shouldn't be stressful. Here's why thousands of travellers trust us with their trip."
+          description={
+            <>
+              Applying for a visa shouldn&apos;t be stressful.
+              <br />
+              Here&apos;s why thousands of travellers trust us with their trip.
+            </>
+          }
         />
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r) => (
