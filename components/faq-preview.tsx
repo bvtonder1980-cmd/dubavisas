@@ -21,7 +21,13 @@ export function FaqPreview() {
         <SectionHeading
           eyebrow="Common questions"
           title="Answers before you apply"
-          description="The questions travellers ask us most. Can't find what you need? Our team is one message away."
+          description={
+            <>
+              The questions travellers ask us most.
+              <br />
+              Can&apos;t find what you need? Our team is one message away.
+            </>
+          }
         />
         <FaqAccordion items={preview} />
         <div className="mt-10 flex justify-center">
