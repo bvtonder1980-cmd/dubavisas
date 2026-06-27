@@ -11,14 +11,14 @@ export function Prices() {
 
   return (
     <Section id="prices" className="relative overflow-hidden bg-secondary">
-      {/* gold triangular lattice pattern */}
+      {/* gold jali floral lattice pattern */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          backgroundImage: "url('/images/triangle-gold.svg')",
-          backgroundSize: "60px 104px",
-          opacity: 0.12,
+          backgroundImage: "url('/images/jali-gold.svg')",
+          backgroundSize: "110px 190px",
+          opacity: 0.16,
         }}
       />
       <Container className="relative">
