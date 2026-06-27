@@ -3,14 +3,9 @@ import { ShieldCheck, Clock4, UserCheck, Wallet, FileCheck2, MessagesSquare } fr
 
 const reasons = [
   {
-    icon: ShieldCheck,
-    title: "Government-compliant, every time",
-    body: "We submit directly to UAE immigration and check every detail so your application meets the latest requirements.",
-  },
-  {
-    icon: Clock4,
-    title: "Genuinely fast turnaround",
-    body: "Most visas are approved within 24 to 72 hours. Need it sooner? Ask us about express processing.",
+    icon: FileCheck2,
+    title: "We catch mistakes before they cost you",
+    body: "Wrong photo or document? We flag it before submission so your visa isn't delayed or rejected.",
   },
   {
     icon: UserCheck,
@@ -23,14 +18,19 @@ const reasons = [
     body: "The price you see includes government fees and our service. No hidden charges added at checkout.",
   },
   {
-    icon: FileCheck2,
-    title: "We catch mistakes before they cost you",
-    body: "Wrong photo or document? We flag it before submission so your visa isn't delayed or rejected.",
-  },
-  {
     icon: MessagesSquare,
     title: "Support that actually replies",
     body: "Reach us on WhatsApp, email or phone. Real answers from real people, seven days a week.",
+  },
+  {
+    icon: Clock4,
+    title: "Genuinely fast turnaround",
+    body: "Most visas are approved within 24 to 72 hours. Need it sooner? Ask us about express processing.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Government-compliant, every time",
+    body: "We submit directly to UAE immigration and check every detail so your application meets the latest requirements.",
   },
 ]
 
