@@ -30,7 +30,7 @@ const reasons = [
   {
     icon: ShieldCheck,
     title: "Trusted by the travel industry",
-    body: "We submit directly to UAE immigration and check every detail so your application meets the latest requirements.",
+    body: "We are trusted by the largest South African travel agency brands to ensure that their travellers get their visas on time, every time.",
   },
 ]
 
