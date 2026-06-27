@@ -34,7 +34,7 @@ export function HowItWorks() {
           title="Your visa, in four simple steps"
           description="With minimal paperwork and no queues or guesswork, here's the entire journey from the start all the way to the boarding gate."
         />
-        <ol className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+        <ol className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, i) => (
             <li
               key={step.title}
