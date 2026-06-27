@@ -1,10 +1,10 @@
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { ButtonLink } from "@/components/ui/button"
-import { FileText, CreditCard, Send, PlaneTakeoff } from "lucide-react"
+import { FileText, Globe, Send, PlaneTakeoff } from "lucide-react"
 
 const steps = [
   {
-    icon: CreditCard,
+    icon: Globe,
     title: "Tell us about your trip",
     body: "Choose your travel dates, nationality and visa type. Then complete the easy online form that takes about three minutes to complete.",
   },
