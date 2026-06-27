@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import Link from "next/link"
-import { ArrowRight, CalendarDays, Globe, MapPin, Star } from "lucide-react"
+import { ArrowRight, CalendarDays, Globe, MapPin, Star, ShieldCheck, Clock, Headphones, Award } from "lucide-react"
 import { countries } from "@/lib/countries"
 import { Container } from "@/components/ui/layout"
 import { siteConfig } from "@/lib/site-config"
@@ -24,6 +24,32 @@ const months = [
 ]
 const currentYear = new Date().getFullYear()
 const years = [String(currentYear), String(currentYear + 1)]
+
+const trustStats = [
+  {
+    icon: Award,
+    /* [PLACEHOLDER] Replace with your real founding year / track record */
+    value: "Since 2018",
+    label: "Trusted visa specialists",
+  },
+  {
+    icon: ShieldCheck,
+    /* [PLACEHOLDER] Replace with your real approval rate */
+    value: "99.2%",
+    label: "Visa approval rate",
+  },
+  {
+    icon: Clock,
+    /* [PLACEHOLDER] Replace with your real average processing time */
+    value: "24–72 hrs",
+    label: "Average processing",
+  },
+  {
+    icon: Headphones,
+    value: "24/7",
+    label: "Human support",
+  },
+]
 
 const fieldClass =
   "h-11 w-full rounded-lg border border-border bg-background px-3 text-sm text-ink outline-none transition focus:border-brand focus:ring-2 focus:ring-brand/30"
@@ -186,6 +212,25 @@ export function Assist() {
             </div>
           </div>
         </div>
+
+        {/* trust badges */}
+        <ul className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 md:gap-4">
+          {trustStats.map((s) => (
+            <li key={s.label} className="flex items-center justify-center gap-3 md:justify-start">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-brand/15 text-brand">
+                <s.icon className="h-7 w-7 text-brand" aria-hidden="true" />
+              </span>
+              <span className="flex flex-col">
+                <span className="font-serif text-lg font-semibold leading-tight" style={{ color: "#f4f1ea" }}>
+                  {s.value}
+                </span>
+                <span className="text-sm leading-tight" style={{ color: "rgba(244,241,234,0.7)" }}>
+                  {s.label}
+                </span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </Container>
     </section>
   )

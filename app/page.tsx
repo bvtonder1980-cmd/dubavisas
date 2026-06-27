@@ -1,5 +1,4 @@
 import { Hero } from "@/components/hero"
-import { TrustBar } from "@/components/trust-bar"
 import { Assist } from "@/components/assist"
 import { HowItWorks } from "@/components/how-it-works"
 import { Prices } from "@/components/prices"
@@ -18,7 +17,6 @@ export default function HomePage() {
       <ServiceSchema />
       <FaqSchema items={faqs.slice(0, 6)} />
       <Hero />
-      <TrustBar />
       <Assist />
       <HowItWorks />
       <Prices />
