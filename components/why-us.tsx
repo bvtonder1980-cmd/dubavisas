@@ -29,7 +29,7 @@ const reasons = [
   },
   {
     icon: ShieldCheck,
-    title: "Government-compliant, every time",
+    title: "Trusted by the travel industry",
     body: "We submit directly to UAE immigration and check every detail so your application meets the latest requirements.",
   },
 ]
