@@ -69,7 +69,7 @@ export function Reviews() {
             />
           </p>
           <p className="text-pretty text-base leading-relaxed sm:text-lg" style={{ color: "rgba(244,241,234,0.7)" }}>
-            Read &amp; confirm our reviews{" "}
+            Verify our reviews, or read more{" "}
             <a
               href="https://uk.trustpilot.com/review/dubaivisa.co.za"
               target="_blank"
