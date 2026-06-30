@@ -60,7 +60,14 @@ function ArticleBody({ body }: { body: string }) {
       flushList()
       continue
     }
-    if (line.startsWith("## ")) {
+    if (line.startsWith("### ")) {
+      flushList()
+      blocks.push(
+        <h3 key={`h3-${key++}`} className="mt-8 font-serif text-xl font-semibold text-foreground">
+          {line.replace("### ", "")}
+        </h3>,
+      )
+    } else if (line.startsWith("## ")) {
       flushList()
       blocks.push(
         <h2 key={`h-${key++}`} className="mt-10 font-serif text-2xl font-semibold text-foreground">

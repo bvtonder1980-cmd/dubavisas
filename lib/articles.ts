@@ -82,9 +82,20 @@ It is however important to note that without a residence permit from one of thes
 ## Which visa should you choose?
 The right visa depends on how long you plan to stay and whether you need to enter the country more than once:
 
-- 14 or 30 Day Single Entry — for holidays and short visits
-- 60 Day Single Entry — for longer stays
-- Multiple Entry visas — if you plan to leave and re-enter the UAE
+### Single Entry Visas
+
+Single entry visas are sufficient if you plan to only enter the UAE once.
+
+- 14 Day Single Entry Visa
+- 30 Day Single Entry Visa
+- 60 Day Single Entry Visa
+
+### Multiple Entry Visas
+
+Multiple entry visas are required if you plan to enter the UAE more than once.
+
+- 30 Day Multiple Entry Visa
+- 60 Day Multiple Entry Visa
 
 ## How to apply
 You can complete the entire process online. You submit your passport details and documents, we process the application with the relevant authorities, and your approved visa is emailed to you. [PLACEHOLDER: insert your exact application steps and processing SLA.]
