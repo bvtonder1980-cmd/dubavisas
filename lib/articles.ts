@@ -66,7 +66,11 @@ export const articles: Article[] = [
     author: "Dubai Visas Online",
     datePublished: "2026-01-15",
     readingMinutes: 5,
-    body: `South African passport holders do require a visa to enter the United Arab Emirates for tourism or transit. Unlike some nationalities that receive a visa on arrival, South Africans must arrange their UAE visa before they travel.
+    body: `South African passport holders do require a visa to enter the United Arab Emirates. Unlike some nationalities that receive a visa on arrival, South Africans must arrange their UAE visa before they travel.
+
+South Africans can however transit Dubai International Airport for up to 8 hours towards their onward destination, without obtaining a visa, but when your transit exceeds 8 hours, you will require a visa.
+
+When transitting without a visa, you cannot leave the airport whilst in transit.
 
 ## Why South Africans need a pre-arranged visa
 The UAE grants visa-on-arrival access to a specific list of nationalities. South Africa is not currently on that list, which means a tourist or transit visa must be approved before boarding your flight. [PLACEHOLDER: confirm current visa-on-arrival policy at time of publishing.]
