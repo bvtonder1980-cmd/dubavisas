@@ -373,6 +373,8 @@ Before selecting your visa, it is important to understand two key terms:
 - Visa validity period — the period that your visa remains valid for your arrival into the UAE. You must arrive in the UAE before the visa validity period expires at midnight of the last date mentioned.
 - Length of stay — Once you have arrived within the visa validity period, the length of stay period starts when you clear immigration and you are then permitted to remain in the UAE for the number of days noted as the length of stay (96 hours, 14 days, 30 days and so on).
 
+It is important to note that your day of entry counts as day one, so even if you arrive 10 minutes before midnight, those ten minutes will count as day one and your next day will be counted as day two.
+
 The visa you choose should be based on the purpose of your trip, the duration of your stay, and whether you plan to enter the UAE once or multiple times.
 
 ## UAE Single-Entry Visas
