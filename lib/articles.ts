@@ -75,7 +75,7 @@ When transitting without a visa, you cannot leave the airport whilst in transit.
 ## Why South Africans need a pre-arranged visa
 The UAE grants visa-on-arrival access to a specific list of nationalities. South Africa is not currently on that list, which means a tourist, business or transit visa must be approved before boarding your flight.
 
-There was a recent announcement by the Ministry of Interior, that South African passport holders, who also hold a valid residence permit in their passport for either the USA, UK, EU, Singapore, Japan, South Korea, Australia, New Zealand or Canada, can obtain a visa on arrival.
+There was a recent announcement by the Ministry of Interior that South African passport holders who also hold a valid residence permit in their passport for either the USA, UK, EU, Singapore, Japan, South Korea, Australia, New Zealand or Canada, can obtain a visa on arrival.
 
 It is however important to note that without a residence permit from one of these countries, South African passport holders still require a pre-arranged visa before boarding a flight.
 
