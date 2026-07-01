@@ -198,9 +198,7 @@ To reduce the risk of visa delays, resubmission requests, or application rejecti
 - Use a professional photographer whenever possible — professionally captured photographs generally provide the best lighting, resolution, and compliance with ICAO standards, reducing the likelihood of visa processing delays or rejection.
 
 ## ICAO Photo examples
-- Valid for at least 6 months from your date of entry
-- Clear, full-colour scan of the photo page
-- No glare or cut-off edges
+Below are examples of ICAO compliant photographs
 
 ## Additional documents
 Depending on your visa type and circumstances you may also need:
