@@ -120,7 +120,9 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
     body: `Most UAE visit visas are processed within 24 to 96 hours. However, several factors can affect the exact timing, so it's always best to apply well ahead of your travel date.
 
 ## Standard processing time
-Under normal circumstances, applications are processed within 2 to 4 working days. We recommend applying at least one week before departure to allow a comfortable buffer.
+Under normal circumstances, applications are processed within 24 to 96 hours. We recommend applying at least three weeks before departure to allow a comfortable buffer.
+
+If you want to apply really early, submit your application within two months of your intended travel date, as we can only submit your application to the relevant authorities if your travel date is in the next two months.
 
 ## What can affect processing time
 - Public holidays in the UAE and your country of residence
