@@ -202,12 +202,6 @@ Below are examples of ICAO compliant photographs
 
 ![Four examples of ICAO compliant passport photographs on plain white backgrounds, each showing a person facing the camera with a neutral expression and even lighting](/images/articles/icao-photo-examples.png)
 
-## Common mistakes to avoid
-- Blurry or low-resolution scans
-- Photos with busy backgrounds
-- Passports close to expiry
-- Names that don't match across documents
-
 If you're unsure, our team checks every application before submission to help avoid rejections.`,
   },
   {
