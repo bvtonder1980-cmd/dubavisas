@@ -105,7 +105,7 @@ Once your application is compiled, we process the application with the relevant 
 ## Documents you'll need
 The precise documents you need depends on various factors, but rest assured that our experts will guide you to prepare your personalised application for the best possible chance of success.
 
-Once approved, simply print your visa or keep a digital copy on your phone to present at immigration.`,
+Once approved, simply print a copy of your visa to present at the boarding gate and keep a digital copy on your phone as a backup.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
