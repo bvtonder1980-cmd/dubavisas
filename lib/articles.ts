@@ -158,7 +158,15 @@ If you're travelling on short notice, contact our team to discuss your options. 
     body: `One of the most common reasons a UAE visa application is delayed is an incorrect photo or document. Getting these right the first time means faster approval and less stress.
 
 ## The UAE's strict photo requirements explained
-[PLACEHOLDER: add your content explaining the UAE's strict photo requirements here.]
+The United Arab Emirates has introduced stricter photo verification requirements for all visa applications submitted since June 2026, making ICAO (International Civil Aviation Organization) compliant passport photographs an essential part of the application process. Travellers applying for a UAE visa online therefore need to submit high-quality, professionally captured photographs that meet international biometric standards.
+
+The updated requirements follow guidelines established by the International Civil Aviation Organization (ICAO), which sets global standards for passports, travel documents, and facial recognition systems. These standards ensure that photographs can be accurately processed by the advanced biometric and immigration technologies increasingly used across UAE airports and border control systems.
+
+According to ICAO guidelines, visa photographs must feature a clear, full-face image with a neutral expression, proper lighting, natural skin tones, and a plain white or light-coloured background. Images containing shadows, filters, excessive editing, poor cropping, blurred focus, or distracting backgrounds may lead to delays, requests for resubmission, or visa rejection.
+
+Dubai immigration authorities now rely heavily on facial recognition and biometric verification technologies to compare passport photographs, visa application images, and airport identity scans. Non-compliant photographs can result in identity mismatches, causing unnecessary complications during visa processing or upon arrival in the UAE.
+
+To avoid delays and improve the likelihood of a successful visa application, applicants are strongly advised to submit high-resolution, ICAO-standard photographs, preferably taken by a professional with experience in international passport and visa requirements.
 
 ## Passport photo requirements
 Your photo should meet international (ICAO) standards:
