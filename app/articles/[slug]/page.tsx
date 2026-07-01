@@ -3,6 +3,7 @@ import { notFound } from "next/navigation"
 import Link from "next/link"
 import { Container, Section } from "@/components/ui/layout"
 import { ArticleCard } from "@/components/article-card"
+import { ArticleCta } from "@/components/article-cta"
 import { CtaBand } from "@/components/cta-band"
 import { ArticleSchema, BreadcrumbSchema } from "@/components/json-ld"
 import { articles, getArticle } from "@/lib/articles"
@@ -153,6 +154,7 @@ export default async function ArticlePage({
           <div className="mt-8">
             <ArticleBody body={article.body} />
           </div>
+          <ArticleCta />
           <p className="mt-10 rounded-2xl border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
             This guide is for general information. Visa rules can change — confirm the latest requirements when you
             apply, or contact our team for help.
