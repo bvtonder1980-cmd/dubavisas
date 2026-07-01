@@ -432,7 +432,7 @@ Example: If you enter the UAE on 1 July using a 60-day multiple-entry visa, your
     excerpt:
       "What's the difference, and when is a multiple-entry UAE visa worth the extra cost? A simple breakdown.",
     category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
+    image: "/images/articles/single-vs-multiple-entry.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-07",
     readingMinutes: 5,
