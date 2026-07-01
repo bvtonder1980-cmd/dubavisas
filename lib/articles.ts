@@ -202,7 +202,7 @@ Below are examples of ICAO compliant photographs
 
 ![Four examples of ICAO compliant passport photographs on plain white backgrounds, each showing a person facing the camera with a neutral expression and even lighting](/images/articles/icao-photo-examples.png)
 
-If you're unsure, our team checks every application before submission to help avoid rejections.`,
+If you're unsure if your photo meets the required specifications, simply reach out to our team of experts. We're well-trained in what to look for and can advise you on what is needed for your perfect photograph.`,
   },
   {
     slug: "best-time-to-visit-dubai",
