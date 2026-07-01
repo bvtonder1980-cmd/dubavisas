@@ -157,6 +157,9 @@ If you're travelling on short notice, contact our team to discuss your options. 
     readingMinutes: 6,
     body: `One of the most common reasons a UAE visa application is delayed is an incorrect photo or document. Getting these right the first time means faster approval and less stress.
 
+## The UAE's strict photo requirements explained
+[PLACEHOLDER: add your content explaining the UAE's strict photo requirements here.]
+
 ## Passport photo requirements
 Your photo should meet international (ICAO) standards:
 
