@@ -359,7 +359,7 @@ The next time your journey includes a stop in the UAE, don't just wait for your 
     excerpt:
       "A plain-English comparison of every UAE tourist visa — validity, entries and who each one suits best.",
     category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
+    image: "/images/articles/visa-types.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-01",
     readingMinutes: 6,
