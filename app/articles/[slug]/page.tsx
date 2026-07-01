@@ -68,6 +68,7 @@ function ArticleBody({ body }: { body: string }) {
   const lines = body.split("\n")
   const blocks: React.ReactNode[] = []
   let list: string[] = []
+  let table: string[] = []
   let key = 0
 
   const flushList = () => {
@@ -86,15 +87,63 @@ function ArticleBody({ body }: { body: string }) {
     }
   }
 
+  const parseRow = (row: string) =>
+    row
+      .replace(/^\||\|$/g, "")
+      .split("|")
+      .map((cell) => cell.trim())
+
+  const isSeparatorRow = (row: string) => /^\s*\|?[\s:|-]+\|?\s*$/.test(row) && row.includes("-")
+
+  const flushTable = () => {
+    if (!table.length) return
+    const rows = table.filter((r) => !isSeparatorRow(r)).map(parseRow)
+    if (rows.length) {
+      const [header, ...bodyRows] = rows
+      blocks.push(
+        <div key={`tbl-${key++}`} className="my-6 overflow-x-auto rounded-2xl border border-border">
+          <table className="w-full border-collapse text-left text-sm">
+            <thead>
+              <tr className="bg-secondary/60">
+                {header.map((cell, i) => (
+                  <th key={i} className="px-4 py-3 font-semibold text-foreground">
+                    {renderInline(cell)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {bodyRows.map((cells, r) => (
+                <tr key={r} className="border-t border-border">
+                  {cells.map((cell, c) => (
+                    <td key={c} className="px-4 py-3 leading-relaxed text-muted-foreground">
+                      {renderInline(cell)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      )
+    }
+    table = []
+  }
+
   for (const raw of lines) {
     const line = raw.trim()
     if (!line) {
       flushList()
+      flushTable()
       continue
     }
     const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/)
-    if (imageMatch) {
+    if (line.startsWith("|")) {
       flushList()
+      table.push(line)
+    } else if (imageMatch) {
+      flushList()
+      flushTable()
       const [, alt, src] = imageMatch
       blocks.push(
         <Image
@@ -108,6 +157,7 @@ function ArticleBody({ body }: { body: string }) {
       )
     } else if (line.startsWith("### ")) {
       flushList()
+      flushTable()
       blocks.push(
         <h3 key={`h3-${key++}`} className="mt-8 font-serif text-xl font-semibold text-foreground">
           {line.replace("### ", "")}
@@ -115,15 +165,18 @@ function ArticleBody({ body }: { body: string }) {
       )
     } else if (line.startsWith("## ")) {
       flushList()
+      flushTable()
       blocks.push(
         <h2 key={`h-${key++}`} className="mt-10 font-serif text-2xl font-semibold text-foreground">
           {line.replace("## ", "")}
         </h2>,
       )
     } else if (line.startsWith("- ")) {
+      flushTable()
       list.push(line.replace("- ", ""))
     } else {
       flushList()
+      flushTable()
       blocks.push(
         <p key={`p-${key++}`} className="my-4 leading-relaxed text-muted-foreground">
           {renderInline(line)}
@@ -132,6 +185,7 @@ function ArticleBody({ body }: { body: string }) {
     }
   }
   flushList()
+  flushTable()
   return <>{blocks}</>
 }
 
