@@ -197,7 +197,7 @@ To reduce the risk of visa delays, resubmission requests, or application rejecti
 - Avoid red-eye and digital alterations — photos with red-eye effects, heavy retouching, artificial enhancements, or obvious editing marks may be rejected.
 - Use a professional photographer whenever possible — professionally captured photographs generally provide the best lighting, resolution, and compliance with ICAO standards, reducing the likelihood of visa processing delays or rejection.
 
-## Passport requirements
+## ICAO Photo examples
 - Valid for at least 6 months from your date of entry
 - Clear, full-colour scan of the photo page
 - No glare or cut-off edges
