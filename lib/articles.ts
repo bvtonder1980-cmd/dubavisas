@@ -101,6 +101,10 @@ Multiple entry visas are required if you plan to enter the UAE more than once.
 You can complete the entire process online. You submit your passport details and documents, we process the application with the relevant authorities, and your approved visa is emailed to you.
 
 ## Documents you'll need
+The precise documents you need depends on various factors, such as age, accommodation in Dubai etc. Our systems and our experts will guide you to prepare your application for the best possible chance of success.
+
+Below is a list of the standard requirements:
+
 - A passport valid for at least 6 months
 - A clear colour passport photo
 - A copy of your return or onward ticket
