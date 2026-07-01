@@ -26,7 +26,7 @@ export function ArticleCta() {
           href="/#contact"
           variant="outline"
           size="lg"
-          className="border-[rgba(244,241,234,0.3)] text-[#f4f1ea] hover:bg-[#f4f1ea] hover:text-[#16110d]"
+          className="border-[rgba(244,241,234,0.3)] text-white hover:bg-white hover:text-[#16110d]"
         >
           Talk to an expert
         </ButtonLink>
