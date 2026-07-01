@@ -113,7 +113,7 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
     excerpt:
       "Typical UAE visa processing times, what affects them, and how to make sure your visa is ready before you fly.",
     category: "Processing Times",
-    image: "/images/articles/overstay-fines.png",
+    image: "/images/articles/processing-time.png",
     author: "Dubai Visas Online",
     datePublished: "2026-01-20",
     readingMinutes: 4,
