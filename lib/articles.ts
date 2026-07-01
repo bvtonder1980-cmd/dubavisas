@@ -124,6 +124,9 @@ Under normal circumstances, applications are processed within 24 to 96 hours. We
 
 If you want to apply really early, submit your application within two months of your intended travel date, as we can only submit your application to the relevant authorities if your travel date is in the next two months.
 
+## Peak season processing time
+[PLACEHOLDER: add your peak season processing time content here.]
+
 ## What can affect processing time
 - Public holidays in the UAE and your country of residence
 - Incomplete or unclear documents
