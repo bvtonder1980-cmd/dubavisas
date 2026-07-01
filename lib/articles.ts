@@ -425,18 +425,6 @@ Example: If you enter the UAE on 1 July using a 30-day multiple-entry visa, 1 Ju
 Example: If you enter the UAE on 1 July using a 60-day multiple-entry visa, your visa period begins on that date and expires after 60 consecutive days, irrespective of the number of entries made.`,
   },
   {
-    slug: "30-day-vs-60-day-dubai-visa",
-    title: "30-Day vs 60-Day Dubai Visa: Which Should You Choose?",
-    excerpt:
-      "How to decide between a 30-day and 60-day UAE tourist visa based on your trip length, budget and plans.",
-    category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
-    author: "Dubai Visas Online",
-    datePublished: "2026-03-04",
-    readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
-  },
-  {
     slug: "single-entry-vs-multiple-entry-dubai-visa",
     title: "Single Entry vs Multiple Entry Dubai Visas",
     excerpt:
