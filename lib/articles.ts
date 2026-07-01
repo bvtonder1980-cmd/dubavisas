@@ -197,7 +197,7 @@ To reduce the risk of visa delays, resubmission requests, or application rejecti
 - Avoid red-eye and digital alterations — photos with red-eye effects, heavy retouching, artificial enhancements, or obvious editing marks may be rejected.
 - Use a professional photographer whenever possible — professionally captured photographs generally provide the best lighting, resolution, and compliance with ICAO standards, reducing the likelihood of visa processing delays or rejection.
 
-## ICAO Photo examples
+## ICAO compliant photo examples
 Below are examples of ICAO compliant photographs
 
 ![Four examples of ICAO compliant passport photographs on plain white backgrounds, each showing a person facing the camera with a neutral expression and even lighting](/images/articles/icao-photo-examples.png)
