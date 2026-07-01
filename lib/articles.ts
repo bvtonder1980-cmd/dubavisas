@@ -117,7 +117,7 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
     author: "Dubai Visas Online",
     datePublished: "2026-01-20",
     readingMinutes: 4,
-    body: `Most UAE tourist and transit visas are processed within 48 to 96 hours. However, several factors can affect the exact timing, so it's always best to apply well ahead of your travel date. [PLACEHOLDER: confirm your standard and express processing times.]
+    body: `Most UAE visit visas are processed within 24 to 96 hours. However, several factors can affect the exact timing, so it's always best to apply well ahead of your travel date.
 
 ## Standard processing time
 Under normal circumstances, applications are processed within 2 to 4 working days. We recommend applying at least one week before departure to allow a comfortable buffer.
