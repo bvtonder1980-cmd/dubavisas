@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Container, Section } from "@/components/ui/layout"
 import { ArticleCard } from "@/components/article-card"
 import { ArticleCta } from "@/components/article-cta"
-import { CtaBand } from "@/components/cta-band"
 import { ArticleSchema, BreadcrumbSchema } from "@/components/json-ld"
 import { articles, getArticle } from "@/lib/articles"
 
@@ -172,11 +171,6 @@ export default async function ArticlePage({
           </div>
         </Container>
       </Section>
-
-      <CtaBand
-        title="Ready to apply for your visa?"
-        description="Start your UAE visa application now — fast processing and expert document checks included."
-      />
     </main>
   )
 }
