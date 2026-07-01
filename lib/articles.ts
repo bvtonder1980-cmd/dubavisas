@@ -282,23 +282,74 @@ Whether you're exploring the skyscrapers of Dubai, experiencing the cultural att
     author: "Dubai Visas Online",
     datePublished: "2026-02-18",
     readingMinutes: 4,
-    body: `A long layover in Dubai doesn't have to mean hours stuck in the terminal. With the right short-stay visa, you can step out and experience the city before your next flight.
+    body: `For many travellers, a layover is simply an unavoidable part of getting from one destination to another. However, if your journey includes a stop in the United Arab Emirates, your transit time could become one of the most memorable parts of your trip.
 
-## Do you need a visa to leave the airport?
-If you want to leave the airport during your layover, you'll typically need a tourist or short-stay visa arranged before you travel. [PLACEHOLDER: confirm the best visa option and minimum layover time for stepping out.]
+Home to some of the world's busiest international airports, the UAE welcomes millions of transit passengers each year. Whether you're flying through Dubai or Abu Dhabi, a UAE layover offers the perfect opportunity to experience world-famous attractions, rich cultural heritage, exceptional cuisine, and stunning landscapes – even if you only have a few hours to spare.
 
-## What you can do in a few hours
-- Visit the Burj Khalifa and Dubai Mall
-- Stroll along Dubai Marina or JBR beach
-- Experience a desert safari (for longer layovers)
-- Enjoy a meal with a skyline view
+## How Long Should Your Layover Be?
+Before planning your adventure, it's important to assess how much time you have available.
 
-## Practical tips
-- Factor in airport transfer and security time
-- Keep your visa and onward ticket handy
-- Watch the clock — don't cut it too fine before your connecting flight
+- Under 4 hours: It's generally advisable to remain at the airport and enjoy its facilities.
+- 6 to 8 hours: You'll have enough time to explore nearby attractions and experience local culture, providing that you have an approved visa that allows you to leave the airport.
+- 10 hours or more: This allows for a more immersive visit, with time to discover multiple attractions and neighbourhoods. Again, just be sure that you have an approved visa that allows you to leave the airport.
 
-A short-stay visa is a simple way to turn dead time into a mini adventure. Apply online before you travel and make your layover count.`,
+Always remember to factor in immigration procedures, transport times, and arriving back at the airport at least three hours before your onward flight.
+
+## Experience the Best of Dubai
+If your layover takes you through Dubai, you'll have access to one of the world's most exciting cities. Just a short journey from Dubai International Airport, visitors can explore the iconic Burj Khalifa, wander through the enormous Dubai Mall, or watch the spectacular Dubai Fountain show.
+
+For those looking to experience a different side of the city, a visit to the historic Al Fahidi district and Dubai Creek offers a fascinating glimpse into Dubai's heritage. Traditional markets, known as souks, provide the perfect opportunity to experience local culture, shop for souvenirs, and sample authentic Middle Eastern cuisine.
+
+## Discover the Cultural Treasures of Abu Dhabi
+Abu Dhabi, the capital of the UAE, offers a unique blend of tradition and modernity. The magnificent Sheikh Zayed Grand Mosque is considered one of the world's most beautiful religious landmarks and is a must-see for any visitor.
+
+Travellers with additional time can explore the Louvre Abu Dhabi, relax along the picturesque Corniche waterfront, or experience the excitement of Yas Island, home to world-class entertainment and attractions.
+
+## Explore Beyond the Major Cities
+The UAE is much more than its famous skylines. If your itinerary allows, consider exploring some of the country's lesser-known emirates.
+
+Sharjah offers a rich cultural experience with museums, heritage sites, and traditional architecture. Ras Al Khaimah is renowned for its mountains, desert adventures, and outdoor activities, while Fujairah boasts beautiful beaches and scenic landscapes along the Gulf of Oman.
+
+These destinations provide visitors with an opportunity to experience the UAE's diverse landscapes and cultural heritage beyond the country's urban centres.
+
+## Relax and Recharge
+Long-haul travel can be exhausting, making a layover the perfect opportunity to relax and recharge. The UAE is home to some of the world's finest beaches, luxury hotels, spas, and wellness facilities.
+
+Many hotels offer day-use packages, allowing transit passengers to enjoy swimming pools, spa treatments, fitness facilities, and fine dining before continuing their journey.
+
+## Experience World-Class Dining
+The UAE's culinary scene reflects its position as a global crossroads. From traditional Emirati cuisine to Michelin-starred restaurants and international street food, there is something to satisfy every palate.
+
+Some local favourites worth trying include:
+
+- Machboos
+- Shawarma
+- Harees
+- Arabic mezze
+- Fresh seafood dishes
+- Luqaimat, a traditional Emirati dessert
+
+Whether dining in a luxury hotel or exploring local eateries, food lovers will find endless options to enjoy.
+
+## Shop in One of the World's Retail Capitals
+Few destinations rival the UAE when it comes to shopping. From luxury boutiques and designer brands to traditional markets and artisan products, visitors can enjoy a world-class retail experience.
+
+Popular destinations include Dubai Mall, Mall of the Emirates, Yas Mall, and the many traditional souks located throughout the country. Even travellers with limited time can experience the UAE's renowned shopping culture.
+
+## Essential Tips for Your UAE Layover
+To make the most of your stopover, consider the following:
+
+- Check visa requirements before travelling.
+- Verify your eligibility for transit visas if required.
+- Plan your transport in advance using taxis, metro systems, or ride-hailing services.
+- Dress appropriately when visiting cultural or religious sites.
+- Stay hydrated, especially during the warmer months.
+- Allow sufficient time to return to the airport for security and boarding procedures. Be at the airport at least 3 hours prior to your departure time.
+
+## Turn Your Stopover into an Experience
+A layover in the United Arab Emirates is far more than simply waiting for your next flight. Whether you choose to admire the world's tallest building, explore centuries-old traditions, relax on pristine beaches, or indulge in world-class cuisine, the UAE offers travellers the chance to transform transit into an unforgettable travel experience.
+
+The next time your journey includes a stop in the UAE, don't just wait for your next flight — take the opportunity to discover one of the world's most fascinating destinations.`,
   },
 
   // ── NEW GUIDE SLOTS (search-informed topics) ────────────────────
