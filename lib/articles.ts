@@ -105,9 +105,20 @@ The precise documents you need depends on various factors, but rest assured that
 
 Below is a list of the standard requirements:
 
-- A passport valid for at least 6 months
-- A clear colour passport photo
-- A copy of your return or onward ticket
+- Passport copy — perfectly clear scanned copy of your passport.
+- Copy of the front & back page of your passport cover.
+- Clear colour photo — perfectly clear colour head and shoulder photo on a plain white background, no more than 6 months old.
+- Flight ticket/itinerary, showing the applicant's name as per their passport.
+- Hotel confirmation/itinerary — voucher with the visa applicant's name and surname and the confirmation number on the hotel voucher, submitted together with the application for processing.
+- For persons under 18 years of age — please provide an unabridged birth certificate of high quality with no ink marks or creases. It must show at least one parent's name, and that parent must be travelling with the minor.
+
+### Visiting family or friends instead of staying at a hotel
+
+If you are staying with family or friends in the UAE rather than at a hotel, we need to submit the following instead of a hotel confirmation:
+
+- Signed invitation letter from your host in the UAE. The letter should include: (i) the applicants by name who will be staying with them, as well as their relation to the host; (ii) the dates (from date to date) the applicants will be staying; (iii) the host's address; (iv) the host's mobile number; and (v) the host's signature.
+- Copy of the host's Dubai residency visa.
+- Tenancy agreement/contract of the host in the UAE.
 
 Once approved, simply print your visa or keep a digital copy on your phone to present at immigration.`,
   },
