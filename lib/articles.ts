@@ -98,7 +98,9 @@ Multiple entry visas are required if you plan to enter the UAE more than once.
 - 60 Day Multiple Entry Visa
 
 ## How to apply
-You can complete the entire process online. You submit your passport details and documents, we process the application with the relevant authorities, and your approved visa is emailed to you.
+You can complete the entire process online. You submit your passport details and required documents, which our team of experts will review and assist you to prepare a personalised application based on your unique circumstances and reason for travel.
+
+Once your application is compiled, we process the application with the relevant authorities, and your approved visa is emailed to you.
 
 ## Documents you'll need
 The precise documents you need depends on various factors, but rest assured that our experts will guide you to prepare your personalised application for the best possible chance of success.
