@@ -32,6 +32,37 @@ export async function generateMetadata({
   }
 }
 
+// Parses inline markdown-style links [text](url) into React nodes.
+function renderInline(text: string): React.ReactNode {
+  const parts: React.ReactNode[] = []
+  const regex = /\[([^\]]+)\]\(([^)]+)\)/g
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+  let key = 0
+  while ((match = regex.exec(text)) !== null) {
+    if (match.index > lastIndex) {
+      parts.push(text.slice(lastIndex, match.index))
+    }
+    const [, label, href] = match
+    const isInternal = href.startsWith("/") || href.startsWith("#")
+    parts.push(
+      <Link
+        key={`lnk-${key++}`}
+        href={href}
+        {...(isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+        className="font-medium text-accent underline underline-offset-4 hover:opacity-80"
+      >
+        {label}
+      </Link>,
+    )
+    lastIndex = regex.lastIndex
+  }
+  if (lastIndex < text.length) {
+    parts.push(text.slice(lastIndex))
+  }
+  return parts.length ? parts : text
+}
+
 function ArticleBody({ body }: { body: string }) {
   const lines = body.split("\n")
   const blocks: React.ReactNode[] = []
@@ -45,7 +76,7 @@ function ArticleBody({ body }: { body: string }) {
           {list.map((item, i) => (
             <li key={i} className="flex items-start gap-3 leading-relaxed text-muted-foreground">
               <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" aria-hidden="true" />
-              <span>{item}</span>
+              <span>{renderInline(item)}</span>
             </li>
           ))}
         </ul>,
@@ -80,7 +111,7 @@ function ArticleBody({ body }: { body: string }) {
       flushList()
       blocks.push(
         <p key={`p-${key++}`} className="my-4 leading-relaxed text-muted-foreground">
-          {line}
+          {renderInline(line)}
         </p>,
       )
     }

@@ -139,7 +139,7 @@ If you're planning a trip to the UAE during this time, we advise that you try to
 
 ## Tips for faster approval
 - Submit clear and valid documents.
-- Use a compliant passport photo
+- Use a compliant passport photo (for more details on photo requirements, [click here](/articles/dubai-visa-photo-requirements))
 - Double-check that your name matches your passport exactly
 - Apply early — don't leave it to the last minute
 
