@@ -436,7 +436,18 @@ Example: If you enter the UAE on 1 July using a 60-day multiple-entry visa, your
     author: "Dubai Visas Online",
     datePublished: "2026-03-07",
     readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
+    body: `The most important factor to consider when choosing between a single or multiple entry visa is whether you plan to enter the UAE only once and then leave without the intention of returning soon, or whether you would like to return to the UAE in the near future.
+
+| Visa Type | Best For | Number of Entries |
+| --- | --- | --- |
+| Single Entry | Holidays, family visits, business trips with one visit to the UAE | One entry only |
+| Multiple Entry | Frequent travellers, cruises, regional travel, multiple business meetings | Unlimited entries during the visa period |
+
+Choose a single-entry visa if you only plan to visit the UAE once during your trip.
+
+Choose a multiple-entry visa if you intend to leave and re-enter the UAE during your travels, such as travelling to neighbouring countries or making several business visits. Once you use your single entry visa, it is seen as used and you cannot re-enter, but if you have a multiple entry visa, you can leave and come back as many times as you like, providing that you do so in the length of stay granted on your visa.
+
+Not sure which one is right for you? Get in touch with our team, we're here to assist you each step of the way.`,
   },
   {
     slug: "dubai-visa-overstay-fines-grace-period",
