@@ -200,6 +200,8 @@ To reduce the risk of visa delays, resubmission requests, or application rejecti
 ## ICAO Photo examples
 Below are examples of ICAO compliant photographs
 
+![Four examples of ICAO compliant passport photographs on plain white backgrounds, each showing a person facing the camera with a neutral expression and even lighting](/images/articles/icao-photo-examples.png)
+
 ## Additional documents
 Depending on your visa type and circumstances you may also need:
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { notFound } from "next/navigation"
 import Link from "next/link"
+import Image from "next/image"
 import { Container, Section } from "@/components/ui/layout"
 import { ArticleCard } from "@/components/article-card"
 import { ArticleCta } from "@/components/article-cta"
@@ -91,7 +92,21 @@ function ArticleBody({ body }: { body: string }) {
       flushList()
       continue
     }
-    if (line.startsWith("### ")) {
+    const imageMatch = line.match(/^!\[([^\]]*)\]\(([^)]+)\)$/)
+    if (imageMatch) {
+      flushList()
+      const [, alt, src] = imageMatch
+      blocks.push(
+        <Image
+          key={`img-${key++}`}
+          src={src || "/placeholder.svg"}
+          alt={alt}
+          width={1200}
+          height={900}
+          className="my-6 h-auto w-full rounded-2xl border border-border"
+        />,
+      )
+    } else if (line.startsWith("### ")) {
       flushList()
       blocks.push(
         <h3 key={`h3-${key++}`} className="mt-8 font-serif text-xl font-semibold text-foreground">
