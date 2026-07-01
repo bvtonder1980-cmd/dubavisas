@@ -363,7 +363,66 @@ The next time your journey includes a stop in the UAE, don't just wait for your 
     author: "Dubai Visas Online",
     datePublished: "2026-03-01",
     readingMinutes: 6,
-    body: PLACEHOLDER_BODY,
+    body: `Planning a trip to the United Arab Emirates can be exciting, but choosing the correct visa type is an important first step. Whether you are travelling for tourism, business, family visits, or multiple trips within a short period, understanding the different UAE visa options will help ensure a smooth travel experience.
+
+This guide explains the various UAE visa types available, including the difference between single-entry and multiple-entry visas, and when to choose a 30-day or 60-day visa.
+
+## Understanding UAE Visa Validity
+Before selecting your visa, it is important to understand two key terms:
+
+- Visa validity period — the period during which you must enter the UAE after your visa has been issued. This is the window in which you are allowed to arrive, and your number of days approved (96 hours, 14 days, 30 days, etc.) will only be triggered when you arrive.
+- Length of stay — the maximum amount of time you are permitted to remain in the UAE after entering the country.
+
+The visa you choose should be based on the purpose of your trip, the duration of your stay, and whether you plan to enter the UAE once or multiple times.
+
+## UAE Single-Entry Visas
+A single-entry visa allows you to enter the UAE only once. Once you leave the UAE, the visa is considered used and void, regardless of how many days remained on the visa.
+
+### 96-Hour Transit Visa (Single Entry)
+This visa is designed for travellers transiting through the UAE.
+
+- Valid for a stay of up to 96 hours (4 days) from the date of arrival.
+- Permits one entry only.
+- Ideal for short stopovers or brief business visits.
+
+### 14-Day Visa (Single Entry)
+Suitable for short holidays, family visits, or business trips.
+
+- Allows a stay of up to 14 consecutive days from the date of entry.
+- Permits one entry only.
+
+### 30-Day Visa (Single Entry)
+One of the most popular visa options for tourists.
+
+- Allows a stay of up to 30 consecutive days from the date of entry.
+- Permits one entry only.
+- Suitable for standard holidays, family visits, or short business trips.
+
+### 60-Day Visa (Single Entry)
+Ideal for longer stays in the UAE.
+
+- Allows a stay of up to 60 consecutive days from the date of entry.
+- Permits one entry only.
+- Commonly used for extended holidays, family visits, business travel, or travellers exploring opportunities within the UAE.
+
+## UAE Multiple-Entry Visas
+A multiple-entry visa allows you to enter and exit the UAE multiple times during the visa validity period (see above).
+
+This type of visa is ideal for travellers who plan to visit other countries and return to the UAE, cruise passengers, frequent business travellers, or those with family residing in the region.
+
+### 30-Day Visa (Multiple Entry)
+- Allows unlimited entries and exits within a 30-day period.
+- The 30-day period begins on the date of your first entry into the UAE.
+- The visa remains valid for exactly 30 consecutive days, regardless of how many times you leave and re-enter.
+
+Example: If you enter the UAE on 1 July using a 30-day multiple-entry visa, 1 July becomes Day 1. You may enter and leave the UAE as many times as needed, but all travel must be completed by Day 30.
+
+### 60-Day Visa (Multiple Entry)
+- Allows unlimited entries and exits within a 60-day period.
+- The 60-day period begins on the date of your first entry into the UAE.
+- The visa remains valid for exactly 60 consecutive days, regardless of how often you travel in and out of the country.
+
+Example: If you enter the UAE on 1 July using a 60-day multiple-entry visa, your visa period begins on that date and expires after 60 consecutive days, irrespective of the number of entries made.`,
   },
   {
     slug: "30-day-vs-60-day-dubai-visa",
