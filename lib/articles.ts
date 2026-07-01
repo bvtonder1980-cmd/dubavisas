@@ -178,6 +178,9 @@ Your photo should meet international (ICAO) standards:
 - No hats or head coverings (except for religious purposes)
 - No shadows or reflections
 
+## Top 15 Tips and requirements for taking an ICAO compliant photo for your visa application
+[PLACEHOLDER: add your top 15 tips and requirements for an ICAO compliant photo here.]
+
 ## Passport requirements
 - Valid for at least 6 months from your date of entry
 - Clear, full-colour scan of the photo page
