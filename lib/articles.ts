@@ -179,7 +179,23 @@ Your photo should meet international (ICAO) standards:
 - No shadows or reflections
 
 ## Top 15 Tips and requirements for taking an ICAO compliant photo for your visa application
-[PLACEHOLDER: add your top 15 tips and requirements for an ICAO compliant photo here.]
+To reduce the risk of visa delays, resubmission requests, or application rejection, applicants should ensure their passport photographs comply with ICAO biometric standards by following these recommendations:
+
+- Face the camera directly — position your head and shoulders straight and centred, looking directly at the camera at eye level.
+- Maintain a neutral facial expression — keep your mouth closed, avoid smiling or showing teeth, and maintain a natural, neutral expression.
+- Use a plain white background — the background must be plain white or light-coloured, with no patterns, textures, shadows, wall decorations, or visible objects.
+- Ensure hair does not obstruct facial features — hair should not cover the forehead, eyes, or ears. All facial features must be clearly visible.
+- Avoid all shadows — there should be no shadows on the face, behind the head, or anywhere on the background.
+- Use balanced, even lighting — the photograph should be evenly illuminated, without appearing too dark, too bright, or overexposed.
+- Maintain natural skin tones — do not use beauty filters, skin smoothing effects, or excessive photo editing. Skin tone and facial features must appear natural.
+- Ensure high resolution and sharp focus — the image must be clear, sharp, and free from blur, pixelation, scan lines, creases, or printing defects.
+- Position the face correctly within the frame — the face should occupy approximately 70% to 80% of the image area, with the head centred and fully visible.
+- Keep eyes fully visible and open — eyes must be open, clearly visible, and not obstructed by hair, shadows, or reflections.
+- Follow glasses requirements carefully — if prescription glasses are worn, lenses must be clear, free of glare or reflections, and frames should not obscure the eyes. Sunglasses and tinted lenses are not acceptable. Alternatively, remove glasses for the photo.
+- Ensure head coverings do not obscure the face — religious or medical head coverings are permitted provided the entire face remains visible and unobstructed.
+- Do not include other people or objects — the photograph must contain only the applicant, with no furniture, decorations, accessories, or other individuals visible.
+- Avoid red-eye and digital alterations — photos with red-eye effects, heavy retouching, artificial enhancements, or obvious editing marks may be rejected.
+- Use a professional photographer whenever possible — professionally captured photographs generally provide the best lighting, resolution, and compliance with ICAO standards, reducing the likelihood of visa processing delays or rejection.
 
 ## Passport requirements
 - Valid for at least 6 months from your date of entry
