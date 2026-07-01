@@ -138,7 +138,7 @@ If you're planning a trip to the UAE during this time, we advise that you try to
 - Additional checks required for certain applications
 
 ## Tips for faster approval
-- Submit a clear, valid passport scan
+- Submit clear and valid documents.
 - Use a compliant passport photo
 - Double-check that your name matches your passport exactly
 - Apply early — don't leave it to the last minute
