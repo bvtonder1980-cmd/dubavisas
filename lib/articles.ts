@@ -457,7 +457,9 @@ Not sure which one is right for you? Get in touch with our team, we're here to a
     author: "Dubai Visas Online",
     datePublished: "2026-03-10",
     readingMinutes: 6,
-    body: PLACEHOLDER_BODY,
+    body: `Overstaying a visa in the United Arab Emirates can result in significant fines, travel delays, and potential complications with future visa applications. With several changes to UAE immigration regulations in recent years, many travellers remain uncertain about current overstay rules, grace periods, and visa extension options.
+
+This guide explains everything you need to know about UAE tourist and visit visa overstays, including the latest overstay fines, whether grace periods still exist, and how to extend your visa legally.`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
