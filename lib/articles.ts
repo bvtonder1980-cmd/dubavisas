@@ -527,7 +527,10 @@ Where a child is travelling with their legal parent(s), the minor's visa applica
 
 In addition to the normal document requirements, a copy of the child's unabridged birth certificate must be included in their application.
 
-The accompanying parent or legal guardian's details should also appear on the minor's unabridged birth certificate submitted with the visa application.`,
+The accompanying parent or legal guardian's details should also appear on the minor's unabridged birth certificate submitted with the visa application.
+
+## Can a minor travel to the UAE without their parents?
+[PLACEHOLDER: add your content about whether a minor can travel to the UAE without their parents here.]`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
