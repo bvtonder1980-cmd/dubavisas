@@ -484,7 +484,10 @@ The longer a visitor overstays, the greater the risk of:
 - Difficulties obtaining future UAE visas
 - Possible immigration restrictions in severe cases
 
-For this reason, travellers should always monitor their visa expiry date carefully.`,
+For this reason, travellers should always monitor their visa expiry date carefully.
+
+## If I found employment, and my employer is arranging my work visa, can I overstay on my visit visa while my work visa is in process?
+[PLACEHOLDER: add your content about overstaying while a work visa is in process here.]`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
