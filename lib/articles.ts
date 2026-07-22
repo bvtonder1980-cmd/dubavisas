@@ -37,9 +37,7 @@ export type Article = {
   body: string
 }
 
-const PLACEHOLDER_BODY = `[PLACEHOLDER] Write this guide using your own real-world experience and verified, official information.
-
-## Introduction
+const PLACEHOLDER_BODY = `## Introduction
 Open with the question this guide answers and who it's for. Speak from your first-hand experience helping South African travellers — that real expertise is exactly what makes this guide authoritative and quotable by search engines.
 
 ## Key points to cover
