@@ -568,7 +568,7 @@ Please note that certification by a Commissioner of Oaths alone is generally not
 As UAE immigration requirements may change without prior notice, applicants are advised to ensure that all documentation is complete, correctly certified, and submitted well in advance of their planned travel date.
 
 ## Visa Fees for Minor Children
-[PLACEHOLDER: add your content about visa fees for minor children here.]`,
+In many cases, reduced visa fees may apply for minors travelling with their parents. However, for organised group travel, minors are generally charged the standard adult visa fee.`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
