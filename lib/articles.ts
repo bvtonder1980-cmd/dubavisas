@@ -516,7 +516,11 @@ Travelling to the United Arab Emirates (UAE) as a minor involves additional visa
 The main purpose of the additional requirements is always aimed at protecting minors and combatting child trafficking.
 
 ## What is the difference between a normal birth certificate and an unabridged birth certificate?
-[PLACEHOLDER: add your content explaining the difference between a normal and an unabridged birth certificate here.]`,
+A normal birth certificate will contain only the details of the minor child, whereas an unabridged birth certificate will additionally contain the full names and ID numbers of that minor's parents.
+
+This is an official document issued by the Department of Home Affairs in South Africa.
+
+When applying for a visa, immigration officials rely on this document to ensure that the minor is travelling with their legal parents.`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
