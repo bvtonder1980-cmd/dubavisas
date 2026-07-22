@@ -520,7 +520,10 @@ A normal birth certificate will contain only the details of the minor child, whe
 
 This is an official document issued by the Department of Home Affairs in South Africa.
 
-When applying for a visa, immigration officials rely on this document to ensure that the minor is travelling with their legal parents.`,
+When applying for a visa, immigration officials rely on this document to ensure that the minor is travelling with their legal parents.
+
+## UAE Visa Applications for Minors Travelling with Parents
+[PLACEHOLDER: add your content about UAE visa applications for minors travelling with parents here.]`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
