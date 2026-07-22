@@ -510,7 +510,9 @@ If you are approaching your visa expiry date and need more time in the UAE, our 
     author: "Dubai Visas Online",
     datePublished: "2026-03-16",
     readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
+    body: `Travelling to the United Arab Emirates (UAE) as a minor involves additional visa requirements and documentation to ensure compliance with UAE immigration regulations and international child travel policies.
+
+The main purpose of the additional requirements is always aimed at protecting minors and combatting child trafficking.`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
