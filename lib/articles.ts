@@ -462,7 +462,15 @@ Not sure which one is right for you? Get in touch with our team, we're here to a
 This guide explains everything you need to know about UAE tourist and visit visa overstays, including the latest overstay fines, whether grace periods still exist, and how to extend your visa legally.
 
 ## Is there a grace period for UAE visa extensions?
-[PLACEHOLDER: add your content about the UAE visa grace period here.]`,
+One of the most common misconceptions among travellers is that UAE tourist visas include a grace period after expiry.
+
+The answer is no.
+
+The previous grace period that applied to certain UAE visit visas has been removed. Today, tourists and visitors must either leave the UAE or extend their visa before the final day of their authorised stay. Overstay penalties begin immediately after your visa expires.
+
+Example:
+
+Your 30-day tourist visa expires on 30 June. If you remain in the UAE on 1 July, overstay fines will begin to accumulate from that day.`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
