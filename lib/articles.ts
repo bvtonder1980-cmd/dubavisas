@@ -473,9 +473,11 @@ Example:
 Your 30-day tourist visa expires on 30 June. If you remain in the UAE on 1 July, overstay fines will begin to accumulate from that day.
 
 ## What are the UAE visa overstay fines?
-The UAE currently applies a standard overstay penalty for visitors and tourists that may increase as your length of overstay period increases.
+As of 2026, the UAE applies a standard overstay penalty of around AED 50 for each day you remain in the country beyond your authorised stay. This daily charge continues to build for every day of the overstay, so the total can add up quickly.
 
-Additional administrative or exit permit fees may also apply when departing the UAE.
+On top of the daily fine, travellers are usually required to pay an exit permit fee when leaving the UAE. This fee typically ranges from AED 100 to AED 350, depending on your circumstances at the time of departure.
+
+Fees are set by the UAE authorities and can change, so it is always worth confirming the current amounts before you travel or if you think you may overstay.
 
 The longer a visitor overstays, the greater the risk of:
 
