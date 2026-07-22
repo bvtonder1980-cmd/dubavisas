@@ -573,18 +573,6 @@ In many cases, reduced visa fees may apply for minors travelling with their pare
 Because minor applications are detailed and easily delayed by incorrect or incomplete certification, many families choose to have their documents checked before submitting.`,
   },
   {
-    slug: "dubai-visa-cost-price-breakdown",
-    title: "Dubai Visa Cost: A Complete Price Breakdown",
-    excerpt:
-      "Exactly what you pay for a UAE tourist visa — government fees, service fees and how to avoid hidden charges.",
-    category: "Pricing",
-    image: "/images/articles/overstay-fines.png",
-    author: "Dubai Visas Online",
-    datePublished: "2026-03-19",
-    readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
-  },
-  {
     slug: "dubai-visa-application-step-by-step",
     title: "Dubai Visa for South Africans: Step-by-Step Application Guide",
     excerpt:
