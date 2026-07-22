@@ -501,18 +501,6 @@ Extending before your visa expires keeps you fully compliant with UAE immigratio
 If you are approaching your visa expiry date and need more time in the UAE, our team can guide you through the extension process and make sure everything is arranged correctly before your current visa lapses.`,
   },
   {
-    slug: "how-to-extend-dubai-tourist-visa",
-    title: "How to Extend Your Dubai Tourist Visa",
-    excerpt:
-      "Your options for extending a UAE tourist visa without leaving the country, plus what it costs and when to apply.",
-    category: "Visa Rules",
-    image: "/images/articles/overstay-fines.png",
-    author: "Dubai Visas Online",
-    datePublished: "2026-03-13",
-    readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
-  },
-  {
     slug: "dubai-visas-for-children-and-families",
     title: "Dubai Visas for Children & Families",
     excerpt:
