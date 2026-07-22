@@ -506,7 +506,7 @@ If you are approaching your visa expiry date and need more time in the UAE, our 
     excerpt:
       "Travelling to Dubai with kids? Here's how visas work for minors, including the documents families often miss.",
     category: "Visa Requirements",
-    image: "/images/articles/dubai-layover.png",
+    image: "/images/articles/children-family-visa.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-16",
     readingMinutes: 5,
