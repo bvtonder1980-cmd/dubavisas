@@ -502,7 +502,7 @@ If you are approaching your visa expiry date and need more time in the UAE, our 
   },
   {
     slug: "dubai-visas-for-children-and-families",
-    title: "Dubai Visas for Children & Families",
+    title: "UAE Visa Requirements for Children Under the Age of 18",
     excerpt:
       "Travelling to Dubai with kids? Here's how visas work for minors, including the documents families often miss.",
     category: "Visa Requirements",
