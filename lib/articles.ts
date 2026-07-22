@@ -464,7 +464,7 @@ This guide explains everything you need to know about UAE tourist and visit visa
 ## Is there a grace period for UAE visa extensions?
 One of the most common misconceptions among travellers is that UAE tourist visas include a grace period after expiry.
 
-The answer is no.
+**The answer is no.**
 
 The previous grace period that applied to certain UAE visit visas has been removed. Today, tourists and visitors must either leave the UAE or extend their visa before the final day of their authorised stay. Overstay penalties begin immediately after your visa expires.
 

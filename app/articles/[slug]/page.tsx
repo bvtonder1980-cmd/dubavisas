@@ -33,10 +33,11 @@ export async function generateMetadata({
   }
 }
 
-// Parses inline markdown-style links [text](url) into React nodes.
+// Parses inline markdown-style links [text](url) and bold **text** into React nodes.
 function renderInline(text: string): React.ReactNode {
   const parts: React.ReactNode[] = []
-  const regex = /\[([^\]]+)\]\(([^)]+)\)/g
+  // Matches either a link [label](href) or bold **text**.
+  const regex = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g
   let lastIndex = 0
   let match: RegExpExecArray | null
   let key = 0
@@ -44,18 +45,26 @@ function renderInline(text: string): React.ReactNode {
     if (match.index > lastIndex) {
       parts.push(text.slice(lastIndex, match.index))
     }
-    const [, label, href] = match
-    const isInternal = href.startsWith("/") || href.startsWith("#")
-    parts.push(
-      <Link
-        key={`lnk-${key++}`}
-        href={href}
-        {...(isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
-        className="font-medium text-accent underline underline-offset-4 hover:opacity-80"
-      >
-        {label}
-      </Link>,
-    )
+    const [, label, href, boldText] = match
+    if (boldText !== undefined) {
+      parts.push(
+        <strong key={`b-${key++}`} className="font-semibold text-foreground">
+          {boldText}
+        </strong>,
+      )
+    } else {
+      const isInternal = href.startsWith("/") || href.startsWith("#")
+      parts.push(
+        <Link
+          key={`lnk-${key++}`}
+          href={href}
+          {...(isInternal ? {} : { target: "_blank", rel: "noopener noreferrer" })}
+          className="font-medium text-accent underline underline-offset-4 hover:opacity-80"
+        >
+          {label}
+        </Link>,
+      )
+    }
     lastIndex = regex.lastIndex
   }
   if (lastIndex < text.length) {
