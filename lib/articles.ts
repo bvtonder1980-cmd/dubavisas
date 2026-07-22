@@ -565,7 +565,10 @@ For minors travelling without a legal parent or guardian, all supporting documen
 
 Please note that certification by a Commissioner of Oaths alone is generally not sufficient for these applications.
 
-As UAE immigration requirements may change without prior notice, applicants are advised to ensure that all documentation is complete, correctly certified, and submitted well in advance of their planned travel date.`,
+As UAE immigration requirements may change without prior notice, applicants are advised to ensure that all documentation is complete, correctly certified, and submitted well in advance of their planned travel date.
+
+## Visa Fees for Minor Children
+[PLACEHOLDER: add your content about visa fees for minor children here.]`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
