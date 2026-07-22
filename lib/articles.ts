@@ -525,7 +525,9 @@ When applying for a visa, immigration officials rely on this document to ensure 
 ## UAE Visa Applications for Minors Travelling with Parents
 Where a child is travelling with their legal parent(s), the minor's visa application must be submitted together with the travelling parent. In most cases, the child must travel with the same legal parent whose documentation was used to support the visa application.
 
-In addition to the normal document requirements, a copy of the child's unabridged birth certificate must be included in their application.`,
+In addition to the normal document requirements, a copy of the child's unabridged birth certificate must be included in their application.
+
+The accompanying parent or legal guardian's details should also appear on the minor's unabridged birth certificate submitted with the visa application.`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
