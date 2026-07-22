@@ -487,7 +487,9 @@ The longer a visitor overstays, the greater the risk of:
 For this reason, travellers should always monitor their visa expiry date carefully.
 
 ## If I found employment, and my employer is arranging my work visa, can I overstay on my visit visa while my work visa is in process?
-[PLACEHOLDER: add your content about overstaying while a work visa is in process here.]`,
+This is a common misconception with many travellers, but overstaying your visit visa while your work visa is being arranged can still lead to significant fines and delays.
+
+Travellers are always advised, especially with the prospects of employment, to ensure that their visit visa remains valid.`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
