@@ -473,7 +473,18 @@ Example:
 Your 30-day tourist visa expires on 30 June. If you remain in the UAE on 1 July, overstay fines will begin to accumulate from that day.
 
 ## What are the UAE visa overstay fines?
-[PLACEHOLDER: add your content about the UAE visa overstay fines here.]`,
+The UAE currently applies a standard overstay penalty for visitors and tourists that may increase as your length of overstay period increases.
+
+Additional administrative or exit permit fees may also apply when departing the UAE.
+
+The longer a visitor overstays, the greater the risk of:
+
+- Delays at immigration checkpoints
+- Additional penalties and administrative charges
+- Difficulties obtaining future UAE visas
+- Possible immigration restrictions in severe cases
+
+For this reason, travellers should always monitor their visa expiry date carefully.`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
