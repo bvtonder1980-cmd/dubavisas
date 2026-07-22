@@ -492,7 +492,11 @@ This is a common misconception with many travellers, but overstaying your visit 
 Travellers are always advised, especially with the prospects of employment, to ensure that their visit visa remains valid.
 
 ## Can I extend my visit visa legally to avoid an overstay status?
-[PLACEHOLDER: add your content about extending your visit visa legally here.]`,
+Yes, in fact extending your visa through our team of experts is easy to do and costs significantly less than the potential fines and penalties that may be imposed if you overstay.
+
+If you need to extend your visa, we can help you and ensure that you remain in the UAE legally and fully compliant with local laws.
+
+Arranging an official visa extension is the only legal way to extend your period of stay.`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
