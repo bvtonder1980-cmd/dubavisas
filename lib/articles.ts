@@ -470,7 +470,10 @@ The previous grace period that applied to certain UAE visit visas has been remov
 
 Example:
 
-Your 30-day tourist visa expires on 30 June. If you remain in the UAE on 1 July, overstay fines will begin to accumulate from that day.`,
+Your 30-day tourist visa expires on 30 June. If you remain in the UAE on 1 July, overstay fines will begin to accumulate from that day.
+
+## What are the UAE visa overstay fines?
+[PLACEHOLDER: add your content about the UAE visa overstay fines here.]`,
   },
   {
     slug: "how-to-extend-dubai-tourist-visa",
