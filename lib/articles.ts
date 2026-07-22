@@ -504,7 +504,7 @@ If you are approaching your visa expiry date and need more time in the UAE, our 
     slug: "dubai-visas-for-children-and-families",
     title: "UAE Visa Requirements for Children Under the Age of 18",
     excerpt:
-      "Travelling to Dubai with kids? Here's how visas work for minors, including the documents families often miss.",
+      "UAE visa rules for South African children under 18 — the exact documents, certification and consent letters families need.",
     category: "Visa Requirements",
     image: "/images/articles/children-family-visa.png",
     author: "Dubai Visas Online",
