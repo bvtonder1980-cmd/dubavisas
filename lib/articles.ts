@@ -513,7 +513,10 @@ If you are approaching your visa expiry date and need more time in the UAE, our 
     body: `## Introduction
 Travelling to the United Arab Emirates (UAE) as a minor involves additional visa requirements and documentation to ensure compliance with UAE immigration regulations and international child travel policies.
 
-The main purpose of the additional requirements is always aimed at protecting minors and combatting child trafficking.`,
+The main purpose of the additional requirements is always aimed at protecting minors and combatting child trafficking.
+
+## What is the difference between a normal birth certificate and an unabridged birth certificate?
+[PLACEHOLDER: add your content explaining the difference between a normal and an unabridged birth certificate here.]`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
