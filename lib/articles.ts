@@ -530,7 +530,42 @@ In addition to the normal document requirements, a copy of the child's unabridge
 The accompanying parent or legal guardian's details should also appear on the minor's unabridged birth certificate submitted with the visa application.
 
 ## Can a minor travel to the UAE without their parents?
-[PLACEHOLDER: add your content about whether a minor can travel to the UAE without their parents here.]`,
+In general, children under the age of 18 cannot apply for a UAE visa or travel to the UAE independently. Minors must typically travel with at least one legal parent or guardian. The accompanying parent or legal guardian's details should also appear on the minor's unabridged birth certificate submitted with the visa application.
+
+The only exceptions are where the child is travelling as part of an organised group, such as:
+
+- School tours or educational trips
+- Sporting teams or tournaments
+- Cultural or exchange programmes
+- Travel accompanied by an officially appointed parent, guardian, teacher, or coach
+
+Where a child under the age of 18 is travelling without a legal parent, the visa application must be submitted as part of a group application. Additional supporting documentation is required to verify parental consent and the purpose of travel.
+
+Please note that group visa applications involving minors typically require 5 to 10 working days for processing. Processing times may be longer depending on the size of the group, the nature of the travel, and any additional verification requirements requested by UAE immigration authorities.
+
+The following documents must be provided for each minor applicant:
+
+- Certified copy of the child's passport
+- Recent colour passport photograph with a plain white background
+- Certified copy of the unabridged birth certificate showing both parents' full names
+- Certified Home Affairs parental consent affidavit authorising travel without the legal parent(s)
+- Certified copy of the mother's ID document or passport
+- Certified copy of the father's ID document or passport
+- Certified and signed invitation letter from the host organisation, school, event organiser, or sponsor, detailing the purpose of travel, itinerary, and travel dates
+- Certified and signed confirmation or enrolment letter from the child's school
+- Confirmed flight itinerary
+- Confirmed hotel accommodation booking matching the travel dates submitted
+
+### Certification Requirements
+For minors travelling without a legal parent or guardian, all supporting documents listed above (excluding the passport photograph, flight itinerary, and hotel confirmation) must be:
+
+- Certified,
+- Officially stamped, and
+- Signed at a South African Police Service (SAPS) station.
+
+Please note that certification by a Commissioner of Oaths alone is generally not sufficient for these applications.
+
+As UAE immigration requirements may change without prior notice, applicants are advised to ensure that all documentation is complete, correctly certified, and submitted well in advance of their planned travel date.`,
   },
   {
     slug: "dubai-visa-cost-price-breakdown",
