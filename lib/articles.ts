@@ -732,7 +732,7 @@ If you do not have one of these valid residence permits in your current passport
 ## Some Final Advice for South African Travellers
 When planning a trip to Dubai or elsewhere in the UAE, never rely solely on social media posts, travel forums, or information from friends who travelled previously. Visa regulations change regularly, and requirements can differ depending on your nationality, residency status, and purpose of travel.
 
-The safest approach is always to confirm your visa eligibility before booking your trip, ensuring a smooth and stress-free journey to the UAE.`,
+The safest approach is always to confirm your visa eligibility before booking your trip, ensuring a smooth and stress-free journey to the UAE. If you are ready to begin, see our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step).`,
   },
   {
     slug: "arriving-at-dubai-airport",
