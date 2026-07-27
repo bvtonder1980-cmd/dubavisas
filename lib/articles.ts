@@ -663,7 +663,9 @@ To avoid unnecessary delays, we recommend:
 - Applying well in advance of your intended travel date, particularly during school holidays and peak travel seasons.
 
 ## Need Assistance During the Application Process?
-[PLACEHOLDER: add your content for the assistance section here.]`,
+Our experienced visa service advisors are always available on phone, email or WhatsApp to assist you in compiling your visa application for the best possible chance of a successful outcome.
+
+Whether you're travelling for tourism, business, a family visit, or a short stopover, our team is available to guide you through every step of the application process.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
