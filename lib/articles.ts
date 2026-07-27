@@ -682,7 +682,10 @@ One of the most common questions asked by South African travellers planning a tr
 
 Unfortunately, there is a significant amount of conflicting information online, leading many travellers to believe they can simply board a flight and obtain their visa upon arrival in the United Arab Emirates (UAE). In reality, the answer depends on your individual circumstances.
 
-In this article, we separate the myths from the facts so that South African passport holders can travel to Dubai and the UAE with confidence.`,
+In this article, we separate the myths from the facts so that South African passport holders can travel to Dubai and the UAE with confidence.
+
+## Myth #1: All South Africans Receive a Free Visa on Arrival
+[PLACEHOLDER: add your content for Myth #1 here.]`,
   },
   {
     slug: "arriving-at-dubai-airport",
