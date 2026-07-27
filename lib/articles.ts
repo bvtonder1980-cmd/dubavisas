@@ -720,7 +720,14 @@ The UAE frequently reviews and updates its visa regulations to support tourism, 
 For this reason, travellers should always verify the latest requirements before booking flights or travelling.
 
 ## So, Can South Africans Get a Visa on Arrival in Dubai?
-[PLACEHOLDER: add your content for this section here.]`,
+**The answer is: sometimes, but in most cases not.**
+
+You may qualify for a UAE visa on arrival if:
+
+- You hold a South African passport; and
+- You also hold a valid residence permit issued by the United States, United Kingdom, a European Union country, Canada, Australia, New Zealand, Singapore, Japan, or South Korea.
+
+If you do not have one of these valid residence permits in your current passport, you should apply for a UAE visa before travelling.`,
   },
   {
     slug: "arriving-at-dubai-airport",
