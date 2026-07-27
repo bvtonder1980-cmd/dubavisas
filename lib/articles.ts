@@ -685,7 +685,11 @@ Unfortunately, there is a significant amount of conflicting information online, 
 In this article, we separate the myths from the facts so that South African passport holders can travel to Dubai and the UAE with confidence.
 
 ## Myth #1: All South Africans Receive a Free Visa on Arrival
-[PLACEHOLDER: add your content for Myth #1 here.]`,
+**Reality: Most South African passport holders require a visa prior to arrival.**
+
+Traditionally, South African citizens have been required to obtain a UAE visa before travelling. However, recent changes to UAE immigration regulations have expanded visa-on-arrival eligibility for certain South African travellers. To qualify, South African passport holders must hold a valid residence permit from specific countries, including the United States, United Kingdom, European Union member states, Canada, Australia, New Zealand, Singapore, Japan, or South Korea.
+
+If you do not hold one of these qualifying foreign residence permits, you will need to apply for a UAE visa before departure.`,
   },
   {
     slug: "arriving-at-dubai-airport",
