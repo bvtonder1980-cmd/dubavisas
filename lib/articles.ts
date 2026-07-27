@@ -717,7 +717,10 @@ Having these documents readily available can help avoid delays at immigration.
 
 The UAE frequently reviews and updates its visa regulations to support tourism, business travel, and international relations. Eligibility for visa-on-arrival programmes, visa validity periods, and documentary requirements can change with little notice.
 
-For this reason, travellers should always verify the latest requirements before booking flights or travelling.`,
+For this reason, travellers should always verify the latest requirements before booking flights or travelling.
+
+## So, Can South Africans Get a Visa on Arrival in Dubai?
+[PLACEHOLDER: add your content for this section here.]`,
   },
   {
     slug: "arriving-at-dubai-airport",
