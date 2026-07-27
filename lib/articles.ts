@@ -692,7 +692,11 @@ Traditionally, South African citizens have been required to obtain a UAE visa be
 If you do not hold one of these qualifying foreign residence permits, you will need to apply for a UAE visa before departure.
 
 ## Myth #2: If You Arrive Without a Visa, Immigration Will Issue One Anyway
-[PLACEHOLDER: add your content for Myth #2 here.]`,
+**Reality: Airlines may refuse boarding before you even leave South Africa.**
+
+One of the biggest misconceptions is that travellers can simply arrive in Dubai and sort out their visa at immigration. In practice, airlines are required to verify that passengers have the correct travel documentation before boarding, and if they allow you to travel without one, they could face significant fines. The airline is not going to risk this, so they ensure that you have the proper visa in place before you even board the aircraft.
+
+If you require a pre-approved UAE visa and do not have one, you will most likely be denied boarding at the airport in South Africa.`,
   },
   {
     slug: "arriving-at-dubai-airport",
