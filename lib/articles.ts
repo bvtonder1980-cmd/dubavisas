@@ -730,7 +730,9 @@ You may qualify for a UAE visa on arrival if:
 If you do not have one of these valid residence permits in your current passport, you should apply for a UAE visa before travelling.
 
 ## Some Final Advice for South African Travellers
-[PLACEHOLDER: add your content for the final advice section here.]`,
+When planning a trip to Dubai or elsewhere in the UAE, never rely solely on social media posts, travel forums, or information from friends who travelled previously. Visa regulations change regularly, and requirements can differ depending on your nationality, residency status, and purpose of travel.
+
+The safest approach is always to confirm your visa eligibility before booking your trip, ensuring a smooth and stress-free journey to the UAE.`,
   },
   {
     slug: "arriving-at-dubai-airport",
