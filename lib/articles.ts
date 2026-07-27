@@ -635,7 +635,10 @@ A clear copy of the host's valid UAE residence visa must be provided.
 
 **3. Host's Tenancy Agreement**
 
-A copy of the host's tenancy contract or proof of residence in the UAE is required.`,
+A copy of the host's tenancy contract or proof of residence in the UAE is required.
+
+## Step 3: Make Payment
+[PLACEHOLDER: add your content for Step 3 here.]`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
