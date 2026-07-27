@@ -646,7 +646,10 @@ You also have the option to make a manual EFT, but in this case, please remember
 
 - Use your DBV reference number (located at the bottom left of your invoice) as your payment reference.
 - Upload your proof of payment through our system, or email it through to us at [info@dubaivisasonline.co.za](mailto:info@dubaivisasonline.co.za).
-- Providing the correct reference number helps us process your application without delays.`,
+- Providing the correct reference number helps us process your application without delays.
+
+## What Happens After Submission?
+[PLACEHOLDER: add your content about what happens after submission here.]`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
