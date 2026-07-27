@@ -611,7 +611,31 @@ All applicants must provide the following:
 ### Additional Requirements for Children Under 18
 Applicants under the age of 18 must also provide:
 
-- A high-quality copy of their unabridged birth certificate. The document must be free from ink marks, damage, or folds. At least one parent named on the birth certificate must be travelling with the minor.`,
+- A high-quality copy of their unabridged birth certificate. The document must be free from ink marks, damage, or folds. At least one parent named on the birth certificate must be travelling with the minor.
+
+### Visiting Family or Friends in the UAE?
+If you will be staying with family or friends instead of a hotel, additional documentation is required.
+
+Please submit:
+
+**1. Signed Invitation Letter from Your Host**
+
+The invitation letter must include:
+
+- Full names of all applicants staying with the host
+- The relationship between the host and applicants
+- The dates of the visit (arrival and departure dates)
+- The complete residential address in the UAE
+- The host's contact telephone number
+- The host's signature
+
+**2. Copy of the Host's UAE Residency Visa**
+
+A clear copy of the host's valid UAE residence visa must be provided.
+
+**3. Host's Tenancy Agreement**
+
+A copy of the host's tenancy contract or proof of residence in the UAE is required.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
