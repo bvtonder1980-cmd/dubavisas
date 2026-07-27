@@ -673,7 +673,7 @@ Whether you're travelling for tourism, business, a family visit, or a short stop
     excerpt:
       "Can South Africans get a Dubai visa on arrival? We clear up the confusion and explain what's actually required.",
     category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
+    image: "/images/articles/visa-on-arrival.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-28",
     readingMinutes: 4,
