@@ -588,7 +588,13 @@ Travelling to Dubai or anywhere in the United Arab Emirates (UAE) is an exciting
 At Dubai Visas Online, we have simplified the application process to make obtaining your Dubai visa as quick and stress-free as possible. This step-by-step guide explains exactly how South African travellers can apply for a UAE visa.
 
 ## Step 1: Select your dates, visa type and complete the online visa application form.
-[PLACEHOLDER: add your content for Step 1 here.]`,
+Begin your application by visiting our website: [www.dubaivisasonline.co.za](https://www.dubaivisasonline.co.za) or [www.dubaivisa.co.za](https://www.dubaivisa.co.za)
+
+On the home page, complete the travel date, citizenship and location questions.
+
+In the next section, you will choose the visa type that you wish to apply for and will then access the online visa application form.
+
+Please complete the form for each passenger, ensuring that all information entered matches the passport details exactly, including full names, passport numbers, nationality, and travel dates. Incorrect information may result in delays or visa rejection.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
