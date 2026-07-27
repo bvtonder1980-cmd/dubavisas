@@ -677,7 +677,12 @@ Whether you're travelling for tourism, business, a family visit, or a short stop
     author: "Dubai Visas Online",
     datePublished: "2026-03-28",
     readingMinutes: 4,
-    body: PLACEHOLDER_BODY,
+    body: `## Introduction
+One of the most common questions asked by South African travellers planning a trip to Dubai is: "Can I get a visa on arrival?"
+
+Unfortunately, there is a significant amount of conflicting information online, leading many travellers to believe they can simply board a flight and obtain their visa upon arrival in the United Arab Emirates (UAE). In reality, the answer depends on your individual circumstances.
+
+In this article, we separate the myths from the facts so that South African passport holders can travel to Dubai and the UAE with confidence.`,
   },
   {
     slug: "arriving-at-dubai-airport",
