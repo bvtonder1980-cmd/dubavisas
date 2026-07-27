@@ -578,7 +578,7 @@ Because minor applications are detailed and easily delayed by incorrect or incom
     excerpt:
       "A complete walkthrough of applying for a Dubai visa from South Africa, from documents to approval.",
     category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
+    image: "/images/articles/application-steps.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-22",
     readingMinutes: 7,
