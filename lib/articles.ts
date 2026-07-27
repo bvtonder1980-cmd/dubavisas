@@ -654,7 +654,13 @@ Once we have received and checked your completed application, supporting documen
 Standard tourist and business visa applications are typically processed within 24 to 48 hours, although processing times may vary during peak travel periods or when additional verification is required.
 
 ## Tips for a Smooth Dubai Visa Application Process
-[PLACEHOLDER: add your content for the tips section here.]`,
+To avoid unnecessary delays, we recommend:
+
+- Ensuring all passport scans are clear and readable.
+- Providing recent passport photographs that comply with UAE visa photo requirements.
+- Double-checking that names match exactly across all documents, and ensuring no nicknames are used.
+- Submitting accommodation and flight confirmations with the applicant's full name.
+- Applying well in advance of your intended travel date, particularly during school holidays and peak travel seasons.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
