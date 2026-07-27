@@ -727,7 +727,10 @@ You may qualify for a UAE visa on arrival if:
 - You hold a South African passport; and
 - You also hold a valid residence permit issued by the United States, United Kingdom, a European Union country, Canada, Australia, New Zealand, Singapore, Japan, or South Korea.
 
-If you do not have one of these valid residence permits in your current passport, you should apply for a UAE visa before travelling.`,
+If you do not have one of these valid residence permits in your current passport, you should apply for a UAE visa before travelling.
+
+## Some Final Advice for South African Travellers
+[PLACEHOLDER: add your content for the final advice section here.]`,
   },
   {
     slug: "arriving-at-dubai-airport",
