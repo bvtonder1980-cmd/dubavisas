@@ -638,7 +638,15 @@ A clear copy of the host's valid UAE residence visa must be provided.
 A copy of the host's tenancy contract or proof of residence in the UAE is required.
 
 ## Step 3: Make Payment
-[PLACEHOLDER: add your content for Step 3 here.]`,
+Once your application has been completed online through our website, you may proceed with payment.
+
+Our website allows you to make secure online payments using your Visa or Mastercard credit or debit card, or using our online instant EFT portal.
+
+You also have the option to make a manual EFT, but in this case, please remember:
+
+- Use your DBV reference number (located at the bottom left of your invoice) as your payment reference.
+- Upload your proof of payment through our system, or email it through to us at [info@dubaivisasonline.co.za](mailto:info@dubaivisasonline.co.za).
+- Providing the correct reference number helps us process your application without delays.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
