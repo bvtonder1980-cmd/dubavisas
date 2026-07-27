@@ -713,7 +713,11 @@ You should always travel with:
 Having these documents readily available can help avoid delays at immigration.
 
 ## Myth #4: Visa Rules Never Change
-[PLACEHOLDER: add your content for Myth #4 here.]`,
+**Reality: UAE immigration policies are regularly updated.**
+
+The UAE frequently reviews and updates its visa regulations to support tourism, business travel, and international relations. Eligibility for visa-on-arrival programmes, visa validity periods, and documentary requirements can change with little notice.
+
+For this reason, travellers should always verify the latest requirements before booking flights or travelling.`,
   },
   {
     slug: "arriving-at-dubai-airport",
