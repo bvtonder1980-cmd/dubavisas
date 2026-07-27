@@ -660,7 +660,10 @@ To avoid unnecessary delays, we recommend:
 - Providing recent passport photographs that comply with UAE visa photo requirements.
 - Double-checking that names match exactly across all documents, and ensuring no nicknames are used.
 - Submitting accommodation and flight confirmations with the applicant's full name.
-- Applying well in advance of your intended travel date, particularly during school holidays and peak travel seasons.`,
+- Applying well in advance of your intended travel date, particularly during school holidays and peak travel seasons.
+
+## Need Assistance During the Application Process?
+[PLACEHOLDER: add your content for the assistance section here.]`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
