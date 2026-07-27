@@ -710,7 +710,10 @@ You should always travel with:
 - Proof of accommodation, such as a hotel reservation or host details.
 - Evidence of sufficient funds for your stay if requested.
 
-Having these documents readily available can help avoid delays at immigration.`,
+Having these documents readily available can help avoid delays at immigration.
+
+## Myth #4: Visa Rules Never Change
+[PLACEHOLDER: add your content for Myth #4 here.]`,
   },
   {
     slug: "arriving-at-dubai-airport",
