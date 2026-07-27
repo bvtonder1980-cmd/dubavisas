@@ -597,7 +597,21 @@ In the next section, you will choose the visa type that you wish to apply for an
 Please complete the form for each passenger, ensuring that all information entered matches the passport details exactly, including full names, passport numbers, nationality, and travel dates. Incorrect information may result in delays or visa rejection.
 
 ## Step 2: Submit the Required Supporting Documents
-[PLACEHOLDER: add your content for Step 2 here.]`,
+After completing your application, you will need to upload or email the required supporting documents.
+
+### Standard Supporting Documents
+All applicants must provide the following:
+
+- **Passport copy** — A perfectly clear scanned copy of your passport information page.
+- **Passport cover** — A clear copy of both the front and back cover of your passport in the same frame.
+- **Recent colour photograph** — A clear head-and-shoulders photograph taken within the last six months against a plain white background.
+- **Flight itinerary or ticket** — Showing the applicant's full name exactly as it appears in the passport.
+- **Hotel reservation or accommodation confirmation** — The hotel voucher must clearly display the traveller's full name and the booking confirmation number.
+
+### Additional Requirements for Children Under 18
+Applicants under the age of 18 must also provide:
+
+- A high-quality copy of their unabridged birth certificate. The document must be free from ink marks, damage, or folds. At least one parent named on the birth certificate must be travelling with the minor.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
