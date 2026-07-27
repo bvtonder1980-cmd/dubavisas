@@ -594,7 +594,10 @@ On the home page, complete the travel date, citizenship and location questions.
 
 In the next section, you will choose the visa type that you wish to apply for and will then access the online visa application form.
 
-Please complete the form for each passenger, ensuring that all information entered matches the passport details exactly, including full names, passport numbers, nationality, and travel dates. Incorrect information may result in delays or visa rejection.`,
+Please complete the form for each passenger, ensuring that all information entered matches the passport details exactly, including full names, passport numbers, nationality, and travel dates. Incorrect information may result in delays or visa rejection.
+
+## Step 2: Submit the Required Supporting Documents
+[PLACEHOLDER: add your content for Step 2 here.]`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
