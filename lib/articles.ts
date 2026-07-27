@@ -699,7 +699,18 @@ One of the biggest misconceptions is that travellers can simply arrive in Dubai 
 If you require a pre-approved UAE visa and do not have one, you will most likely be denied boarding at the airport in South Africa.
 
 ## Myth #3: Visa on Arrival Means No Documents Are Required
-[PLACEHOLDER: add your content for Myth #3 here.]`,
+**Reality: Supporting documents may still be requested.**
+
+Even travellers who qualify for visa on arrival should be prepared to provide supporting documentation if requested by immigration authorities.
+
+You should always travel with:
+
+- A passport valid for at least six months.
+- A confirmed return or onward flight ticket.
+- Proof of accommodation, such as a hotel reservation or host details.
+- Evidence of sufficient funds for your stay if requested.
+
+Having these documents readily available can help avoid delays at immigration.`,
   },
   {
     slug: "arriving-at-dubai-airport",
