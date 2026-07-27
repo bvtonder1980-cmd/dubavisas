@@ -649,7 +649,9 @@ You also have the option to make a manual EFT, but in this case, please remember
 - Providing the correct reference number helps us process your application without delays.
 
 ## What Happens After Submission?
-[PLACEHOLDER: add your content about what happens after submission here.]`,
+Once we have received and checked your completed application, supporting documents, and payment confirmation, we submit your visa application to the UAE immigration authorities for processing.
+
+Standard tourist and business visa applications are typically processed within 24 to 48 hours, although processing times may vary during peak travel periods or when additional verification is required.`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
