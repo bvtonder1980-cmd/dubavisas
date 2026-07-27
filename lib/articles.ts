@@ -668,18 +668,6 @@ Our experienced visa service advisors are always available on phone, email or Wh
 Whether you're travelling for tourism, business, a family visit, or a short stopover, our team is available to guide you through every step of the application process.`,
   },
   {
-    slug: "documents-needed-for-dubai-visa",
-    title: "What Documents Do You Need for a Dubai Visa?",
-    excerpt:
-      "A simple checklist of everything you need to apply for a UAE tourist visa and get approved first time.",
-    category: "Documents",
-    image: "/images/articles/photo-requirements.png",
-    author: "Dubai Visas Online",
-    datePublished: "2026-03-25",
-    readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
-  },
-  {
     slug: "dubai-visa-on-arrival-myths",
     title: "Dubai Visa on Arrival: Myths vs Reality for South Africans",
     excerpt:
