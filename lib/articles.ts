@@ -585,7 +585,10 @@ Because minor applications are detailed and easily delayed by incorrect or incom
     body: `## Introduction
 Travelling to Dubai or anywhere in the United Arab Emirates (UAE) is an exciting experience, whether you're planning a holiday, business trip, family visit, or stopover. Before travelling, South African passport holders must obtain a valid UAE visa.
 
-At Dubai Visas Online, we have simplified the application process to make obtaining your Dubai visa as quick and stress-free as possible. This step-by-step guide explains exactly how South African travellers can apply for a UAE visa.`,
+At Dubai Visas Online, we have simplified the application process to make obtaining your Dubai visa as quick and stress-free as possible. This step-by-step guide explains exactly how South African travellers can apply for a UAE visa.
+
+## Step 1: Select your dates, visa type and complete the online visa application form.
+[PLACEHOLDER: add your content for Step 1 here.]`,
   },
   {
     slug: "documents-needed-for-dubai-visa",
