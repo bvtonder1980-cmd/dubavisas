@@ -752,12 +752,12 @@ This guide explains what to expect when arriving at Dubai Airport, from disembar
 ## Step 1: Disembark and Follow the Immigration Signs
 After landing, passengers will be directed through the airport terminal towards immigration control. Clear signage in English and Arabic makes navigating the airport relatively easy.
 
-Depending on your arrival terminal and the number of incoming flights, the walk to immigration can take anywhere from a few minutes to around 20 minutes.
+Depending on your arrival terminal and the number of incoming flights, the walk to immigration can take anywhere from a few minutes to around 20 minutes. South African travellers usually arrive on direct Emirates or flydubai flights from Johannesburg or Cape Town, which land at Terminal 3 — Dubai International's largest and most modern terminal.
 
 Before joining the immigration queue, ensure you have the following documents readily available:
 
 - Your passport with at least six months' validity remaining.
-- Your approved UAE visa (if required).
+- Your approved UAE visa (if required). If you still need to apply, see our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step).
 - Your return or onward flight details.
 - Hotel reservation or accommodation details.
 - Any additional supporting documents requested during your visa application.
