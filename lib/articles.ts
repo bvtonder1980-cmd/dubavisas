@@ -1038,7 +1038,7 @@ A little cultural awareness goes a long way in ensuring a pleasant and hassle-fr
     readingMinutes: 6,
     body: `Dubai is often associated with luxury hotels, supercars, and extravagant shopping malls. However, many visitors are surprised to discover that travelling to Dubai and the United Arab Emirates (UAE) can be affordable with a little planning.
 
-Whether you're visiting for a short city break, a family holiday, or a business trip, understanding the local currency, payment methods, and transport options can help you make the most of your travel budget.
+Whether you're visiting for a short city break, a family holiday, or a business trip, understanding the local currency, payment methods, and transport options can help you make the most of your travel budget. The first step in that planning is making sure your visa is sorted — see our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step).
 
 This guide covers everything you need to know about money, currency, and getting around Dubai without overspending.
 
@@ -1104,6 +1104,8 @@ However, exchange rates in Dubai are often competitive, and visitors can easily 
 - Banks
 
 ATMs are widely available throughout the UAE and generally offer convenient access to local currency.
+
+**A note for South African travellers:** the South African Rand (ZAR) generally fetches a better rate when exchanged in Dubai than at South African airports, so it's usually best to change only a small amount before you leave and the rest on arrival. Because Dubai is largely cashless, most South African visitors find that a bank card covers the majority of their spending, with a little cash kept on hand for markets, taxis, and tips.
 
 Before travelling, check with your bank regarding:
 
