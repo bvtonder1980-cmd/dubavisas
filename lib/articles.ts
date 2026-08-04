@@ -866,7 +866,7 @@ Whether you're visiting for tourism, business, or to see family and friends, a l
     excerpt:
       "Respect local culture and avoid awkward moments with this practical guide to dressing and behaving in Dubai.",
     category: "Travel Guide",
-    image: "/images/articles/best-time-to-visit.png",
+    image: "/images/articles/dress-code-customs.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-03",
     readingMinutes: 5,
