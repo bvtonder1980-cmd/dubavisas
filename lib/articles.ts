@@ -1608,7 +1608,7 @@ By taking the time to submit an accurate, complete, and well-prepared applicatio
     excerpt:
       "Whether travel and medical insurance is required for the UAE, and what cover South African travellers should look for.",
     category: "Travel Guide",
-    image: "/images/articles/dubai-layover.png",
+    image: "/images/articles/travel-insurance.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-21",
     readingMinutes: 4,
