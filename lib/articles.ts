@@ -744,7 +744,10 @@ The safest approach is always to confirm your visa eligibility before booking yo
     author: "Dubai Visas Online",
     datePublished: "2026-03-31",
     readingMinutes: 5,
-    body: PLACEHOLDER_BODY,
+    body: `## Introduction
+Dubai International Airport is one of the busiest and most efficient airports in the world, welcoming millions of visitors to the United Arab Emirates (UAE) each year. If you're travelling to Dubai for the first time, understanding the arrival process can help make your journey stress-free and straightforward.
+
+This guide explains what to expect when arriving at Dubai Airport, from disembarking your flight to collecting your luggage and entering the UAE.`,
   },
   {
     slug: "dubai-dress-code-and-customs",
