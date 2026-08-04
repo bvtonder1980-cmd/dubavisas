@@ -747,7 +747,10 @@ The safest approach is always to confirm your visa eligibility before booking yo
     body: `## Introduction
 Dubai International Airport is one of the busiest and most efficient airports in the world, welcoming millions of visitors to the United Arab Emirates (UAE) each year. If you're travelling to Dubai for the first time, understanding the arrival process can help make your journey stress-free and straightforward.
 
-This guide explains what to expect when arriving at Dubai Airport, from disembarking your flight to collecting your luggage and entering the UAE.`,
+This guide explains what to expect when arriving at Dubai Airport, from disembarking your flight to collecting your luggage and entering the UAE.
+
+## Step 1: Disembark and Follow the Immigration Signs
+[PLACEHOLDER: add your content for Step 1 here.]`,
   },
   {
     slug: "dubai-dress-code-and-customs",
