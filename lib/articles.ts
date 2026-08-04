@@ -1241,6 +1241,8 @@ Whether you're travelling for a weekend getaway or an extended holiday, smart pl
 
 If you're planning your first trip to Dubai, here are the top five attractions and experiences you simply shouldn't miss.
 
+For South African travellers, the good news is that all of these experiences are easily reachable within a typical 4 to 7 day trip, and they pair perfectly with the direct Emirates and flydubai routes from Johannesburg and Cape Town. Before you start planning your itinerary, make sure your visa is sorted — see our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step).
+
 ## 1. Visit the Burj Khalifa – The World's Tallest Building
 No first trip to Dubai is complete without visiting the iconic Burj Khalifa.
 
@@ -1343,9 +1345,9 @@ If you have additional time during your visit, you may also wish to experience:
 To make the most of your first trip to Dubai:
 
 - Book major attractions in advance.
-- Use the Dubai Metro where possible.
+- Use the Dubai Metro where possible — our [money and getting-around guide](/articles/dubai-money-currency-getting-around) explains the Nol Card and fares.
 - Stay hydrated, particularly during summer months.
-- Dress respectfully in public areas.
+- Dress respectfully in public areas — see our [Dubai dress code and local customs guide](/articles/dubai-dress-code-and-customs).
 - Carry a small amount of local currency.
 - Allow enough time to experience both modern and traditional Dubai.
 
