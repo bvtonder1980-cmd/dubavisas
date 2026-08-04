@@ -1614,7 +1614,7 @@ By taking the time to submit an accurate, complete, and well-prepared applicatio
     readingMinutes: 4,
     body: `When planning a trip to Dubai or anywhere else in the United Arab Emirates (UAE), most travellers focus on flights, accommodation, and visas. However, one important item that is often overlooked is travel insurance.
 
-So, do you need travel insurance for Dubai? The simple answer is: while travel insurance is not mandatory for most tourist visa applications, it is highly recommended for all travellers visiting the UAE.
+So, do you need travel insurance for Dubai? The simple answer is: while travel insurance is not mandatory for most tourist visa applications, it is highly recommended for all travellers visiting the UAE. If you are still sorting out your entry documents, our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step) walks you through the process.
 
 Travel insurance can provide valuable protection against unexpected events and help prevent significant financial costs should something go wrong during your trip.
 
@@ -1678,7 +1678,7 @@ Dubai offers a wide range of exciting activities, including:
 
 Not all travel insurance policies automatically cover these activities.
 
-If you plan to participate in adventure or sporting activities, check your policy carefully and consider additional cover if required.
+If you plan to participate in adventure or sporting activities — many of which feature in our guide to the [top things to do in Dubai](/articles/things-to-do-in-dubai-first-time) — check your policy carefully and consider additional cover if required.
 
 ## What Happens If You Travel Without Insurance?
 Many travellers visit Dubai without travel insurance and never experience any issues. However, if something unexpected happens, the financial consequences can be significant.
@@ -1716,6 +1716,10 @@ Before purchasing a policy:
 
 ## Should South Africans Buy Travel Insurance for Dubai?
 For South African travellers, comprehensive travel insurance is strongly recommended when visiting Dubai and the UAE.
+
+This is particularly important because most South African medical aid schemes provide little or no cover for treatment received outside the country. Without standalone travel insurance, a medical emergency in Dubai could leave you personally responsible for the full cost of private hospital treatment, which can run into tens of thousands of Rand.
+
+The good news is that travel insurance is relatively inexpensive — often a small fraction of the total cost of a Dubai holiday from South Africa — making it one of the most affordable forms of protection you can arrange before you travel.
 
 International travel always carries an element of uncertainty, and having the right insurance in place can provide reassurance and financial protection should unexpected circumstances arise.
 
