@@ -1535,7 +1535,7 @@ By understanding local customs, respecting cultural traditions, and planning ahe
 
 Understanding why Dubai visas get rejected can help you prepare a complete, accurate application and give yourself the best possible chance of approval. Below, we explain the most common reasons for rejection and exactly how to avoid them.
 
-For South African applicants specifically, the majority of refusals come down to three avoidable issues: photographs that don't meet the requirements, names that do not exactly match the passport, and passports with less than six months' validity remaining. Double-checking those two points alone prevents most South African visa rejections.
+For South African applicants specifically, the majority of refusals come down to three avoidable issues: photographs that don't meet the requirements, names that do not exactly match the passport, and passports with less than six months' validity remaining. Double-checking those three points alone prevents most South African visa rejections.
 
 ## 1. Incorrect or Incomplete Personal Information
 One of the most common reasons for visa rejection is simple human error when entering personal details.
