@@ -1233,7 +1233,7 @@ Whether you're travelling for a weekend getaway or an extended holiday, smart pl
     excerpt:
       "The must-see attractions and experiences for your first trip to Dubai, from the Burj Khalifa to desert safaris.",
     category: "Travel Guide",
-    image: "/images/articles/best-time-to-visit.png",
+    image: "/images/articles/things-to-do-dubai.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-09",
     readingMinutes: 7,
