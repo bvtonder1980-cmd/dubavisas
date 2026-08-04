@@ -765,7 +765,98 @@ Before joining the immigration queue, ensure you have the following documents re
 Having these documents easily accessible will help speed up the immigration process.
 
 ## Step 2: Immigration Clearance
-[PLACEHOLDER: add your content for Step 2 here.]`,
+At the immigration counter, a UAE immigration officer will review your travel documents and verify your eligibility to enter the country.
+
+During the process, you may be asked simple questions such as:
+
+- What is the purpose of your visit?
+- How long will you be staying?
+- Where will you be staying in the UAE?
+- When is your return flight?
+
+Most travellers complete immigration clearance within a few minutes. However, waiting times can vary depending on the time of arrival and passenger volumes.
+
+### Biometric Verification
+The UAE uses advanced biometric systems at its airports. Immigration authorities may verify your identity using:
+
+- Facial recognition technology.
+- Passport scanning.
+- Other biometric security measures where applicable.
+
+These procedures are routine and help ensure efficient and secure entry into the country.
+
+## Step 3: Proceed to Baggage Claim
+Once you have cleared immigration, follow the signs to the baggage reclaim area.
+
+To locate your luggage carousel:
+
+- Check the flight information screens located throughout the arrivals hall.
+- Match your flight number with the designated baggage belt.
+
+Dubai airports are known for efficient baggage handling, although collection times can vary depending on flight schedules and passenger numbers.
+
+If your luggage does not arrive, proceed immediately to your airline's baggage assistance desk before leaving the arrivals area.
+
+## Step 4: Customs Clearance
+After collecting your baggage, you will proceed through customs screening.
+
+Most visitors will pass through customs without issue, provided they are not carrying prohibited or restricted items.
+
+Travellers should familiarise themselves with UAE customs regulations before departure, particularly regarding:
+
+- Prescription medication.
+- Large amounts of cash.
+- Restricted goods.
+- Alcohol and tobacco allowances.
+- Commercial goods and gifts.
+
+Failure to declare restricted items may result in delays, confiscation, fines, or other penalties.
+
+## Step 5: Entering the Arrivals Hall
+After clearing customs, you will enter the public arrivals area where you can:
+
+- Meet family members or friends.
+- Locate hotel transfer services.
+- Access taxi services.
+- Arrange private transfers.
+- Use public transport connections.
+
+Dubai airports offer numerous facilities, including:
+
+- Currency exchange services.
+- SIM card providers.
+- ATMs.
+- Restaurants and coffee shops.
+- Car rental services.
+
+If you require internet access immediately upon arrival, free airport Wi-Fi is available throughout most terminals.
+
+## How Long Does Arrival Processing Take?
+The total time from aircraft arrival to exiting the airport varies depending on passenger volumes and the time of day.
+
+As a general guideline:
+
+| Process | Estimated Time |
+| --- | --- |
+| Walking to immigration | 5–20 minutes |
+| Immigration clearance | 5–45 minutes |
+| Baggage collection | 15–45 minutes |
+| Customs clearance | 5–15 minutes |
+
+In most cases, travellers can expect to leave the airport within one to two hours after landing.
+
+## Tips for a Smooth Arrival in Dubai
+To make your arrival experience as smooth as possible:
+
+- Keep your passport and visa documents easily accessible.
+- Ensure your phone is charged before landing.
+- Complete any required arrival forms accurately.
+- Confirm your accommodation address before travel.
+- Familiarise yourself with UAE customs regulations.
+- Allow extra time during peak holiday seasons and major events.
+
+## Final Thoughts
+Arriving in Dubai is generally a quick and efficient process thanks to the UAE's modern airport infrastructure and advanced immigration systems. By ensuring your documents are prepared and understanding what to expect upon arrival, you can begin your trip with confidence and focus on enjoying everything the UAE has to offer.`,
   },
   {
     slug: "dubai-dress-code-and-customs",
