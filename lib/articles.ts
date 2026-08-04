@@ -750,7 +750,19 @@ Dubai International Airport is one of the busiest and most efficient airports in
 This guide explains what to expect when arriving at Dubai Airport, from disembarking your flight to collecting your luggage and entering the UAE.
 
 ## Step 1: Disembark and Follow the Immigration Signs
-[PLACEHOLDER: add your content for Step 1 here.]`,
+After landing, passengers will be directed through the airport terminal towards immigration control. Clear signage in English and Arabic makes navigating the airport relatively easy.
+
+Depending on your arrival terminal and the number of incoming flights, the walk to immigration can take anywhere from a few minutes to around 20 minutes.
+
+Before joining the immigration queue, ensure you have the following documents readily available:
+
+- Your passport with at least six months' validity remaining.
+- Your approved UAE visa (if required).
+- Your return or onward flight details.
+- Hotel reservation or accommodation details.
+- Any additional supporting documents requested during your visa application.
+
+Having these documents easily accessible will help speed up the immigration process.`,
   },
   {
     slug: "dubai-dress-code-and-customs",
