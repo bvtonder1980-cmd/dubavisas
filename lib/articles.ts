@@ -1717,7 +1717,7 @@ Before purchasing a policy:
 ## Should South Africans Buy Travel Insurance for Dubai?
 For South African travellers, comprehensive travel insurance is strongly recommended when visiting Dubai and the UAE.
 
-This is particularly important because most South African medical aid schemes provide little or no cover for treatment received outside the country. Without standalone travel insurance, a medical emergency in Dubai could leave you personally responsible for the full cost of private hospital treatment, which can run into tens of thousands of Rand.
+This is particularly important because most South African medical aid schemes provide little or no cover for treatment received outside the country. Without standalone travel insurance, a medical emergency in Dubai could leave you personally responsible for the full cost of private hospital treatment, which can run into hundreds of thousands of Rand.
 
 The good news is that travel insurance is relatively inexpensive — often a small fraction of the total cost of a Dubai holiday from South Africa — making it one of the most affordable forms of protection you can arrange before you travel.
 
