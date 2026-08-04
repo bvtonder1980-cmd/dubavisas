@@ -740,7 +740,7 @@ The safest approach is always to confirm your visa eligibility before booking yo
     excerpt:
       "From landing to baggage claim — how UAE immigration works and how to breeze through with your e-visa.",
     category: "Travel Guide",
-    image: "/images/articles/dubai-layover.png",
+    image: "/images/articles/dubai-airport-arrival.png",
     author: "Dubai Visas Online",
     datePublished: "2026-03-31",
     readingMinutes: 5,
