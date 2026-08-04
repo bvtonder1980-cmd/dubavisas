@@ -1603,18 +1603,6 @@ While a visa rejection can be stressful, it is almost always avoidable. The over
 By taking the time to submit an accurate, complete, and well-prepared application — or by letting our experienced team handle the process for you — you can travel to Dubai and the UAE with confidence and peace of mind.`,
   },
   {
-    slug: "dubai-passport-validity-rules",
-    title: "Passport Validity Rules for Travelling to Dubai",
-    excerpt:
-      "How much passport validity you need for the UAE, and why a near-expiry passport can stop you boarding.",
-    category: "Documents",
-    image: "/images/articles/visa-requirements.png",
-    author: "Dubai Visas Online",
-    datePublished: "2026-04-18",
-    readingMinutes: 4,
-    body: PLACEHOLDER_BODY,
-  },
-  {
     slug: "dubai-travel-insurance-guide",
     title: "Do You Need Travel Insurance for Dubai?",
     excerpt:
