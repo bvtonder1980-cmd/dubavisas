@@ -762,7 +762,10 @@ Before joining the immigration queue, ensure you have the following documents re
 - Hotel reservation or accommodation details.
 - Any additional supporting documents requested during your visa application.
 
-Having these documents easily accessible will help speed up the immigration process.`,
+Having these documents easily accessible will help speed up the immigration process.
+
+## Step 2: Immigration Clearance
+[PLACEHOLDER: add your content for Step 2 here.]`,
   },
   {
     slug: "dubai-dress-code-and-customs",
