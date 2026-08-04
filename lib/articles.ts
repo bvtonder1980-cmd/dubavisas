@@ -1371,7 +1371,7 @@ Whether you're admiring the skyline from the Burj Khalifa, exploring the desert 
 Whether you're planning to visit during the holy month of Ramadan, Eid celebrations, or other public holidays, understanding what to expect will help ensure a smooth and enjoyable trip.
 
 ## What Is Ramadan?
-Ramadan is the holiest month in the Islamic calendar and is observed by Muslims worldwide as a period of fasting, prayer, reflection, and community.
+Ramadan in the Islamic calendar and is observed by Muslims worldwide as a period of fasting, prayer, reflection, and community.
 
 During Ramadan, Muslims fast daily from sunrise to sunset, refraining from food, drink, and other activities during daylight hours. The exact dates of Ramadan change each year because they are determined by the Islamic lunar calendar.
 
