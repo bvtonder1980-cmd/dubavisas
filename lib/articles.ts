@@ -1032,7 +1032,7 @@ A little cultural awareness goes a long way in ensuring a pleasant and hassle-fr
     excerpt:
       "Currency, tipping, the Dubai Metro, taxis and apps — everything you need to manage money and travel smart.",
     category: "Travel Guide",
-    image: "/images/articles/best-time-to-visit.png",
+    image: "/images/articles/money-getting-around.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-06",
     readingMinutes: 6,
