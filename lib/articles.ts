@@ -872,9 +872,9 @@ Whether you're visiting for tourism, business, or to see family and friends, a l
     readingMinutes: 5,
     body: `The United Arab Emirates (UAE) is one of the world's most popular travel destinations, attracting millions of visitors each year for tourism, business, shopping, and family holidays. The country is known for its luxury hotels, modern cities, beautiful beaches, and welcoming hospitality.
 
-Although the UAE is a multicultural and relatively liberal country by regional standards, it remains rooted in Islamic traditions and local customs. Visitors are expected to dress respectfully and behave appropriately in public spaces.
+Although the UAE is a multicultural and relatively liberal country by regional standards, it remains rooted in Islamic traditions and local customs. Visitors are expected to dress respectfully and behave appropriately in public spaces. Many South African visitors are pleasantly surprised to find the everyday dress norms far more relaxed and cosmopolitan than they expected.
 
-Understanding the local culture before you travel can help ensure a respectful, enjoyable, and stress-free visit.
+Understanding the local culture before you travel — and making sure your visa is sorted with our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step) — can help ensure a respectful, enjoyable, and stress-free visit.
 
 ## Is There a Strict Dress Code in Dubai and the UAE?
 Contrary to popular belief, there is no single national dress code for visitors in the UAE. However, modest and respectful clothing is expected in most public places.
