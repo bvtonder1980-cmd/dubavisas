@@ -1370,6 +1370,8 @@ Whether you're admiring the skyline from the Burj Khalifa, exploring the desert 
 
 Whether you're planning to visit during the holy month of Ramadan, Eid celebrations, or other public holidays, understanding what to expect will help ensure a smooth and enjoyable trip.
 
+A useful note for South African travellers: because Ramadan follows the Islamic lunar calendar, it shifts roughly 11 days earlier each year on the standard Gregorian calendar. If you tend to travel around South African school holidays, it is worth checking whether your dates overlap with Ramadan so you can plan accordingly. Demand also rises sharply during these periods, so it is wise to sort your visa early — see our [step-by-step Dubai visa application guide for South Africans](/articles/dubai-visa-application-step-by-step).
+
 ## What Is Ramadan?
 Ramadan is observed by Muslims worldwide as a period of fasting, prayer, reflection, and community.
 
@@ -1418,7 +1420,7 @@ Throughout the UAE, visitors can enjoy:
 Many hotels and restaurants offer elaborate Iftar experiences that are popular with both residents and tourists.
 
 ## Should Visitors Dress Differently During Ramadan?
-During Ramadan, visitors are encouraged to dress more conservatively than usual, particularly in public places.
+During Ramadan, visitors are encouraged to dress more conservatively than usual, particularly in public places. For a fuller overview of what to wear across different settings, see our [Dubai dress code and local customs guide](/articles/dubai-dress-code-and-customs).
 
 General recommendations include:
 
