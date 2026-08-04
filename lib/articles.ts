@@ -1362,7 +1362,7 @@ Whether you're admiring the skyline from the Burj Khalifa, exploring the desert 
     excerpt:
       "What changes during Ramadan and UAE public holidays, and how it affects your trip, dining and visa timing.",
     category: "Travel Guide",
-    image: "/images/articles/best-time-to-visit.png",
+    image: "/images/articles/ramadan-holidays.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-12",
     readingMinutes: 5,
