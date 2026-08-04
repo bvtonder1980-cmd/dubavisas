@@ -1527,7 +1527,7 @@ By understanding local customs, respecting cultural traditions, and planning ahe
     excerpt:
       "The most common reasons UAE visa applications are refused, and the simple steps that prevent delays.",
     category: "Visa Rules",
-    image: "/images/articles/photo-requirements.png",
+    image: "/images/articles/visa-rejection.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-15",
     readingMinutes: 5,
