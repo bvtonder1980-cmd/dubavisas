@@ -145,7 +145,16 @@ A copy of your confirmed return or onward flight ticket or itinerary, showing th
 
 The confirmed tickets or itinerary helps to indicate to UAE immigration that you will leave before your visa validity period expires and that you have bona-fide travel plans to return to South Africa, or to a different onward destination.
 
-## Requirement 5 - Confirmed Accommodation`,
+## Requirement 5 - Confirmed Accommodation
+If you're staying at a hotel, you will need a hotel confirmation letter or hotel accommodation voucher. It is important to note that the full names and surname of all travellers in your party must appear on the confirmation letter/voucher. The dates of your accommodation must cover the length of stay and match with the duration of your flight tickets' arrival and departure dates.
+
+If you're staying with family or friends, then you need to submit the following:
+
+- **Signed invitation letter from your host in the UAE.** The letter should mention the applicants by name who will be staying with them as well as their relation to them, the dates (from date to date) the applicants will be staying with them, the host's address, the host's mobile number, and it must be signed by the host.
+- **Copy of the host's Dubai residency visa.**
+- **Tenancy agreement/contract of the host in the UAE.**
+
+This is to ensure that your host is legally in the UAE and formally inviting you to visit them.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
