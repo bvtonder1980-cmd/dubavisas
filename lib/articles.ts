@@ -157,7 +157,9 @@ If you're staying with family or friends, then you need to submit the following:
 - Copy of the host's Dubai residency visa.
 - Tenancy agreement/contract of the host in the UAE.
 
-This is to ensure that your host is legally in the UAE and formally inviting you to visit them.`,
+This is to ensure that your host is legally in the UAE and formally inviting you to visit them.
+
+## Requirement 6 - For minors under 18 years of age`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
