@@ -138,7 +138,9 @@ The UAE has some of the strictest photo requirements in the world.
 
 They require a recent colour passport-style photo against a white background, with your full face visible and no glasses or head covering (except religious).
 
-The photo requirements are so detailed, that we wrote a whole article about it. We strongly urge you to read our [travel guide on photo requirements](/articles/dubai-visa-photo-requirements).`,
+The photo requirements are so detailed, that we wrote a whole article about it. We strongly urge you to read our [travel guide on photo requirements](/articles/dubai-visa-photo-requirements).
+
+## Requirement 4 - Return / Onward flight ticket`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
