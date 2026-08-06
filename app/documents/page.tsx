@@ -7,9 +7,9 @@ import { BreadcrumbSchema } from "@/components/json-ld"
 import { FileText, Copy, Camera, Plane, BedDouble, Baby } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Dubai Visa Document & Photo Requirements (2026)",
+  title: "Dubai Visa Document Requirements (2026)",
   description:
-    "The exact documents and passport photo specifications you need to apply for a UAE visa. Avoid rejection with our clear, up-to-date requirements checklist.",
+    "The exact documents you need to apply for a UAE visa. Avoid rejection with our clear, up-to-date requirements checklist for South African travellers.",
   alternates: { canonical: "/documents" },
 }
 
