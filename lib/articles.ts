@@ -115,7 +115,11 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
     author: "Dubai Visas Online",
     datePublished: "2026-01-17",
     readingMinutes: 8,
-    body: PLACEHOLDER_BODY,
+    body: `Most South African passport holders can easily obtain a visa to the UAE, providing that they submit the correct documents.
+
+Incorrect or incomplete documents is the single largest reason why some visa applications are rejected.
+
+Below, we'll deep-dive into each visa requirement to help you compile a comprehensive visa application with the best possible chance of a successful outcome.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
