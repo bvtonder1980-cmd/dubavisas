@@ -153,9 +153,9 @@ If you're staying at a hotel, you will need a hotel confirmation letter or hotel
 ### Staying with family or friends
 If you're staying with family or friends, then you need to submit the following:
 
-- **Signed invitation letter from your host in the UAE.** The letter should mention the applicants by name who will be staying with them as well as their relation to them, the dates (from date to date) the applicants will be staying with them, the host's address, the host's mobile number, and it must be signed by the host.
-- **Copy of the host's Dubai residency visa.**
-- **Tenancy agreement/contract of the host in the UAE.**
+- Signed invitation letter from your host in the UAE. The letter should mention the applicants by name who will be staying with them as well as their relation to them, the dates (from date to date) the applicants will be staying with them, the host's address, the host's mobile number, and it must be signed by the host.
+- Copy of the host's Dubai residency visa.
+- Tenancy agreement/contract of the host in the UAE.
 
 This is to ensure that your host is legally in the UAE and formally inviting you to visit them.`,
   },
