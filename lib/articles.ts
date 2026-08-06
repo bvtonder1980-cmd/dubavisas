@@ -119,7 +119,9 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
 
 Incorrect or incomplete documents is the single largest reason why some visa applications are rejected.
 
-Below, we'll deep-dive into each visa requirement to help you compile a comprehensive visa application with the best possible chance of a successful outcome.`,
+Below, we'll deep-dive into each visa requirement to help you compile a comprehensive visa application with the best possible chance of a successful outcome.
+
+## Requirement 1 - Clear copy of your valid passport`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
