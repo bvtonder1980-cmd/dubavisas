@@ -126,7 +126,12 @@ Submit a clear, readable colour copy of the biodata page of your passport. This 
 
 Your passport must also be valid for at least 6 months after your return date from the UAE and must contain at least two blank pages for entry and exit stamps.
 
-## Requirement 2 - Copy of your passport cover page`,
+## Requirement 2 - Copy of your passport cover page
+Although this may seem like a strange request, the UAE does in fact require a copy of the front and back of your green passport cover page.
+
+You can simply open your passport and copy the cover, clearly showing the South African coat of arms on the cover.
+
+The copy also needs to be of good quality and easily readable.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
