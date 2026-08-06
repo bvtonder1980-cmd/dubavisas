@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Link from "next/link"
 import { PageHeader } from "@/components/page-header"
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { CtaBand } from "@/components/cta-band"
@@ -86,10 +87,17 @@ export default function DocumentsPage() {
                 </div>
               ))}
               <div className="rounded-2xl border border-border bg-card p-6 shadow-sm md:col-span-2">
-                <h3 className="font-serif text-lg font-semibold text-foreground">Additional information</h3>
+                <h3 className="font-serif text-lg font-semibold text-foreground">Want the finer details?</h3>
                 <p className="mt-1 text-pretty leading-relaxed text-muted-foreground">
-                  {/* [PLACEHOLDER] Populate this full-width card with additional details */}
-                  Add your text here.
+                  Each of these documents comes with its own set of rules that can make or break your application. For a
+                  closer look at exactly what&apos;s required and how to get every detail right, read our{" "}
+                  <Link
+                    href="/articles/dubai-visa-requirements-deep-dive"
+                    className="font-medium text-primary underline underline-offset-4 hover:text-primary/80"
+                  >
+                    deep dive into Dubai visa requirements
+                  </Link>
+                  .
                 </p>
               </div>
             </div>
