@@ -111,7 +111,7 @@ Once approved, simply print a copy of your visa to present at the boarding gate 
     excerpt:
       "A detailed, in-depth look at UAE visa requirements, covering every visa type, document, and eligibility rule South African travellers should know.",
     category: "Visa Requirements",
-    image: "/images/articles/visa-requirements.png",
+    image: "/images/articles/visa-requirements-deep-dive.png",
     author: "Dubai Visas Online",
     datePublished: "2026-01-17",
     readingMinutes: 8,
