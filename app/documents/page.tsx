@@ -89,7 +89,7 @@ export default function DocumentsPage() {
               description="Have these ready before you start and your application will take just a few minutes."
               className="max-w-4xl"
             />
-            <div className="grid gap-6 md:grid-cols-2">
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
               {documents.map((doc) => (
                 <div key={doc.title} className="flex gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/15">
