@@ -165,7 +165,7 @@ Children typically require an unabridged birth certificate listing both parents,
 Travelling with minors can become quite complicated, so we urge you to read our article, [Travelling with minors](/articles/dubai-visas-for-children-and-families).
 
 ## In closing
-Paying close attention to the requirement details will greatly improve your visa application's chances of a successful outcome.`,
+Paying close attention to the requirement details will greatly improve your visa application's chances of a successful outcome. As we mentioned at the start, incomplete or incorrect documents are the single largest reason applications are turned down — so it's well worth understanding [why Dubai visas get rejected, and how to avoid it](/articles/dubai-visa-rejection-reasons) before you apply.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
