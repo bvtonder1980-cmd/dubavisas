@@ -106,6 +106,18 @@ The precise documents you need depends on various factors, but rest assured that
 Once approved, simply print a copy of your visa to present at the boarding gate and keep a digital copy on your phone as a backup.`,
   },
   {
+    slug: "dubai-visa-requirements-deep-dive",
+    title: "Dubai Visa Requirements - a Deep Dive",
+    excerpt:
+      "A detailed, in-depth look at UAE visa requirements, covering every visa type, document, and eligibility rule South African travellers should know.",
+    category: "Visa Requirements",
+    image: "/images/articles/visa-requirements.png",
+    author: "Dubai Visas Online",
+    datePublished: "2026-01-17",
+    readingMinutes: 8,
+    body: PLACEHOLDER_BODY,
+  },
+  {
     slug: "how-long-does-a-dubai-visa-take",
     title: "How Long Does a Dubai Visa Take to Process?",
     excerpt:
