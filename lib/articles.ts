@@ -121,7 +121,10 @@ Incorrect or incomplete documents is the single largest reason why some visa app
 
 Below, we'll deep-dive into each visa requirement to help you compile a comprehensive visa application with the best possible chance of a successful outcome.
 
-## Requirement 1 - Clear copy of your valid passport`,
+## Requirement 1 - Clear copy of your valid passport
+Submit a clear, readable colour copy of the biodata page of your passport. This is the page with your photo, the passport number, date of issue and date of expiry. It is very important that the passport copy must be easily readable by humans and AI systems.
+
+Your passport must also be valid for at least 6 months after your return date from the UAE and must contain at least two blank pages for entry and exit stamps.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
