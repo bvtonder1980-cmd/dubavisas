@@ -162,7 +162,9 @@ This is to ensure that your host is legally in the UAE and formally inviting you
 ## Requirement 6 - For minors under 18 years of age
 Children typically require an unabridged birth certificate listing both parents, plus parental consent where applicable.
 
-Travelling with minors can become quite complicated, so we urge you to read our article, [Travelling with minors](/articles/dubai-visas-for-children-and-families).`,
+Travelling with minors can become quite complicated, so we urge you to read our article, [Travelling with minors](/articles/dubai-visas-for-children-and-families).
+
+Paying close attention to the requirement details will greatly improve your visa application's chances of a successful outcome.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
