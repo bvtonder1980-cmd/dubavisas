@@ -143,7 +143,9 @@ The photo requirements are so detailed, that we wrote a whole article about it. 
 ## Requirement 4 - Return / Onward flight ticket
 A copy of your confirmed return or onward flight ticket or itinerary, showing that you'll leave the UAE within your visa validity period.
 
-The confirmed tickets or itinerary helps to indicate to UAE immigration that you will leave before your visa validity period expires and that you have bona-fide travel plans to return to South Africa, or to a different onward destination.`,
+The confirmed tickets or itinerary helps to indicate to UAE immigration that you will leave before your visa validity period expires and that you have bona-fide travel plans to return to South Africa, or to a different onward destination.
+
+## Requirement 5 - Confirmed Accommodation`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
