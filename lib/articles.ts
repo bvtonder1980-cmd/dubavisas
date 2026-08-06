@@ -140,7 +140,12 @@ They require a recent colour passport-style photo against a white background, wi
 
 The photo requirements are so detailed, that we wrote a whole article about it. We strongly urge you to read our [travel guide on photo requirements](/articles/dubai-visa-photo-requirements).
 
-## Requirement 4 - Return / Onward flight ticket`,
+## Requirement 4 - Return / Onward flight ticket
+A copy of your confirmed return or onward flight ticket, showing that you'll leave the UAE within your visa validity period.
+
+These must be confirmed e-tickets. Flight quotes or flight itineraries, will simply not work.
+
+The confirmed tickets help to indicate to UAE immigration that you will leave before your visa validity period expires.`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
