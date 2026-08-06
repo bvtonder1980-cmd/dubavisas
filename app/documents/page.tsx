@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { CtaBand } from "@/components/cta-band"
 import { BreadcrumbSchema } from "@/components/json-ld"
-import { FileText, Camera, Plane, Baby, CheckCircle2, XCircle } from "lucide-react"
+import { FileText, Copy, Camera, Plane, BedDouble, Baby, CheckCircle2, XCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Dubai Visa Document & Photo Requirements (2026)",
@@ -16,21 +16,31 @@ const documents = [
   {
     icon: FileText,
     title: "Valid passport",
-    body: "A clear colour scan of your passport's photo page. Your passport must be valid for at least 6 months from your date of travel.",
+    body: "Your passport must be valid for at least 6 months from your date of travel, with at least one blank page for entry stamps.",
+  },
+  {
+    icon: Copy,
+    title: "Copy of your passport cover page",
+    body: "A clear colour copy of the front and back of your passport's cover page, so all details are fully legible.",
   },
   {
     icon: Camera,
-    title: "Passport photo",
+    title: "Clear colour passport photo",
     body: "A recent colour passport-style photo against a white background, with your full face visible and no glasses or head covering (except religious).",
   },
   {
     icon: Plane,
-    title: "Return / onward ticket",
+    title: "Return / onward flight ticket",
     body: "A copy of your confirmed return or onward flight ticket showing you'll leave the UAE within your visa validity.",
   },
   {
+    icon: BedDouble,
+    title: "Confirmed accommodation",
+    body: "Proof of where you'll stay — a confirmed hotel booking, or the address and details of the host if you're staying with family or friends.",
+  },
+  {
     icon: Baby,
-    title: "For minors",
+    title: "For minors under 18",
     body: "Children typically require an unabridged birth certificate listing both parents, plus parental consent where applicable.",
   },
 ]
