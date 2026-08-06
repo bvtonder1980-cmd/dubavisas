@@ -76,7 +76,12 @@ export default function DocumentsPage() {
             <SectionHeading
               eyebrow="Checklist"
               title="Your document checklist"
-              description="Have these ready before you start and your application will take just a few minutes."
+              description={
+                <>
+                  Have these ready before you start and your application will take just a few minutes.
+                  <br />
+                </>
+              }
             />
             <div className="grid gap-6 md:grid-cols-2">
               {documents.map((doc) => (
