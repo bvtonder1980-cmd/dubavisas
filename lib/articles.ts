@@ -164,6 +164,7 @@ Children typically require an unabridged birth certificate listing both parents,
 
 Travelling with minors can become quite complicated, so we urge you to read our article, [Travelling with minors](/articles/dubai-visas-for-children-and-families).
 
+## In closing
 Paying close attention to the requirement details will greatly improve your visa application's chances of a successful outcome.`,
   },
   {
