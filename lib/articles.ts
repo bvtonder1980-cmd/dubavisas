@@ -133,7 +133,12 @@ You can simply open your passport and copy the cover, clearly showing the South 
 
 The copy also needs to be of good quality and easily readable.
 
-## Requirement 3 - Clear colour passport photo`,
+## Requirement 3 - Clear colour passport photo
+The UAE has some of the strictest photo requirements in the world.
+
+They require a recent colour passport-style photo against a white background, with your full face visible and no glasses or head covering (except religious).
+
+The photo requirements are so detailed, that we wrote a whole article about it. We strongly urge you to read our [travel guide on photo requirements](/articles/dubai-visa-photo-requirements).`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
