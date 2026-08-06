@@ -131,7 +131,9 @@ Although this may seem like a strange request, the UAE does in fact require a co
 
 You can simply open your passport and copy the cover, clearly showing the South African coat of arms on the cover.
 
-The copy also needs to be of good quality and easily readable.`,
+The copy also needs to be of good quality and easily readable.
+
+## Requirement 3 - Clear colour passport photo`,
   },
   {
     slug: "how-long-does-a-dubai-visa-take",
