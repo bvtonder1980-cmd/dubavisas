@@ -3,7 +3,7 @@ import { PageHeader } from "@/components/page-header"
 import { Section, Container, SectionHeading } from "@/components/ui/layout"
 import { CtaBand } from "@/components/cta-band"
 import { BreadcrumbSchema } from "@/components/json-ld"
-import { FileText, Copy, Camera, Plane, BedDouble, Baby, CheckCircle2, XCircle } from "lucide-react"
+import { FileText, Copy, Camera, Plane, BedDouble, Baby } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Dubai Visa Document & Photo Requirements (2026)",
@@ -43,22 +43,6 @@ const documents = [
     title: "For minors under 18",
     body: "Children typically require an unabridged birth certificate listing both parents, plus parental consent where applicable.",
   },
-]
-
-const photoDo = [
-  "Recent (taken within the last 6 months)",
-  "Plain white or light background",
-  "Full face, eyes open, neutral expression",
-  "Good lighting with no shadows",
-  "High resolution and in focus",
-]
-
-const photoDont = [
-  "No selfies or cropped group photos",
-  "No glasses, hats or filters",
-  "No busy or coloured backgrounds",
-  "No blurry or low-resolution images",
-  "No heavy shadows across the face",
 ]
 
 export default function DocumentsPage() {
@@ -107,44 +91,6 @@ export default function DocumentsPage() {
               Requirements can vary by nationality and visa type. We&apos;ll confirm exactly what you need during your
               application.
             </p>
-          </Container>
-        </Section>
-
-        <Section className="bg-secondary">
-          <Container>
-            <SectionHeading
-              eyebrow="Photo guide"
-              title="Passport photo requirements"
-              description="A non-compliant photo is the most common reason for delays. Use this guide to get it right the first time."
-            />
-            <div className="grid gap-6 md:grid-cols-2">
-              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-                <h3 className="flex items-center gap-2 font-serif text-lg font-semibold text-foreground">
-                  <CheckCircle2 className="h-5 w-5 text-success" aria-hidden="true" /> Do
-                </h3>
-                <ul className="mt-4 flex flex-col gap-3">
-                  {photoDo.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                      <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-success" aria-hidden="true" />
-                      <span className="leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm">
-                <h3 className="flex items-center gap-2 font-serif text-lg font-semibold text-foreground">
-                  <XCircle className="h-5 w-5 text-danger" aria-hidden="true" /> Don&apos;t
-                </h3>
-                <ul className="mt-4 flex flex-col gap-3">
-                  {photoDont.map((item) => (
-                    <li key={item} className="flex items-start gap-2 text-sm text-foreground">
-                      <XCircle className="mt-0.5 h-4 w-4 shrink-0 text-danger" aria-hidden="true" />
-                      <span className="leading-relaxed">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
           </Container>
         </Section>
 
