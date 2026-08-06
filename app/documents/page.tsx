@@ -85,6 +85,13 @@ export default function DocumentsPage() {
                   </div>
                 </div>
               ))}
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm md:col-span-2">
+                <h3 className="font-serif text-lg font-semibold text-foreground">Additional information</h3>
+                <p className="mt-1 text-pretty leading-relaxed text-muted-foreground">
+                  {/* [PLACEHOLDER] Populate this full-width card with additional details */}
+                  Add your text here.
+                </p>
+              </div>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
               {/* [PLACEHOLDER] Confirm your full, current document list and any nationality-specific requirements */}
