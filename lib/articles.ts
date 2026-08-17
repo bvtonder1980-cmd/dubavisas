@@ -1793,7 +1793,7 @@ Many experienced travellers consider travel insurance an essential part of every
     excerpt:
       "A clear breakdown of Dubai visa costs for South Africans in Rand, including the different visa types, what's included, and how to budget for your trip.",
     category: "Visa Requirements",
-    image: "/images/articles/money-getting-around.png",
+    image: "/images/articles/woman-of-his-workmanship.png",
     author: "Dubai Visas Online",
     datePublished: "2026-04-24",
     readingMinutes: 5,
