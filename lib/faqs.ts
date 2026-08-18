@@ -89,7 +89,7 @@ export const faqs: FaqItem[] = [
     category: "Payments & Policies",
     question: "How much does a Dubai visa cost?",
     answer:
-      "Prices depend on the visa type and validity. You can see current pricing for every visa on our pricing section and visa types page. Children may qualify for reduced rates.\n\nSingle Entry Visas start from R2,499, while Multiple Entry Visas start from R4,299.",
+      "Prices depend on the visa type and validity. You can see current pricing for every visa on our pricing section and visa types page. Children may qualify for reduced rates.\n\nSingle Entry Visas start from R2,299, while Multiple Entry Visas start from R4,299.",
   },
   {
     category: "Payments & Policies",

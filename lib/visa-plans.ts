@@ -27,6 +27,20 @@ export const currencyCode = "ZAR"
 
 export const visaPlans: VisaPlan[] = [
   {
+    slug: "96-hour-single-entry",
+    title: "96 Hour Single Entry Visa",
+    shortName: "96 Hour Single",
+    price: "2,299",
+    minorPrice: "1,049",
+    validity: "96 Hours",
+    processing: "48–96 hours",
+    entry: "single",
+    description:
+      "A short transit visa for quick stopovers and layovers in the UAE — ideal when you have a few days between connecting flights.",
+    bestFor: "Stopovers & layovers",
+    highlights: ["Single entry", "Stay up to 96 hours", "Fly any airline", "Perfect for transit"],
+  },
+  {
     slug: "14-day-single-entry",
     title: "14 Day Single Entry Visa",
     shortName: "14 Day Single",
