@@ -10,7 +10,7 @@ export function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-dubai-night.jpg"
+          src="/images/hero-dubai-night.png"
           alt="Dubai Business Bay skyline at night with illuminated skyscrapers reflecting on the water"
           fill
           priority
