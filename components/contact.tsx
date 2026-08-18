@@ -85,7 +85,7 @@ export function Contact() {
           </div>
 
           {/* Form */}
-          <div className="rounded-[4px] border border-border bg-card p-6 shadow-sm sm:p-8">
+          <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
             <h3 className="font-serif text-xl font-semibold text-foreground">Send us a message</h3>
             <form onSubmit={handleSubmit} className="mt-6 space-y-4">
               <div className="grid gap-4 sm:grid-cols-2">

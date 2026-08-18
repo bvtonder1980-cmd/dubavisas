@@ -5,7 +5,7 @@ type ButtonVariant = "primary" | "dark" | "outline" | "ghost"
 type ButtonSize = "sm" | "md" | "lg"
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-[4px] font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-60 disabled:pointer-events-none"
+  "inline-flex items-center justify-center gap-2 rounded-full font-medium transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-60 disabled:pointer-events-none"
 
 const variants: Record<ButtonVariant, string> = {
   primary: "bg-brand text-brand-foreground hover:bg-brand/90",

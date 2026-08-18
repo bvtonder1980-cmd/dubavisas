@@ -6,7 +6,7 @@ import { type FaqItem } from "@/lib/faqs"
 export function FaqAccordion({ items, className }: { items: FaqItem[]; className?: string }) {
   return (
     <div
-      className={`divide-y divide-border overflow-hidden rounded-[4px] border border-border bg-card${
+      className={`divide-y divide-border overflow-hidden rounded-2xl border border-border bg-card${
         className ? ` ${className}` : ""
       }`}
     >

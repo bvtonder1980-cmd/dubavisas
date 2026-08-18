@@ -51,7 +51,7 @@ export function WhyUs() {
         />
         <div className="mt-[30px] grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {reasons.map((r) => (
-            <div key={r.title} className="flex flex-col rounded-[4px] border border-border bg-card p-6 shadow-sm">
+            <div key={r.title} className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
               <span className="mb-4 flex h-16 w-16 items-center justify-center rounded-xl bg-accent/15">
                 <r.icon className="h-8 w-8 text-accent" aria-hidden="true" />
               </span>

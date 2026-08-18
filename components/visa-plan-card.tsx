@@ -5,7 +5,7 @@ import { type VisaPlan, currencySymbol } from "@/lib/visa-plans"
 export function VisaPlanCard({ plan }: { plan: VisaPlan }) {
   return (
     <div
-      className={`relative flex flex-col rounded-[4px] border bg-card p-6 shadow-sm transition-shadow hover:shadow-md ${
+      className={`relative flex flex-col rounded-2xl border bg-card p-6 shadow-sm transition-shadow hover:shadow-md ${
         plan.popular ? "border-accent ring-1 ring-accent" : "border-border"
       }`}
     >

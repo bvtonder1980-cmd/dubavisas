@@ -76,7 +76,7 @@ export default function DocumentsPage() {
             />
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {documents.map((doc) => (
-                <div key={doc.title} className="flex gap-4 rounded-[4px] border border-border bg-card p-6 shadow-sm">
+                <div key={doc.title} className="flex gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/15">
                     <doc.icon className="h-6 w-6 text-accent" aria-hidden="true" />
                   </span>
@@ -86,7 +86,7 @@ export default function DocumentsPage() {
                   </div>
                 </div>
               ))}
-              <div className="rounded-[4px] border border-border bg-card p-6 shadow-sm md:col-span-2">
+              <div className="rounded-2xl border border-border bg-card p-6 shadow-sm md:col-span-2">
                 <h3 className="font-serif text-lg font-semibold text-foreground">Want the finer details?</h3>
                 <p className="mt-1 text-pretty leading-relaxed text-muted-foreground">
                   Each of these documents comes with its own set of rules that can make or break your application. For a

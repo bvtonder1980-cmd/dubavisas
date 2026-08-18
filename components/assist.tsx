@@ -113,7 +113,7 @@ export function Assist() {
           </p>
         </div>
 
-        <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-[4px] border border-border bg-surface shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]">
+        <div className="mx-auto mt-12 max-w-3xl overflow-hidden rounded-3xl border border-border bg-surface shadow-[0_30px_80px_-30px_rgba(0,0,0,0.7)]">
           {/* top trust strip */}
           <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 border-b border-border bg-surface-muted/60 px-6 py-3 text-xs font-medium text-ink-muted sm:gap-x-6">
             <span className="flex items-center gap-1.5">
@@ -199,13 +199,13 @@ export function Assist() {
               {ready ? (
                 <Link
                   href={`/apply${query}`}
-                  className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-[4px] bg-brand px-8 text-base font-medium text-brand-foreground transition-colors hover:bg-brand/90"
+                  className="inline-flex h-14 w-full items-center justify-center gap-2 rounded-full bg-brand px-8 text-base font-medium text-brand-foreground transition-colors hover:bg-brand/90"
                 >
                   Continue to application
                   <ArrowRight className="h-4 w-4" />
                 </Link>
               ) : (
-                <div className="flex h-14 w-full items-center justify-center rounded-[4px] bg-surface-muted px-8 text-sm font-medium text-ink-muted">
+                <div className="flex h-14 w-full items-center justify-center rounded-full bg-surface-muted px-8 text-sm font-medium text-ink-muted">
                   Select your citizenship and residence to continue
                 </div>
               )}

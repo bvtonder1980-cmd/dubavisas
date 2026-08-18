@@ -58,7 +58,7 @@ export function LegalPage({
             ))}
           </div>
 
-          <p className="mt-12 rounded-[4px] border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-12 rounded-2xl border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
             This document contains placeholder wording for demonstration. Please replace it with policies reviewed by
             your own legal advisor before going live.
           </p>

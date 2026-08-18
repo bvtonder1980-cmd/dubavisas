@@ -83,7 +83,7 @@ export function Reviews() {
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {testimonials.map((t) => (
-            <figure key={t.name} className="flex flex-col rounded-[4px] border border-border bg-card p-6 shadow-sm">
+            <figure key={t.name} className="flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm">
               <Stars rating={t.rating} />
               <figcaption className="mt-3 font-serif text-base font-semibold text-foreground">{t.title}</figcaption>
               <blockquote className="mt-2 flex-1 text-pretty text-sm leading-relaxed text-muted-foreground">
@@ -98,7 +98,7 @@ export function Reviews() {
         </div>
 
         {/* Live Trustpilot widget for real-time social proof */}
-        <div className="mt-12 overflow-hidden rounded-[4px] border border-border bg-card p-2">
+        <div className="mt-12 overflow-hidden rounded-2xl border border-border bg-card p-2">
           <iframe
             title="Customer reviews powered by Trustpilot"
             loading="lazy"

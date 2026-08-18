@@ -38,7 +38,7 @@ export function HowItWorks() {
           {steps.map((step, i) => (
             <li
               key={step.title}
-              className="relative flex flex-col rounded-[4px] border border-border bg-card p-6 shadow-sm"
+              className="relative flex flex-col rounded-2xl border border-border bg-card p-6 shadow-sm"
             >
               <span className="absolute right-5 top-5 font-serif text-3xl font-semibold text-accent/30">
                 {String(i + 1).padStart(2, "0")}
