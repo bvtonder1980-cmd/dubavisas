@@ -51,7 +51,7 @@ export default function TermsPage() {
         {
           heading: "Card acquiring and security",
           paragraphs: [
-            "Card transactions will be acquired for Dubai Visas Online by TravelPay (Pty) Ltd who is an approved third-party payment gateway. TravelPay uses very strict forms of encryption and no financial details are stored on the Dubai Visas Online website. Users may got to http://www.travelpay.co.za to view their security certificate and security policy.",
+            "Card transactions will be acquired for Dubai Visas Online by TravelPay (Pty) Ltd who is an approved third-party payment gateway. TravelPay uses very strict forms of encryption and no financial details are stored on the Dubai Visas Online website. Users may got to http://www.travelpay.com to view their security certificate and security policy.",
           ],
         },
         {
