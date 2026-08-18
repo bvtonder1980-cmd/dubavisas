@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { ArrowRight, CheckCircle2, Loader2, LogIn, UserPlus } from "lucide-react"
 import { Field, TextInput } from "@/components/apply/fields"
 import { registerAccount, loginAccount } from "@/lib/auth"
@@ -242,7 +243,17 @@ export function StepAccount({
             className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-brand focus:ring-brand/30"
           />
           <span className="text-sm leading-relaxed text-muted-foreground">
-            I accept the Dubai Visas Online Terms of Use and Disclaimer.
+            I accept the Dubai Visas Online{" "}
+            <Link
+              href="/terms"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={(e) => e.stopPropagation()}
+              className="font-medium text-accent underline underline-offset-2 hover:text-accent/80"
+            >
+              Terms of Use and Disclaimer
+            </Link>
+            .
           </span>
         </label>
         {errors.terms ? <p className="mt-1.5 text-sm font-medium text-danger">{errors.terms}</p> : null}
