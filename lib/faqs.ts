@@ -78,7 +78,11 @@ export const faqs: FaqItem[] = [
     category: "Visa Types & Validity",
     question: "Can I extend my visa once I'm in the UAE?",
     answer:
-      "Some visa types can be extended from within the UAE, subject to immigration rules and additional fees. [PLACEHOLDER: confirm which visas you can extend and the cost.]",
+      "Yes, you can extend your visa. If you are approaching your visa expiry date and need more time in the UAE, our team can guide you through the extension process and make sure everything is arranged correctly before your current visa lapses and you incur fines. For more information, read our travel guide, \"Dubai Visa Overstay Fines, Grace Periods & Extensions\".",
+    link: {
+      href: "/articles/dubai-visa-overstay-fines-grace-period",
+      label: "Read the guide: Dubai Visa Overstay Fines, Grace Periods & Extensions",
+    },
   },
   // Payments & policies
   {
