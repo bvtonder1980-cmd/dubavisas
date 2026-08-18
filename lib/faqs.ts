@@ -101,7 +101,7 @@ export const faqs: FaqItem[] = [
     category: "Payments & Policies",
     question: "What is your refund and cancellation policy?",
     answer:
-      "Our cancellation and refund terms depend on the stage of your application. Full details are available on our cancellation policy page. [PLACEHOLDER: confirm policy details.]",
+      "Our cancellation and refund terms depend on the stage of your application. Full details are available on our cancellation policy page.",
   },
   {
     category: "Payments & Policies",
