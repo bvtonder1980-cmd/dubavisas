@@ -58,7 +58,10 @@ export function ApplyWizard({
         if (!a.passportNumber.trim()) next[`${a.id}.passportNumber`] = "Required"
         if (!isValidCountry(a.nationality)) next[`${a.id}.nationality`] = "Required"
         if (!a.dateOfBirth) next[`${a.id}.dateOfBirth`] = "Required"
+        if (!a.passportIssueDate) next[`${a.id}.passportIssueDate`] = "Required"
         if (!a.passportExpiry) next[`${a.id}.passportExpiry`] = "Required"
+        else if (a.passportIssueDate && a.passportExpiry < a.passportIssueDate)
+          next[`${a.id}.passportExpiry`] = "After issue date"
         if (!a.travelStartDate) next[`${a.id}.travelStartDate`] = "Required"
         if (!a.arrivalDate) next[`${a.id}.arrivalDate`] = "Required"
         if (!a.departureDate) next[`${a.id}.departureDate`] = "Required"

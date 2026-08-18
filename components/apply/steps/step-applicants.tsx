@@ -237,6 +237,16 @@ export function StepApplicants({
                   />
                 </Field>
 
+                <Field label="Passport issue date" htmlFor={`${applicant.id}-issue`} error={err("passportIssueDate")}>
+                  <TextInput
+                    id={`${applicant.id}-issue`}
+                    type="date"
+                    value={applicant.passportIssueDate}
+                    onChange={(v) => updateApplicant(applicant.id, { passportIssueDate: v })}
+                    invalid={Boolean(err("passportIssueDate"))}
+                  />
+                </Field>
+
                 <Field label="Passport expiry" htmlFor={`${applicant.id}-exp`} error={err("passportExpiry")}>
                   <TextInput
                     id={`${applicant.id}-exp`}

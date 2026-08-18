@@ -63,6 +63,7 @@ export type Applicant = {
   nationality: string
   dateOfBirth: string // ISO YYYY-MM-DD
   sex: "M" | "F" | "X" | ""
+  passportIssueDate: string // ISO YYYY-MM-DD
   passportExpiry: string // ISO YYYY-MM-DD
   // Travel (per applicant)
   travelStartDate: string // ISO — intended travel start
@@ -105,6 +106,7 @@ export function makeApplicant(
     nationality: prefill?.nationality ?? "",
     dateOfBirth: "",
     sex: "",
+    passportIssueDate: "",
     passportExpiry: "",
     travelStartDate: "",
     arrivalDate: prefill?.arrivalDate ?? "",
