@@ -18,7 +18,7 @@ export const faqs: FaqItem[] = [
     category: "Eligibility & Requirements",
     question: "Do I need a visa to travel to Dubai?",
     answer:
-      "Most non-GCC nationalities require a visa to enter the UAE. South African passport holders, for example, must arrange a tourist or transit visa before travelling. We can confirm the requirement for your nationality during the application. [PLACEHOLDER: confirm current policy.]",
+      "South African passport holders must arrange a visit (tourism / business) or transit visa before travelling. We also assist other nationalities that require a visa prior to arrival. We can confirm the requirement for your nationality during the application.",
   },
   {
     category: "Eligibility & Requirements",
