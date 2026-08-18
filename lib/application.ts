@@ -21,12 +21,10 @@ export type Title = (typeof TITLE_OPTIONS)[number]
 
 /** Common reasons for visiting the UAE. */
 export const REASON_OPTIONS = [
-  "Tourism",
-  "Visiting family / friends",
   "Business",
+  "Tourism (Staying in a Hotel)",
+  "Tourism (Visiting Friends/Family)",
   "Transit",
-  "Medical",
-  "Other",
 ] as const
 export type ReasonForVisit = (typeof REASON_OPTIONS)[number]
 
