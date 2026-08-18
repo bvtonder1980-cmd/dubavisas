@@ -48,7 +48,7 @@ export function Hero() {
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="#apply" variant="primary" size="lg">
+              <ButtonLink href="#apply" variant="primary" size="lg" className="!rounded-[4px]">
                 Start your application
                 <ArrowRight className="h-4 w-4" />
               </ButtonLink>
@@ -56,7 +56,7 @@ export function Hero() {
                 href="#prices"
                 variant="outline"
                 size="lg"
-                className="border-ink-foreground text-ink-foreground hover:bg-ink-foreground hover:text-ink"
+                className="!rounded-[4px] border-ink-foreground text-ink-foreground hover:bg-ink-foreground hover:text-ink"
               >
                 View pricing
               </ButtonLink>
