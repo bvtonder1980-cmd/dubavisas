@@ -17,49 +17,59 @@ export default function TermsPage() {
       lastUpdated="January 2026"
       sections={[
         {
-          heading: "1. Our service",
+          heading: "Terms of Use & Disclaimer",
           paragraphs: [
-            "We provide a visa facilitation service that assists travellers in applying for UAE tourist and transit visas. We are an independent agency and are not a government department. The final decision on any visa application rests solely with the relevant UAE authorities.",
+            "Dubai Visas Online is a registered business in the Republic Of South Africa and provides visa acquisition services on behalf of travelers wishing to obtain a visa for travel to the UAE.",
+            "By using our website and paying for our services, you agree to the below terms and conditions.",
+            "Dubai Visas Online has no right to issue visas. The right to issue or deny your visa to the UAE rests solely with the UAE Ministry of Interior. Therefore should your visa be denied, or not processed in time, Dubai Visas Online will not be held liable for any loss or damage whatsoever that may be the result of your visa being denied or not issued in time for travel.",
+            "The UAE Ministry of Interior advises against making unalterable travel plans until such time that your visa has been approved. Should you make unalterable travel plans (such as booking, paying and confirming an airline ticket), you do so at your own risk and neither the UAE Ministry of Interior nor Dubai Visas Online will be held liable for any costs in changing the travel plans made before obtaining a visa.",
+            "Payment can be made online (card or instant EFT) or via manual EFT. Should payment be made in the form of a manual EFT, the proof of payment must be emailed to us, or uploaded to your profile on our website, before we start the visa application process. Should you fail to email or upload your proof of payment in due time, and this causes your visa application to be submitted late, Dubai Visas Online will not be held liable for any damage or losses arising as a result of the late submission. We only start the application and document preparation process once we receive payment.",
+            "Although every effort is made to ensure your visa application is successful, we cannot guarantee that the UAE Ministry of Interior will grant your visa.",
+            "Dubai Visas Online is a service provider through which your visa application will be prepared and submitted to the UAE Ministry of Interior on your behalf.",
+            "Should we request additional documents from you and you fail to provide them, we will submit your documents as is, however this could have a detrimental effect on the issuance of your visa.",
+            "Please note that Dubai Visas Online will always do our best to get your visa on time and approved, however should the UAE Ministry of Interior decide to delay your visa for any reason whatsoever or deny your visa, we will not be held liable in any way whatsoever.",
           ],
         },
         {
-          heading: "2. Your responsibilities",
-          paragraphs: ["By using our service, you agree to:"],
-          bullets: [
-            "Provide accurate, complete and truthful information and documents.",
-            "Ensure your passport is valid for at least 6 months from your date of travel.",
-            "Review all details before submission, as errors may lead to rejection.",
-            "Comply with all UAE immigration laws during your stay.",
+          heading: "Return and Refunds Policy",
+          paragraphs: [
+            "The provision of services by Dubai Visas Online is subject to availability. In cases of unavailability, or inability of Dubai Visas Online to fulfill the agreed upon service, Dubai Visas Online will refund the client in full within 30 days.",
           ],
         },
         {
-          heading: "3. Fees and payment",
+          heading: "Customer Privacy Policy",
           paragraphs: [
-            "Our fees include government charges and our service charge, as displayed at the time of application. Payment is required in full before we submit your application. All prices are shown in the currency stated at checkout.",
+            "Dubai Visas Online shall take all reasonable steps to protect the personal information of users. For the purpose of this clause, \u201CPersonal Information\u201D shall be defined as detailed in the Promotion of Access to Information Act 2 of 2000 (PAIA). The PAIA may be downloaded from: http://www.polity.org.za/attachment.php?aa_id=3569.",
           ],
         },
         {
-          heading: "4. Processing times",
+          heading: "Payment options accepted",
           paragraphs: [
-            "Stated processing times are estimates only and are not guaranteed. Delays may occur due to public holidays, additional checks or factors outside our control. We recommend applying well ahead of your travel date.",
+            "Payment may be made online via card (Visa, MasterCard, Diners, American Express) and instant EFT, or by a manual bank transfer into the Dubai Visas Online bank account - the details of which will be provided in your application process.",
           ],
         },
         {
-          heading: "5. Approvals and rejections",
+          heading: "Card acquiring and security",
           paragraphs: [
-            "Visa approval is at the sole discretion of the UAE authorities. We cannot guarantee approval. Where an application is rejected for reasons within our control, our refund and resubmission policy will apply as set out in our Cancellation Policy.",
+            "Card transactions will be acquired for Dubai Visas Online by TravelPay (Pty) Ltd who is an approved third-party payment gateway. TravelPay uses very strict forms of encryption and no financial details are stored on the Dubai Visas Online website. Users may got to http://www.travelpay.co.za to view their security certificate and security policy.",
           ],
         },
         {
-          heading: "6. Limitation of liability",
+          heading: "Customer details seperate from card details",
           paragraphs: [
-            "To the maximum extent permitted by law, our liability is limited to the service fee paid. We are not liable for losses arising from rejected applications, travel disruption, or delays caused by third parties.",
+            "Customer details will be stored by Dubai Visas Online seperately from card details which are entered by the client on TravelPay's secure site. For more detail on TravelPay refer to http://www.travelpay.co.za.",
           ],
         },
         {
-          heading: "7. Contact",
+          heading: "Merchant Outlet country and transaction currency",
           paragraphs: [
-            "If you have any questions about these terms, please contact our support team before applying.",
+            "The merchant outlet country at the time of presenting payment options to the cardholder is South Africa. Transaction currency is South African Rand (ZAR).",
+          ],
+        },
+        {
+          heading: "Responsibility",
+          paragraphs: [
+            "Dubai Visas Online takes responsibility for all aspects relating to the transaction including sale of goods and services sold on this website, customer service and support, dispute resolution and delivery of goods and services.",
           ],
         },
       ]}

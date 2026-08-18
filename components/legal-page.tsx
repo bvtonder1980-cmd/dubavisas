@@ -1,3 +1,4 @@
+import type { ReactNode } from "react"
 import { PageHeader } from "@/components/page-header"
 import { Container, Section } from "@/components/ui/layout"
 import { CtaBand } from "@/components/cta-band"
@@ -6,6 +7,38 @@ export type LegalSection = {
   heading: string
   paragraphs?: string[]
   bullets?: string[]
+}
+
+/**
+ * Renders inline markdown links `[label](url)` and bare URLs as clickable,
+ * accessible anchors while leaving plain text untouched.
+ */
+function renderInline(text: string): ReactNode[] {
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)|(https?:\/\/[^\s]*[^\s.,;:!?)])/g
+  const nodes: ReactNode[] = []
+  let lastIndex = 0
+  let match: RegExpExecArray | null
+  let key = 0
+
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > lastIndex) nodes.push(text.slice(lastIndex, match.index))
+    const href = match[2] ?? match[3]
+    const label = match[1] ?? match[3]
+    nodes.push(
+      <a
+        key={key++}
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-accent underline underline-offset-2 hover:text-accent/80"
+      >
+        {label}
+      </a>,
+    )
+    lastIndex = pattern.lastIndex
+  }
+  if (lastIndex < text.length) nodes.push(text.slice(lastIndex))
+  return nodes
 }
 
 export function LegalPage({
@@ -41,7 +74,7 @@ export function LegalPage({
                 <h2 className="font-serif text-2xl font-semibold text-foreground">{section.heading}</h2>
                 {section.paragraphs?.map((p, i) => (
                   <p key={i} className="leading-relaxed text-muted-foreground">
-                    {p}
+                    {renderInline(p)}
                   </p>
                 ))}
                 {section.bullets ? (
@@ -57,11 +90,6 @@ export function LegalPage({
               </section>
             ))}
           </div>
-
-          <p className="mt-12 rounded-2xl border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
-            This document contains placeholder wording for demonstration. Please replace it with policies reviewed by
-            your own legal advisor before going live.
-          </p>
         </Container>
       </Section>
 
