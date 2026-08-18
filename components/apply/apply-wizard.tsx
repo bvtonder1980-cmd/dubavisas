@@ -6,6 +6,7 @@ import { ArrowLeft, ArrowRight, Check, PartyPopper } from "lucide-react"
 import {
   makeInitialState,
   submitApplication,
+  requiredDocsFor,
   type ApplicationState,
 } from "@/lib/application"
 import { StepAccount } from "@/components/apply/steps/step-account"
@@ -78,11 +79,9 @@ export function ApplyWizard({
 
     if (current === 2) {
       state.applicants.forEach((a) => {
-        if (!a.docs.passportScan) next[`${a.id}.passportScan`] = "Passport page required"
-        if (!a.docs.passportPhoto) next[`${a.id}.passportPhoto`] = "Photo required"
-        if (a.type === "minor" && !a.docs.birthCertificate) {
-          next[`${a.id}.birthCertificate`] = "Birth certificate required"
-        }
+        requiredDocsFor(a).forEach((req) => {
+          if (!a.docs[req.key]) next[`${a.id}.${req.key}`] = `${req.label} required`
+        })
       })
     }
 

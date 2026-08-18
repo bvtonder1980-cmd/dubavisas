@@ -40,12 +40,26 @@ export type UploadedDoc = {
   previewUrl?: string
 }
 
-export type ApplicantDocs = {
-  passportScan?: UploadedDoc
-  passportPhoto?: UploadedDoc
-  returnTicket?: UploadedDoc
-  accommodation?: UploadedDoc
-  birthCertificate?: UploadedDoc // minors only
+/** Every document slot an applicant can have. Which ones are REQUIRED is
+ *  decided per applicant by `requiredDocsFor()` based on age + reason. */
+export type DocKey =
+  | "passportBiodata"
+  | "passportCover"
+  | "passportPhoto"
+  | "flightTicket"
+  | "birthCertificate" // under 18
+  | "hotelVoucher" // Business or Tourism (Staying in a Hotel)
+  | "hostInvitation" // Tourism (Visiting Friends/Family)
+  | "hostResidencyVisa" // Tourism (Visiting Friends/Family)
+  | "hostRentalOrDeed" // Tourism (Visiting Friends/Family)
+
+export type ApplicantDocs = Partial<Record<DocKey, UploadedDoc>>
+
+/** A single required-document rule for an applicant. */
+export type DocRequirement = {
+  key: DocKey
+  label: string
+  hint: string
 }
 
 export type Applicant = {
@@ -135,6 +149,102 @@ export function makeInitialState(defaults?: {
     ],
     consent: false,
   }
+}
+
+/** Age in whole years from an ISO date of birth, or null if not parseable. */
+export function ageFromDob(dob: string): number | null {
+  if (!dob) return null
+  const d = new Date(dob)
+  if (Number.isNaN(d.getTime())) return null
+  const now = new Date()
+  let age = now.getFullYear() - d.getFullYear()
+  const monthDiff = now.getMonth() - d.getMonth()
+  if (monthDiff < 0 || (monthDiff === 0 && now.getDate() < d.getDate())) age -= 1
+  return age
+}
+
+/** True when the applicant is under 18. Uses the entered date of birth when
+ *  available, otherwise falls back to the adult/minor toggle. */
+export function isMinorApplicant(a: Applicant): boolean {
+  const age = ageFromDob(a.dateOfBirth)
+  return age !== null ? age < 18 : a.type === "minor"
+}
+
+/**
+ * SINGLE SOURCE OF TRUTH for required documents. The Documents step renders
+ * one upload box per item returned here, and wizard validation enforces the
+ * same list — so requirement rules live in exactly one place and port cleanly
+ * to the server later.
+ *
+ * Rules:
+ *  - Everyone: passport biodata page, passport cover, passport photo, flight ticket.
+ *  - Under 18: unabridged birth certificate.
+ *  - Business OR Tourism (Staying in a Hotel): hotel confirmation voucher.
+ *  - Tourism (Visiting Friends/Family): host invitation letter, host residency
+ *    visa, host rental agreement or title deed.
+ *  - Transit: no accommodation documents.
+ */
+export function requiredDocsFor(a: Applicant): DocRequirement[] {
+  const docs: DocRequirement[] = [
+    {
+      key: "passportBiodata",
+      label: "Passport Biodata Page Copy",
+      hint: "Colour copy of the passport photo / biodata page.",
+    },
+    {
+      key: "passportCover",
+      label: "Passport Cover Copy",
+      hint: "Copy of the front cover of the passport.",
+    },
+    {
+      key: "passportPhoto",
+      label: "Passport Photo",
+      hint: "Recent colour photo on a plain background.",
+    },
+    {
+      key: "flightTicket",
+      label: "Flight Ticket / Itinerary",
+      hint: "Booking showing arrival to and departure from the UAE.",
+    },
+  ]
+
+  if (isMinorApplicant(a)) {
+    docs.push({
+      key: "birthCertificate",
+      label: "Unabridged Birth Certificate",
+      hint: "Required for all travellers under 18.",
+    })
+  }
+
+  const reason = a.reasonForVisit
+  if (reason === "Business" || reason === "Tourism (Staying in a Hotel)") {
+    docs.push({
+      key: "hotelVoucher",
+      label: "Hotel Confirmation Voucher",
+      hint: "Hotel booking covering your full stay, showing every traveller's name.",
+    })
+  } else if (reason === "Tourism (Visiting Friends/Family)") {
+    docs.push(
+      {
+        key: "hostInvitation",
+        label: "Host Invitation Letter",
+        hint: "Signed invitation letter from your UAE host.",
+      },
+      {
+        key: "hostResidencyVisa",
+        label: "Host Residency Visa",
+        hint: "Copy of your host's UAE residency visa.",
+      },
+      {
+        key: "hostRentalOrDeed",
+        label: "Host Rental Agreement or Title Deed",
+        hint: "Your host's tenancy contract (Ejari) or property title deed.",
+      },
+    )
+  }
+  // Transit: no accommodation documents required.
+
+  return docs
 }
 
 /** Parse a "2,499" style price string into a number. */
