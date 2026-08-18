@@ -60,7 +60,7 @@ export default function AboutPage() {
         breadcrumbs={[{ name: "Home", href: "/" }, { name: "About" }]}
       />
 
-      <Section className="bg-background">
+      <Section className="bg-background pt-8 sm:pt-10 lg:pt-12">
         <Container className="max-w-3xl">
           <h2 className="mb-6 font-serif text-3xl font-semibold text-foreground">Our Story</h2>
           <div className="flex flex-col gap-5 text-pretty leading-relaxed text-muted-foreground">
