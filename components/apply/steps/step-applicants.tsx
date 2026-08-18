@@ -2,9 +2,17 @@
 
 import { UserPlus, Trash2, User } from "lucide-react"
 import { countries } from "@/lib/countries"
+import { visaPlans, currencySymbol } from "@/lib/visa-plans"
 import { Field, SelectInput, TextInput } from "@/components/apply/fields"
 import { PassportScanner } from "@/components/apply/passport-scanner"
-import { makeApplicant, type Applicant, type ApplicationState } from "@/lib/application"
+import {
+  makeApplicant,
+  applicantPrice,
+  TITLE_OPTIONS,
+  REASON_OPTIONS,
+  type Applicant,
+  type ApplicationState,
+} from "@/lib/application"
 import type { MrzResult } from "@/lib/mrz"
 
 /** Map an ICAO 3-letter nationality code to our 2-letter country list. */
@@ -66,7 +74,8 @@ export function StepApplicants({
         <div>
           <h2 className="font-serif text-2xl font-semibold text-foreground">Applicants</h2>
           <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-            Add everyone travelling on this application. Scan each passport to fill the details automatically.
+            Add everyone travelling on this application. Each traveller can choose their own visa and travel
+            dates. Scan a passport to fill the identity details automatically.
           </p>
         </div>
       </div>
@@ -74,6 +83,8 @@ export function StepApplicants({
       <div className="mt-6 flex flex-col gap-6">
         {state.applicants.map((applicant, index) => {
           const err = (field: string) => errors[`${applicant.id}.${field}`]
+          const isAdult = applicant.type === "adult"
+          const unitPrice = applicantPrice(applicant)
           return (
             <div key={applicant.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
               <div className="flex items-center justify-between gap-3">
@@ -112,11 +123,64 @@ export function StepApplicants({
                 ))}
               </div>
 
-              <div className="mt-4">
-                <PassportScanner onResult={(result) => applyScan(applicant.id, result)} />
+              {/* Visa selection */}
+              <div className="mt-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-ink-muted">Visa</h3>
+                <div className="mt-3">
+                  <Field label="Select a visa" htmlFor={`${applicant.id}-visa`} error={err("planSlug")}>
+                    <SelectInput
+                      id={`${applicant.id}-visa`}
+                      ariaLabel="Select a visa"
+                      value={applicant.planSlug || "-"}
+                      onChange={(v) => updateApplicant(applicant.id, { planSlug: v === "-" ? "" : v })}
+                      invalid={Boolean(err("planSlug"))}
+                    >
+                      <option value="-">Select a visa…</option>
+                      {visaPlans.map((p) => (
+                        <option key={p.slug} value={p.slug}>
+                          {p.title}
+                        </option>
+                      ))}
+                    </SelectInput>
+                    {applicant.planSlug ? (
+                      <p className="mt-1.5 text-xs text-muted-foreground">
+                        Price for this applicant: {currencySymbol}
+                        {unitPrice.toLocaleString("en-ZA")} ({isAdult ? "adult" : "child"} rate)
+                      </p>
+                    ) : null}
+                  </Field>
+                </div>
+              </div>
+
+              {/* Passport scanner */}
+              <div className="mt-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-ink-muted">Passport details</h3>
+                <div className="mt-3">
+                  <PassportScanner onResult={(result) => applyScan(applicant.id, result)} />
+                </div>
               </div>
 
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                <Field label="Title" htmlFor={`${applicant.id}-title`} error={err("title")}>
+                  <SelectInput
+                    id={`${applicant.id}-title`}
+                    ariaLabel="Title"
+                    value={applicant.title || "-"}
+                    onChange={(v) => updateApplicant(applicant.id, { title: v === "-" ? "" : v })}
+                    invalid={Boolean(err("title"))}
+                  >
+                    <option value="-">Select…</option>
+                    {TITLE_OPTIONS.map((t) => (
+                      <option key={t} value={t}>
+                        {t}
+                      </option>
+                    ))}
+                  </SelectInput>
+                </Field>
+
+                {/* spacer to keep Title on its own row on desktop */}
+                <div className="hidden sm:block" aria-hidden="true" />
+
                 <Field label="Surname" htmlFor={`${applicant.id}-surname`} error={err("surname")}>
                   <TextInput
                     id={`${applicant.id}-surname`}
@@ -182,33 +246,142 @@ export function StepApplicants({
                     invalid={Boolean(err("passportExpiry"))}
                   />
                 </Field>
+              </div>
 
-                {applicant.type === "adult" ? (
-                  <>
-                    <Field label="Email" htmlFor={`${applicant.id}-email`} error={err("email")}>
+              {/* Travel */}
+              <div className="mt-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-ink-muted">Travel</h3>
+                <div className="mt-3 grid gap-4 sm:grid-cols-3">
+                  <Field
+                    label="Intended travel start date"
+                    htmlFor={`${applicant.id}-travel`}
+                    error={err("travelStartDate")}
+                  >
+                    <TextInput
+                      id={`${applicant.id}-travel`}
+                      type="date"
+                      value={applicant.travelStartDate}
+                      onChange={(v) => updateApplicant(applicant.id, { travelStartDate: v })}
+                      invalid={Boolean(err("travelStartDate"))}
+                    />
+                  </Field>
+
+                  <Field
+                    label="Arrival date in the UAE"
+                    htmlFor={`${applicant.id}-arrival`}
+                    error={err("arrivalDate")}
+                  >
+                    <TextInput
+                      id={`${applicant.id}-arrival`}
+                      type="date"
+                      value={applicant.arrivalDate}
+                      onChange={(v) => updateApplicant(applicant.id, { arrivalDate: v })}
+                      invalid={Boolean(err("arrivalDate"))}
+                    />
+                  </Field>
+
+                  <Field
+                    label="Departure date from the UAE"
+                    htmlFor={`${applicant.id}-departure`}
+                    error={err("departureDate")}
+                  >
+                    <TextInput
+                      id={`${applicant.id}-departure`}
+                      type="date"
+                      value={applicant.departureDate}
+                      onChange={(v) => updateApplicant(applicant.id, { departureDate: v })}
+                      invalid={Boolean(err("departureDate"))}
+                    />
+                  </Field>
+                </div>
+              </div>
+
+              {/* Contact & background */}
+              <div className="mt-5">
+                <h3 className="text-xs font-semibold uppercase tracking-wide text-ink-muted">
+                  Contact &amp; background
+                </h3>
+                <div className="mt-3 grid gap-4 sm:grid-cols-2">
+                  <Field label="Reason for visit" htmlFor={`${applicant.id}-reason`} error={err("reasonForVisit")}>
+                    <SelectInput
+                      id={`${applicant.id}-reason`}
+                      ariaLabel="Reason for visit"
+                      value={applicant.reasonForVisit || "-"}
+                      onChange={(v) => updateApplicant(applicant.id, { reasonForVisit: v === "-" ? "" : v })}
+                      invalid={Boolean(err("reasonForVisit"))}
+                    >
+                      <option value="-">Select…</option>
+                      {REASON_OPTIONS.map((r) => (
+                        <option key={r} value={r}>
+                          {r}
+                        </option>
+                      ))}
+                    </SelectInput>
+                  </Field>
+
+                  {isAdult ? (
+                    <Field label="Occupation" htmlFor={`${applicant.id}-occupation`} error={err("occupation")}>
                       <TextInput
-                        id={`${applicant.id}-email`}
-                        type="email"
-                        value={applicant.email}
-                        onChange={(v) => updateApplicant(applicant.id, { email: v })}
-                        invalid={Boolean(err("email"))}
-                        placeholder="name@example.com"
-                        autoComplete="email"
+                        id={`${applicant.id}-occupation`}
+                        value={applicant.occupation}
+                        onChange={(v) => updateApplicant(applicant.id, { occupation: v })}
+                        invalid={Boolean(err("occupation"))}
+                        placeholder="e.g. Accountant"
                       />
                     </Field>
+                  ) : null}
 
-                    <Field label="Contact number" htmlFor={`${applicant.id}-phone`} error={err("phone")}>
+                  {isAdult ? (
+                    <Field label="Company name (optional)" htmlFor={`${applicant.id}-company`}>
                       <TextInput
-                        id={`${applicant.id}-phone`}
+                        id={`${applicant.id}-company`}
+                        value={applicant.companyName}
+                        onChange={(v) => updateApplicant(applicant.id, { companyName: v })}
+                        placeholder="Employer / company"
+                      />
+                    </Field>
+                  ) : null}
+
+                  {isAdult ? (
+                    <Field label="Work number (optional)" htmlFor={`${applicant.id}-work`}>
+                      <TextInput
+                        id={`${applicant.id}-work`}
                         type="tel"
-                        value={applicant.phone}
-                        onChange={(v) => updateApplicant(applicant.id, { phone: v })}
-                        invalid={Boolean(err("phone"))}
-                        placeholder="+27 72 000 0000"
-                        autoComplete="tel"
+                        value={applicant.workNumber}
+                        onChange={(v) => updateApplicant(applicant.id, { workNumber: v })}
+                        placeholder="+27 21 000 0000"
                       />
                     </Field>
-                  </>
+                  ) : null}
+
+                  <Field label="Contact number" htmlFor={`${applicant.id}-phone`} error={err("phone")}>
+                    <TextInput
+                      id={`${applicant.id}-phone`}
+                      type="tel"
+                      value={applicant.phone}
+                      onChange={(v) => updateApplicant(applicant.id, { phone: v })}
+                      invalid={Boolean(err("phone"))}
+                      placeholder="+27 72 000 0000"
+                      autoComplete="tel"
+                    />
+                  </Field>
+
+                  <Field label="Email address" htmlFor={`${applicant.id}-email`} error={err("email")}>
+                    <TextInput
+                      id={`${applicant.id}-email`}
+                      type="email"
+                      value={applicant.email}
+                      onChange={(v) => updateApplicant(applicant.id, { email: v })}
+                      invalid={Boolean(err("email"))}
+                      placeholder="name@example.com"
+                      autoComplete="email"
+                    />
+                  </Field>
+                </div>
+                {!isAdult ? (
+                  <p className="mt-2 text-xs text-muted-foreground">
+                    For a child, you may use a parent or guardian&apos;s contact details.
+                  </p>
                 ) : null}
               </div>
             </div>

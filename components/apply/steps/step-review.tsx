@@ -1,13 +1,8 @@
 "use client"
 
 import { CheckCircle2, FileText, Loader2 } from "lucide-react"
-import { countries } from "@/lib/countries"
-import { getVisaPlan, currencySymbol } from "@/lib/visa-plans"
+import { getVisaPlan } from "@/lib/visa-plans"
 import { calculatePrice, type ApplicationState } from "@/lib/application"
-
-function countryName(code: string): string {
-  return countries.find((c) => c.code === code)?.name ?? "—"
-}
 
 function countDocs(docs: Record<string, unknown>): number {
   return Object.values(docs).filter(Boolean).length
@@ -26,7 +21,6 @@ export function StepReview({
   submitting: boolean
   error?: string
 }) {
-  const plan = getVisaPlan(state.planSlug)
   const price = calculatePrice(state)
 
   return (
@@ -36,89 +30,62 @@ export function StepReview({
         Please check everything is correct before submitting. You can go back to make changes.
       </p>
 
-      {/* Visa & trip summary */}
-      <div className="mt-6 rounded-2xl border border-border bg-card p-5">
-        <h3 className="text-sm font-semibold text-foreground">Visa &amp; trip</h3>
-        <dl className="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Visa</dt>
-            <dd className="text-right font-medium text-foreground">{plan?.title ?? "—"}</dd>
-          </div>
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Entry type</dt>
-            <dd className="text-right font-medium capitalize text-foreground">{state.entryType}</dd>
-          </div>
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Citizenship</dt>
-            <dd className="text-right font-medium text-foreground">{countryName(state.trip.citizenship)}</dd>
-          </div>
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Residence</dt>
-            <dd className="text-right font-medium text-foreground">{countryName(state.trip.residence)}</dd>
-          </div>
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Arrival date</dt>
-            <dd className="text-right font-medium text-foreground">{state.trip.arrivalDate || "—"}</dd>
-          </div>
-          <div className="flex justify-between gap-4">
-            <dt className="text-muted-foreground">Departure date</dt>
-            <dd className="text-right font-medium text-foreground">{state.trip.departureDate || "—"}</dd>
-          </div>
-        </dl>
-      </div>
-
-      {/* Applicants summary */}
-      <div className="mt-4 rounded-2xl border border-border bg-card p-5">
-        <h3 className="text-sm font-semibold text-foreground">
-          Applicants ({state.applicants.length})
-        </h3>
-        <ul className="mt-3 flex flex-col divide-y divide-border">
-          {state.applicants.map((a, i) => (
-            <li key={a.id} className="flex items-center justify-between gap-4 py-2.5 text-sm">
-              <span className="min-w-0">
-                <span className="font-medium text-foreground">
-                  {`${a.givenNames} ${a.surname}`.trim() || `Applicant ${i + 1}`}
+      {/* Per-applicant summary */}
+      <div className="mt-6 flex flex-col gap-4">
+        {state.applicants.map((a, i) => {
+          const plan = getVisaPlan(a.planSlug)
+          const name = `${[a.title, a.givenNames, a.surname].filter(Boolean).join(" ")}`.trim() || `Applicant ${i + 1}`
+          return (
+            <div key={a.id} className="rounded-2xl border border-border bg-card p-5">
+              <div className="flex items-center justify-between gap-4">
+                <h3 className="text-sm font-semibold text-foreground">
+                  {name}
+                  <span className="ml-2 text-xs font-normal capitalize text-muted-foreground">
+                    {a.type === "minor" ? "child" : "adult"}
+                  </span>
+                </h3>
+                <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
+                  <FileText className="h-3.5 w-3.5" aria-hidden="true" />
+                  {countDocs(a.docs)} docs
                 </span>
-                <span className="ml-2 text-xs capitalize text-muted-foreground">
-                  {a.type === "minor" ? "child" : "adult"}
-                </span>
-              </span>
-              <span className="inline-flex items-center gap-1.5 text-xs text-muted-foreground">
-                <FileText className="h-3.5 w-3.5" aria-hidden="true" />
-                {countDocs(a.docs)} docs
-              </span>
-            </li>
-          ))}
-        </ul>
+              </div>
+              <dl className="mt-3 grid gap-x-6 gap-y-2 text-sm sm:grid-cols-2">
+                <div className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">Visa</dt>
+                  <dd className="text-right font-medium text-foreground">{plan?.title ?? "—"}</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">Reason</dt>
+                  <dd className="text-right font-medium text-foreground">{a.reasonForVisit || "—"}</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">Travel start</dt>
+                  <dd className="text-right font-medium text-foreground">{a.travelStartDate || "—"}</dd>
+                </div>
+                <div className="flex justify-between gap-4">
+                  <dt className="text-muted-foreground">In UAE</dt>
+                  <dd className="text-right font-medium text-foreground">
+                    {a.arrivalDate || "—"} → {a.departureDate || "—"}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          )
+        })}
       </div>
 
       {/* Price */}
       <div className="mt-4 rounded-2xl border border-border bg-secondary/50 p-5">
-        <div className="flex flex-col gap-1 text-sm">
-          {price.adults > 0 ? (
-            <div className="flex justify-between text-muted-foreground">
-              <span>
-                {price.adults} × adult ({currencySymbol}
-                {price.adultUnit.toLocaleString("en-ZA")})
+        <div className="flex flex-col gap-1.5 text-sm">
+          {price.lines.map((line) => (
+            <div key={line.id} className="flex justify-between gap-4 text-muted-foreground">
+              <span className="min-w-0 truncate">
+                {line.name} — {line.planTitle}{" "}
+                <span className="capitalize">({line.type === "minor" ? "child" : "adult"})</span>
               </span>
-              <span>
-                {currencySymbol}
-                {(price.adults * price.adultUnit).toLocaleString("en-ZA")}
-              </span>
+              <span className="shrink-0">{line.formattedUnit}</span>
             </div>
-          ) : null}
-          {price.minors > 0 ? (
-            <div className="flex justify-between text-muted-foreground">
-              <span>
-                {price.minors} × child ({currencySymbol}
-                {price.minorUnit.toLocaleString("en-ZA")})
-              </span>
-              <span>
-                {currencySymbol}
-                {(price.minors * price.minorUnit).toLocaleString("en-ZA")}
-              </span>
-            </div>
-          ) : null}
+          ))}
           <div className="mt-2 flex items-center justify-between border-t border-border pt-3">
             <span className="font-serif text-lg font-semibold text-foreground">Total</span>
             <span className="font-serif text-lg font-semibold text-foreground">{price.formattedTotal}</span>

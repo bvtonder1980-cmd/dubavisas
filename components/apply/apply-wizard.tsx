@@ -9,13 +9,11 @@ import {
   type ApplicationState,
 } from "@/lib/application"
 import { StepAccount } from "@/components/apply/steps/step-account"
-import { StepVisa } from "@/components/apply/steps/step-visa"
-import { StepTrip } from "@/components/apply/steps/step-trip"
 import { StepApplicants } from "@/components/apply/steps/step-applicants"
 import { StepDocuments } from "@/components/apply/steps/step-documents"
 import { StepReview } from "@/components/apply/steps/step-review"
 
-const STEP_LABELS = ["Account", "Applicants", "Visa", "Trip", "Documents", "Review"]
+const STEP_LABELS = ["Account", "Applicants", "Documents", "Review"]
 
 function isValidCountry(code: string): boolean {
   return Boolean(code) && code !== "-" && code !== "--"
@@ -29,7 +27,7 @@ export function ApplyWizard({
   defaults,
   initialMode = "register",
 }: {
-  defaults: { citizenship?: string; residence?: string; arrivalDate?: string }
+  defaults: { citizenship?: string; arrivalDate?: string }
   initialMode?: "register" | "login"
 }) {
   const [state, setState] = useState<ApplicationState>(() => makeInitialState(defaults))
@@ -53,33 +51,29 @@ export function ApplyWizard({
 
     if (current === 1) {
       state.applicants.forEach((a) => {
+        if (!a.planSlug) next[`${a.id}.planSlug`] = "Please select a visa"
+        if (!a.title) next[`${a.id}.title`] = "Required"
         if (!a.surname.trim()) next[`${a.id}.surname`] = "Required"
         if (!a.givenNames.trim()) next[`${a.id}.givenNames`] = "Required"
         if (!a.passportNumber.trim()) next[`${a.id}.passportNumber`] = "Required"
         if (!isValidCountry(a.nationality)) next[`${a.id}.nationality`] = "Required"
         if (!a.dateOfBirth) next[`${a.id}.dateOfBirth`] = "Required"
         if (!a.passportExpiry) next[`${a.id}.passportExpiry`] = "Required"
+        if (!a.travelStartDate) next[`${a.id}.travelStartDate`] = "Required"
+        if (!a.arrivalDate) next[`${a.id}.arrivalDate`] = "Required"
+        if (!a.departureDate) next[`${a.id}.departureDate`] = "Required"
+        else if (a.arrivalDate && a.departureDate < a.arrivalDate)
+          next[`${a.id}.departureDate`] = "After arrival"
+        if (!a.reasonForVisit) next[`${a.id}.reasonForVisit`] = "Required"
         if (a.type === "adult") {
+          if (!a.occupation.trim()) next[`${a.id}.occupation`] = "Required"
           if (!isValidEmail(a.email)) next[`${a.id}.email`] = "Enter a valid email"
           if (!a.phone.trim()) next[`${a.id}.phone`] = "Required"
         }
       })
     }
 
-    if (current === 2 && !state.planSlug) {
-      next.plan = "Please select a visa."
-    }
-
-    if (current === 3) {
-      if (!isValidCountry(state.trip.citizenship)) next.citizenship = "Please select your citizenship."
-      if (!isValidCountry(state.trip.residence)) next.residence = "Please select your residence."
-      if (!state.trip.arrivalDate) next.arrivalDate = "Please choose your arrival date."
-      if (!state.trip.departureDate) next.departureDate = "Please choose your departure date."
-      else if (state.trip.arrivalDate && state.trip.departureDate < state.trip.arrivalDate)
-        next.departureDate = "Departure can't be before arrival."
-    }
-
-    if (current === 4) {
+    if (current === 2) {
       state.applicants.forEach((a) => {
         if (!a.docs.passportScan) next[`${a.id}.passportScan`] = "Passport page required"
         if (!a.docs.passportPhoto) next[`${a.id}.passportPhoto`] = "Photo required"
@@ -134,9 +128,9 @@ export function ApplyWizard({
     }
   }
 
-  // Missing-document summary for step 3 (shown under the step content).
+  // Missing-document summary for the Documents step (shown under the content).
   const docErrorCount = useMemo(
-    () => Object.keys(errors).filter((k) => k.includes(".") && step === 4).length,
+    () => Object.keys(errors).filter((k) => k.includes(".") && step === 2).length,
     [errors, step],
   )
 
@@ -191,10 +185,8 @@ export function ApplyWizard({
           />
         ) : null}
         {step === 1 ? <StepApplicants state={state} update={update} errors={errors} /> : null}
-        {step === 2 ? <StepVisa state={state} update={update} /> : null}
-        {step === 3 ? <StepTrip state={state} update={update} errors={errors} /> : null}
-        {step === 4 ? <StepDocuments state={state} update={update} /> : null}
-        {step === 5 ? (
+        {step === 2 ? <StepDocuments state={state} update={update} /> : null}
+        {step === 3 ? (
           <StepReview
             state={state}
             update={update}
@@ -205,15 +197,14 @@ export function ApplyWizard({
         ) : null}
 
         {/* Step-level error hints */}
-        {step === 2 && errors.plan ? <p className="mt-4 text-sm font-medium text-danger">{errors.plan}</p> : null}
-        {step === 4 && docErrorCount > 0 ? (
+        {step === 2 && docErrorCount > 0 ? (
           <p className="mt-4 text-sm font-medium text-danger">
             Please upload all required documents for each applicant.
           </p>
         ) : null}
 
         {/* Navigation — step 0 (Account) owns its own buttons */}
-        {step >= 1 && step < 5 ? (
+        {step >= 1 && step < 3 ? (
           <div className="mt-8 flex items-center justify-between gap-4">
             <button
               type="button"
@@ -231,7 +222,7 @@ export function ApplyWizard({
             </button>
           </div>
         ) : null}
-        {step === 5 ? (
+        {step === 3 ? (
           <div className="mt-6">
             <button
               type="button"

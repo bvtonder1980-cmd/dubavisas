@@ -3,12 +3,32 @@
  * function. This build is UI-only: `submitApplication` simulates a submit and
  * returns a fake reference. When the site moves to its own server, replace the
  * body of `submitApplication` with a real fetch/POST — nothing else changes.
+ *
+ * NOTE: visa type and travel dates are captured PER APPLICANT (each traveller
+ * may choose a different visa and travel on different dates), so there is no
+ * application-level plan or trip. The order total is the sum of each
+ * applicant's own chosen visa.
  */
 
 import { getVisaPlan, currencySymbol } from "@/lib/visa-plans"
 import type { AuthUser } from "@/lib/auth"
 
 export type ApplicantType = "adult" | "minor"
+
+/** Title options for an applicant. */
+export const TITLE_OPTIONS = ["Mr", "Mrs", "Mstr", "Miss", "Dr", "Prof", "Hon"] as const
+export type Title = (typeof TITLE_OPTIONS)[number]
+
+/** Common reasons for visiting the UAE. */
+export const REASON_OPTIONS = [
+  "Tourism",
+  "Visiting family / friends",
+  "Business",
+  "Transit",
+  "Medical",
+  "Other",
+] as const
+export type ReasonForVisit = (typeof REASON_OPTIONS)[number]
 
 /** The registered / logged-in customer profile that owns this application. */
 export type Account = AuthUser & { authenticated: boolean }
@@ -33,7 +53,10 @@ export type ApplicantDocs = {
 export type Applicant = {
   id: string
   type: ApplicantType
+  // Chosen visa (per applicant)
+  planSlug: string
   // Identity (may be auto-filled from the passport MRZ scan)
+  title: string
   surname: string
   givenNames: string
   passportNumber: string
@@ -41,23 +64,22 @@ export type Applicant = {
   dateOfBirth: string // ISO YYYY-MM-DD
   sex: "M" | "F" | "X" | ""
   passportExpiry: string // ISO YYYY-MM-DD
+  // Travel (per applicant)
+  travelStartDate: string // ISO — intended travel start
+  arrivalDate: string // ISO — arrival in the UAE
+  departureDate: string // ISO — departure from the UAE
+  // Personal / employment
+  companyName: string // adults only
+  occupation: string // adults only
+  reasonForVisit: string
+  workNumber: string // adults only
+  phone: string // contact number
   email: string
-  phone: string
   docs: ApplicantDocs
-}
-
-export type TripDetails = {
-  citizenship: string // country code
-  residence: string // country code
-  arrivalDate: string // ISO YYYY-MM-DD
-  departureDate: string // ISO YYYY-MM-DD
 }
 
 export type ApplicationState = {
   account: Account
-  planSlug: string
-  entryType: "single" | "multiple"
-  trip: TripDetails
   applicants: Applicant[]
   consent: boolean
 }
@@ -68,41 +90,49 @@ function makeId() {
   return `applicant-${Date.now().toString(36)}-${seq}`
 }
 
-export function makeApplicant(type: ApplicantType = "adult"): Applicant {
+export function makeApplicant(
+  type: ApplicantType = "adult",
+  prefill?: { nationality?: string; arrivalDate?: string; planSlug?: string },
+): Applicant {
   return {
     id: makeId(),
     type,
+    planSlug: prefill?.planSlug ?? "",
+    title: "",
     surname: "",
     givenNames: "",
     passportNumber: "",
-    nationality: "",
+    nationality: prefill?.nationality ?? "",
     dateOfBirth: "",
     sex: "",
     passportExpiry: "",
-    email: "",
+    travelStartDate: "",
+    arrivalDate: prefill?.arrivalDate ?? "",
+    departureDate: "",
+    companyName: "",
+    occupation: "",
+    reasonForVisit: "",
+    workNumber: "",
     phone: "",
+    email: "",
     docs: {},
   }
 }
 
 export function makeInitialState(defaults?: {
   citizenship?: string
-  residence?: string
   arrivalDate?: string
-  departureDate?: string
   planSlug?: string
 }): ApplicationState {
   return {
     account: { authenticated: false, email: "", fullName: "", phone: "" },
-    planSlug: defaults?.planSlug ?? "",
-    entryType: "single",
-    trip: {
-      citizenship: defaults?.citizenship ?? "",
-      residence: defaults?.residence ?? "",
-      arrivalDate: defaults?.arrivalDate ?? "",
-      departureDate: defaults?.departureDate ?? "",
-    },
-    applicants: [makeApplicant("adult")],
+    applicants: [
+      makeApplicant("adult", {
+        nationality: defaults?.citizenship,
+        arrivalDate: defaults?.arrivalDate,
+        planSlug: defaults?.planSlug,
+      }),
+    ],
     consent: false,
   }
 }
@@ -112,32 +142,53 @@ function priceToNumber(price: string): number {
   return Number(price.replace(/[^0-9.]/g, "")) || 0
 }
 
+/** Unit price for one applicant based on their chosen visa and type. */
+export function applicantPrice(applicant: Applicant): number {
+  const plan = getVisaPlan(applicant.planSlug)
+  if (!plan) return 0
+  return priceToNumber(applicant.type === "minor" ? plan.minorPrice : plan.price)
+}
+
+export type PriceLine = {
+  id: string
+  name: string
+  planTitle: string
+  type: ApplicantType
+  unit: number
+  formattedUnit: string
+}
+
 export type PriceBreakdown = {
-  adults: number
-  minors: number
-  adultUnit: number
-  minorUnit: number
+  lines: PriceLine[]
   total: number
   currency: string
   formattedTotal: string
 }
 
-/** Live price calculation from the chosen plan × applicant adult/minor mix. */
+function formatMoney(amount: number): string {
+  return `${currencySymbol}${amount.toLocaleString("en-ZA")}`
+}
+
+/** Live price calculation — the sum of each applicant's own chosen visa. */
 export function calculatePrice(state: ApplicationState): PriceBreakdown {
-  const plan = getVisaPlan(state.planSlug)
-  const adultUnit = plan ? priceToNumber(plan.price) : 0
-  const minorUnit = plan ? priceToNumber(plan.minorPrice) : 0
-  const adults = state.applicants.filter((a) => a.type === "adult").length
-  const minors = state.applicants.filter((a) => a.type === "minor").length
-  const total = adults * adultUnit + minors * minorUnit
+  const lines: PriceLine[] = state.applicants.map((a, i) => {
+    const plan = getVisaPlan(a.planSlug)
+    const unit = applicantPrice(a)
+    return {
+      id: a.id,
+      name: `${a.givenNames} ${a.surname}`.trim() || `Applicant ${i + 1}`,
+      planTitle: plan?.title ?? "No visa selected",
+      type: a.type,
+      unit,
+      formattedUnit: formatMoney(unit),
+    }
+  })
+  const total = lines.reduce((sum, l) => sum + l.unit, 0)
   return {
-    adults,
-    minors,
-    adultUnit,
-    minorUnit,
+    lines,
     total,
     currency: currencySymbol,
-    formattedTotal: `${currencySymbol}${total.toLocaleString("en-ZA")}`,
+    formattedTotal: formatMoney(total),
   }
 }
 
@@ -170,15 +221,19 @@ export async function submitApplication(state: ApplicationState): Promise<Submit
   const reference = generateReference(state)
 
   console.log("[v0] submitApplication (stub) — application captured:", {
-    plan: state.planSlug,
-    entryType: state.entryType,
-    trip: state.trip,
+    account: state.account.email,
     applicants: state.applicants.map((a) => ({
       type: a.type,
+      visa: a.planSlug,
       name: `${a.givenNames} ${a.surname}`.trim(),
       passportNumber: a.passportNumber,
+      travelStartDate: a.travelStartDate,
+      arrivalDate: a.arrivalDate,
+      departureDate: a.departureDate,
+      reasonForVisit: a.reasonForVisit,
       docCount: Object.keys(a.docs).length,
     })),
+    total: calculatePrice(state).formattedTotal,
     reference,
   })
 

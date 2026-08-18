@@ -33,7 +33,6 @@ export default async function ApplyPage({
 
   const defaults = {
     citizenship: firstParam(params.citizen),
-    residence: firstParam(params.residence),
     arrivalDate: normaliseDate(firstParam(params.depart)),
   }
 
