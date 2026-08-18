@@ -57,7 +57,7 @@ export default function TermsPage() {
         {
           heading: "Customer details seperate from card details",
           paragraphs: [
-            "Customer details will be stored by Dubai Visas Online seperately from card details which are entered by the client on TravelPay's secure site. For more detail on TravelPay refer to http://www.travelpay.co.za.",
+            "Customer details will be stored by Dubai Visas Online seperately from card details which are entered by the client on TravelPay's secure site. For more detail on TravelPay refer to http://www.travelpay.com.",
           ],
         },
         {
