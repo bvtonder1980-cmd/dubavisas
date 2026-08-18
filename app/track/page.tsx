@@ -24,7 +24,7 @@ export default function TrackPage() {
       <PageHeader
         eyebrow="Application status"
         title="Track your visa application"
-        description="Enter your application reference and the email you applied with to see the latest status of your UAE visa."
+        description="Enter your passport number and the email you applied with to see the latest status of your UAE visa."
         breadcrumbs={[{ name: "Home", href: "/" }, { name: "Track Application" }]}
       />
 
@@ -34,14 +34,14 @@ export default function TrackPage() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
               <div className="flex flex-col gap-2">
                 <label htmlFor="ref" className="text-sm font-medium text-foreground">
-                  Application reference
+                  Passport number
                 </label>
                 <input
                   id="ref"
                   type="text"
                   value={reference}
                   onChange={(e) => setReference(e.target.value)}
-                  placeholder="e.g. DVO-2026-001234"
+                  placeholder="e.g. A01234567"
                   required
                   className={fieldClass}
                 />
@@ -64,7 +64,7 @@ export default function TrackPage() {
                 className="mt-6 rounded-2xl border border-border bg-secondary/50 p-6 text-center"
               >
                 <p className="font-serif text-lg font-semibold text-foreground">
-                  Reference {reference} received
+                  Passport {reference} received
                 </p>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                   {/* [PLACEHOLDER] Connect this form to your real application tracking system or CRM. */}
