@@ -110,7 +110,7 @@ function ArticleBody({ body }: { body: string }) {
     if (rows.length) {
       const [header, ...bodyRows] = rows
       blocks.push(
-        <div key={`tbl-${key++}`} className="my-6 overflow-x-auto rounded-2xl border border-border">
+        <div key={`tbl-${key++}`} className="my-6 overflow-x-auto rounded-[4px] border border-border">
           <table className="w-full border-collapse text-left text-sm">
             <thead>
               <tr className="bg-secondary/60">
@@ -161,7 +161,7 @@ function ArticleBody({ body }: { body: string }) {
           alt={alt}
           width={1200}
           height={900}
-          className="my-6 h-auto w-full rounded-2xl border border-border"
+          className="my-6 h-auto w-full rounded-[4px] border border-border"
         />,
       )
     } else if (line.startsWith("### ")) {
@@ -255,7 +255,7 @@ export default async function ArticlePage({
         </header>
 
         <Container className="max-w-3xl py-10 sm:py-12">
-          <div className="overflow-hidden rounded-2xl border border-border">
+          <div className="overflow-hidden rounded-[4px] border border-border">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={article.image || "/placeholder.svg"} alt={article.title} className="aspect-[16/9] w-full object-cover" />
           </div>
@@ -263,7 +263,7 @@ export default async function ArticlePage({
             <ArticleBody body={article.body} />
           </div>
           <ArticleCta />
-          <p className="mt-10 rounded-2xl border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-10 rounded-[4px] border border-border bg-secondary/50 p-5 text-sm leading-relaxed text-muted-foreground">
             This guide is for general information. Visa rules can change — confirm the latest requirements when you
             apply, or contact our team for help.
           </p>

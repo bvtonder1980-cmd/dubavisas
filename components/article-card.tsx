@@ -4,7 +4,7 @@ import { type Article } from "@/lib/articles"
 
 export function ArticleCard({ article }: { article: Article }) {
   return (
-    <article className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
+    <article className="group flex flex-col overflow-hidden rounded-[4px] border border-border bg-card shadow-sm transition-shadow hover:shadow-md">
       <Link href={`/articles/${article.slug}`} className="relative block aspect-[16/10] overflow-hidden">
         <Image
           src={article.image || "/placeholder.svg"}

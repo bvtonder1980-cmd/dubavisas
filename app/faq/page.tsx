@@ -44,7 +44,7 @@ export default function FaqPage() {
             ))}
           </div>
 
-          <p className="mt-12 rounded-2xl border border-border bg-secondary/50 p-6 text-center text-sm leading-relaxed text-muted-foreground">
+          <p className="mt-12 rounded-[4px] border border-border bg-secondary/50 p-6 text-center text-sm leading-relaxed text-muted-foreground">
             {"Can't find your answer? Our team replies within "}
             <span className="font-semibold text-foreground">one business day</span>
             {" — "}

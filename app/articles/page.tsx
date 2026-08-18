@@ -37,7 +37,7 @@ export default function ArticlesPage() {
           {featured ? (
             <a
               href={`/articles/${featured.slug}`}
-              className="group mb-12 grid overflow-hidden rounded-3xl border border-border bg-card shadow-sm transition hover:shadow-lg md:grid-cols-2"
+              className="group mb-12 grid overflow-hidden rounded-[4px] border border-border bg-card shadow-sm transition hover:shadow-lg md:grid-cols-2"
             >
               <div className="relative aspect-[16/10] overflow-hidden md:aspect-auto">
                 {/* eslint-disable-next-line @next/next/no-img-element */}

@@ -86,7 +86,7 @@ export default function AboutPage() {
         <Container>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
-              <div key={stat.label} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm">
+              <div key={stat.label} className="rounded-[4px] border border-border bg-card p-6 text-center shadow-sm">
                 <p className="font-serif text-3xl font-semibold text-accent">{stat.value}</p>
                 <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
               </div>
@@ -104,7 +104,7 @@ export default function AboutPage() {
           />
           <div className="grid gap-6 md:grid-cols-2">
             {values.map((value) => (
-              <div key={value.title} className="flex gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm">
+              <div key={value.title} className="flex gap-4 rounded-[4px] border border-border bg-card p-6 shadow-sm">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/15">
                   <value.icon className="h-6 w-6 text-accent" aria-hidden="true" />
                 </span>

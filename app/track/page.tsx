@@ -30,7 +30,7 @@ export default function TrackPage() {
 
       <Section className="bg-background">
         <Container className="max-w-2xl">
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
+          <div className="rounded-[4px] border border-border bg-card p-8 shadow-sm">
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
               <div className="flex flex-col gap-2">
                 <label htmlFor="ref" className="text-sm font-medium text-foreground">
@@ -61,7 +61,7 @@ export default function TrackPage() {
             {submitted ? (
               <div
                 role="status"
-                className="mt-6 rounded-2xl border border-border bg-secondary/50 p-6 text-center"
+                className="mt-6 rounded-[4px] border border-border bg-secondary/50 p-6 text-center"
               >
                 <p className="font-serif text-lg font-semibold text-foreground">
                   Reference {reference} received
@@ -78,7 +78,7 @@ export default function TrackPage() {
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
             <a
               href={`mailto:${siteConfig.contact.email}`}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 transition hover:border-accent"
+              className="flex items-center gap-3 rounded-[4px] border border-border bg-card p-5 transition hover:border-accent"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15">
                 <Mail className="h-5 w-5 text-accent" aria-hidden="true" />
@@ -90,7 +90,7 @@ export default function TrackPage() {
             </a>
             <a
               href={`tel:${siteConfig.contact.phone.replace(/\s/g, "")}`}
-              className="flex items-center gap-3 rounded-2xl border border-border bg-card p-5 transition hover:border-accent"
+              className="flex items-center gap-3 rounded-[4px] border border-border bg-card p-5 transition hover:border-accent"
             >
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-accent/15">
                 <Phone className="h-5 w-5 text-accent" aria-hidden="true" />
