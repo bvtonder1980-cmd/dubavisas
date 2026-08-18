@@ -107,7 +107,11 @@ export const faqs: FaqItem[] = [
     category: "Payments & Policies",
     question: "What is the fine for overstaying my visa?",
     answer:
-      "Overstaying a UAE visa results in daily fines set by the authorities. We strongly recommend leaving before your visa expires or arranging an extension. [PLACEHOLDER: confirm current overstay fine amounts.]",
+      "We strongly recommend NOT overstaying your visa, but rather to extend it.\n\nOverstaying a UAE visa results in daily fines set by the authorities.\n\nAs of 2026, the UAE applies a standard overstay penalty of around AED 50 for each day you remain in the country beyond your authorised stay. This daily charge continues to build for every day of the overstay, so the total can add up quickly.\n\nOn top of the daily fine, travellers are usually required to pay an exit permit fee when leaving the UAE. This fee typically ranges from AED 100 to AED 350, depending on your circumstances at the time of departure.\n\nWe strongly recommend reading our travel guide, \"Dubai Visa Overstay Fines, Grace Periods & Extensions\".",
+    link: {
+      href: "/articles/dubai-visa-overstay-fines-grace-period",
+      label: "Read the guide: Dubai Visa Overstay Fines, Grace Periods & Extensions",
+    },
   },
 ]
 
