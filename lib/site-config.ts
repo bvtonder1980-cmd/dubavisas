@@ -71,7 +71,7 @@ export const footerNav: { title: string; links: { label: string; href: string }[
     title: "Company",
     links: [
       { label: "About Us", href: "/about" },
-      { label: "Terms & Conditions", href: "/terms" },
+      { label: "Terms of Use & Disclaimer", href: "/terms" },
       { label: "Privacy Policy", href: "/privacy" },
       { label: "Cancellation Policy", href: "/cancellation" },
     ],

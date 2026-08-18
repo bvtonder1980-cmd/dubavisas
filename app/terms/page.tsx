@@ -2,8 +2,8 @@ import type { Metadata } from "next"
 import { LegalPage } from "@/components/legal-page"
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions",
-  description: "The terms and conditions governing the use of our UAE visa application service.",
+  title: "Terms of Use & Disclaimer",
+  description: "The terms of use and disclaimer governing the use of our UAE visa application service.",
   alternates: { canonical: "/terms" },
 }
 
@@ -11,9 +11,9 @@ export default function TermsPage() {
   return (
     <LegalPage
       eyebrow="Legal"
-      title="Terms & Conditions"
+      title="Terms of Use & Disclaimer"
       description="Please read these terms carefully before using our visa application service."
-      breadcrumbLabel="Terms & Conditions"
+      breadcrumbLabel="Terms of Use & Disclaimer"
       lastUpdated="January 2026"
       sections={[
         {
