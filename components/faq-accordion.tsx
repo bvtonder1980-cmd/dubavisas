@@ -1,6 +1,7 @@
 "use client"
 
-import { Plus } from "lucide-react"
+import Link from "next/link"
+import { Plus, ArrowRight } from "lucide-react"
 import { type FaqItem } from "@/lib/faqs"
 
 export function FaqAccordion({ items, className }: { items: FaqItem[]; className?: string }) {
@@ -19,7 +20,18 @@ export function FaqAccordion({ items, className }: { items: FaqItem[]; className
               aria-hidden="true"
             />
           </summary>
-          <div className="px-6 pb-5 text-pretty leading-relaxed text-muted-foreground">{item.answer}</div>
+          <div className="px-6 pb-5 text-pretty leading-relaxed text-muted-foreground">
+            {item.answer}
+            {item.link ? (
+              <Link
+                href={item.link.href}
+                className="mt-3 inline-flex items-center gap-1.5 font-medium text-accent underline underline-offset-4 hover:text-accent/80"
+              >
+                {item.link.label}
+                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+              </Link>
+            ) : null}
+          </div>
         </details>
       ))}
     </div>

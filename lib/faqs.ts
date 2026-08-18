@@ -10,6 +10,7 @@ export type FaqItem = {
   question: string
   answer: string
   category: string
+  link?: { href: string; label: string }
 }
 
 export const faqs: FaqItem[] = [
@@ -22,9 +23,10 @@ export const faqs: FaqItem[] = [
   },
   {
     category: "Eligibility & Requirements",
-    question: "What documents do I need to apply for a Dubai visa?",
-    answer:
-      "You'll typically need a passport valid for at least 6 months, a clear colour passport photo meeting international standards, and a copy of your return or onward flight ticket. Minors may need a birth certificate. [PLACEHOLDER: confirm your full document list.]",
+  question: "What documents do I need to apply for a Dubai visa?",
+  answer:
+    "You'll typically need a passport valid for at least 6 months, a clear colour passport photo meeting international standards, and a copy of your return or onward flight ticket and proof of accommodation, however there are specific requirements for each document type. Minors also need an unabridged birth certificate. For more information, read our travel guide, \"Dubai Visa Requirements - a Deep Dive\".",
+    link: { href: "/articles/dubai-visa-requirements-deep-dive", label: "Read the guide: Dubai Visa Requirements - a Deep Dive" },
   },
   {
     category: "Eligibility & Requirements",
