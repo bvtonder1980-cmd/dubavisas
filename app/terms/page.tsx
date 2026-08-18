@@ -33,7 +33,7 @@ export default function TermsPage() {
         {
           heading: "Return and Refunds Policy",
           paragraphs: [
-            "The provision of services by Dubai Visas Online is subject to availability. In cases of unavailability, or inability of Dubai Visas Online to fulfill the agreed upon service, Dubai Visas Online will refund the client in full within 30 days.",
+            "The provision of visa application services by Dubai Visas Online is subject to availability. In cases of unavailability, or inability of Dubai Visas Online to fulfill the agreed upon service, Dubai Visas Online will refund the client in full within 30 days. Should your visa be applied for but rejected by the Ministry of Interior, no refund is due.",
           ],
         },
         {
