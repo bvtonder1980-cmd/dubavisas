@@ -111,7 +111,7 @@ export default function AboutPage() {
             title="What we stand for"
             description="The principles that guide every application we handle."
           />
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="mt-10 grid gap-6 md:grid-cols-2">
             {values.map((value) => (
               <div key={value.title} className="flex gap-4 rounded-2xl border border-border bg-card p-6 shadow-sm">
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-accent/15">
