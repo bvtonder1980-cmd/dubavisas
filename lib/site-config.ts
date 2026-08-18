@@ -14,7 +14,7 @@ export const siteConfig = {
 
   // [PLACEHOLDER] Replace with your real contact details
   contact: {
-    email: "support@dubaivisasonline.com",
+    email: "info@dubaivisasonline.co.za",
     phone: "+27 00 000 0000",
     whatsapp: "+27000000000",
     addressLine: "Cape Town, South Africa",
