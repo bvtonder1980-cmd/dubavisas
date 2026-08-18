@@ -1,6 +1,6 @@
 "use client"
 
-import { useRef } from "react"
+import { useRef, useState } from "react"
 import { UploadCloud, FileCheck2, X } from "lucide-react"
 import type { UploadedDoc } from "@/lib/application"
 
@@ -28,6 +28,7 @@ export function DocUpload({
   className?: string
 }) {
   const inputRef = useRef<HTMLInputElement>(null)
+  const [dragging, setDragging] = useState(false)
 
   function handleFile(file: File | undefined) {
     if (!file) return
@@ -38,6 +39,12 @@ export function DocUpload({
       type: file.type,
       previewUrl: file.type.startsWith("image/") ? URL.createObjectURL(file) : undefined,
     })
+  }
+
+  function handleDrop(e: React.DragEvent) {
+    e.preventDefault()
+    setDragging(false)
+    handleFile(e.dataTransfer.files?.[0])
   }
 
   function remove() {
@@ -92,10 +99,20 @@ export function DocUpload({
         <button
           type="button"
           onClick={() => inputRef.current?.click()}
-          className="mt-3 flex w-full items-center justify-center gap-2 rounded-lg border border-dashed border-border bg-background py-2.5 text-xs font-semibold text-ink-muted transition-colors hover:border-brand hover:text-brand"
+          onDragOver={(e) => {
+            e.preventDefault()
+            setDragging(true)
+          }}
+          onDragLeave={() => setDragging(false)}
+          onDrop={handleDrop}
+          className={`mt-3 flex w-full flex-col items-center justify-center gap-1.5 rounded-lg border border-dashed py-4 text-xs font-semibold transition-colors ${
+            dragging
+              ? "border-brand bg-brand/5 text-brand"
+              : "border-border bg-background text-ink-muted hover:border-brand hover:text-brand"
+          }`}
         >
-          <UploadCloud className="h-4 w-4" aria-hidden="true" />
-          Choose file
+          <UploadCloud className="h-5 w-5" aria-hidden="true" />
+          {dragging ? "Drop file here" : "Drag & drop or click to choose"}
         </button>
       )}
     </div>
