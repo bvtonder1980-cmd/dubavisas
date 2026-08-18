@@ -45,7 +45,7 @@ export const faqs: FaqItem[] = [
     category: "Processing & Delivery",
     question: "How will I receive my visa?",
     answer:
-      "Once approved, your visa is emailed to you as a PDF. You can print it or keep a digital copy on your phone to present at immigration.",
+      "Once approved, your visa is emailed to you as a PDF. We recommend printing a copy or two and to keep a digital copy on your phone to present at immigration.",
   },
   {
     category: "Processing & Delivery",
