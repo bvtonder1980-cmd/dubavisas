@@ -178,9 +178,6 @@ export function StepApplicants({
                   </SelectInput>
                 </Field>
 
-                {/* spacer to keep Title on its own row on desktop */}
-                <div className="hidden sm:block" aria-hidden="true" />
-
                 <Field label="Surname" htmlFor={`${applicant.id}-surname`} error={err("surname")}>
                   <TextInput
                     id={`${applicant.id}-surname`}
