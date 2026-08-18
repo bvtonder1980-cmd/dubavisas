@@ -65,19 +65,26 @@ export default function AboutPage() {
           <h2 className="mb-6 font-serif text-3xl font-semibold text-foreground">Our Story</h2>
           <div className="flex flex-col gap-5 text-pretty leading-relaxed text-muted-foreground">
             <p>
-              {/* [PLACEHOLDER] Replace with your real company story and credentials. */}
-              {siteConfig.name} was founded with a simple goal: make applying for a UAE visa fast, clear and
-              completely stress-free. What used to mean confusing paperwork and long waits is now a simple online
-              process backed by a team that genuinely cares about getting you approved.
+              {siteConfig.name} was founded in 2018 by a mother-and-son team who has been in the visa industry since
+              2006, with a simple goal: make applying for a UAE visa fast, clear and completely stress-free.
             </p>
             <p>
-              We specialise exclusively in UAE tourist and transit visas, which means we know the requirements inside
-              out. From your first question to the moment your visa lands in your inbox, our specialists guide you
-              every step of the way.
+              We knew that we could add value to our travellers&apos; experience by building a website and backend
+              systems that allow for easy and clear application capturing coupled with swift application processes that
+              allow for a faster turnaround.
             </p>
             <p>
-              Whether you&apos;re planning a holiday, a stopover or a business trip, we handle the details so you can
-              travel with total peace of mind.
+              Our industry experience led us to build {siteConfig.name} into what we believe is the easiest and fastest
+              way to get a visa to the UAE.
+            </p>
+            <p>
+              What used to mean confusing paperwork and long waits is now a simple online process backed by a team that
+              genuinely cares about getting you approved.
+            </p>
+            <p>
+              Today, we specialise exclusively in UAE visas, which means we know the requirements inside out. From your
+              first question to the moment your visa lands in your inbox, our specialists guide you every step of the
+              way.
             </p>
           </div>
         </Container>
