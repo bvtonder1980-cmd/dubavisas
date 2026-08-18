@@ -60,6 +60,19 @@ export default function AboutPage() {
         breadcrumbs={[{ name: "Home", href: "/" }, { name: "About" }]}
       />
 
+      <Section className="bg-secondary">
+        <Container>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {stats.map((stat) => (
+              <div key={stat.label} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm">
+                <p className="font-serif text-3xl font-semibold text-accent">{stat.value}</p>
+                <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </Section>
+
       <Section className="bg-background">
         <Container className="max-w-3xl">
           <div className="flex flex-col gap-5 text-pretty leading-relaxed text-muted-foreground">
@@ -78,19 +91,6 @@ export default function AboutPage() {
               Whether you&apos;re planning a holiday, a stopover or a business trip, we handle the details so you can
               travel with total peace of mind.
             </p>
-          </div>
-        </Container>
-      </Section>
-
-      <Section className="bg-secondary">
-        <Container>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {stats.map((stat) => (
-              <div key={stat.label} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm">
-                <p className="font-serif text-3xl font-semibold text-accent">{stat.value}</p>
-                <p className="mt-1 text-sm text-muted-foreground">{stat.label}</p>
-              </div>
-            ))}
           </div>
         </Container>
       </Section>
