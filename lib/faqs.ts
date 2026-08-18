@@ -58,7 +58,11 @@ export const faqs: FaqItem[] = [
     category: "Visa Types & Validity",
     question: "What's the difference between single and multiple entry visas?",
     answer:
-      "A single entry visa allows one entry into the UAE for the duration of its validity. A multiple entry visa lets you enter and exit the country several times within the validity period — ideal for regional or business travellers.",
+      "A single entry visa allows one entry into the UAE for the duration of its validity. A multiple entry visa lets you enter and exit the country several times within the validity period — ideal for regional or business travellers. For more information, please read our travel guide, \"Single Entry vs Multiple Entry Dubai Visas\".",
+    link: {
+      href: "/articles/single-entry-vs-multiple-entry-dubai-visa",
+      label: "Read the guide: Single Entry vs Multiple Entry Dubai Visas",
+    },
   },
   {
     category: "Visa Types & Validity",
