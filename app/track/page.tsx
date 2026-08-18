@@ -28,7 +28,7 @@ export default function TrackPage() {
         breadcrumbs={[{ name: "Home", href: "/" }, { name: "Track Application" }]}
       />
 
-      <Section className="bg-background">
+      <Section className="bg-background pt-8 sm:pt-10 lg:pt-12">
         <Container className="max-w-2xl">
           <div className="rounded-3xl border border-border bg-card p-8 shadow-sm">
             <form onSubmit={handleSubmit} className="flex flex-col gap-5">
