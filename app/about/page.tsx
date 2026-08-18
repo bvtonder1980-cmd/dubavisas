@@ -92,6 +92,7 @@ export default function AboutPage() {
 
       <Section className="bg-secondary">
         <Container>
+          <h2 className="mb-8 text-center font-serif text-3xl font-semibold text-foreground">Our Track Record</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="rounded-2xl border border-border bg-card p-6 text-center shadow-sm">
