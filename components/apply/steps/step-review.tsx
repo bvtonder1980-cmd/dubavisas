@@ -60,6 +60,10 @@ export function StepReview({
             <dt className="text-muted-foreground">Arrival date</dt>
             <dd className="text-right font-medium text-foreground">{state.trip.arrivalDate || "—"}</dd>
           </div>
+          <div className="flex justify-between gap-4">
+            <dt className="text-muted-foreground">Departure date</dt>
+            <dd className="text-right font-medium text-foreground">{state.trip.departureDate || "—"}</dd>
+          </div>
         </dl>
       </div>
 

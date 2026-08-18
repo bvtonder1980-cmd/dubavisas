@@ -59,6 +59,9 @@ export function ApplyWizard({
       if (!isValidCountry(state.trip.citizenship)) next.citizenship = "Please select your citizenship."
       if (!isValidCountry(state.trip.residence)) next.residence = "Please select your residence."
       if (!state.trip.arrivalDate) next.arrivalDate = "Please choose your arrival date."
+      if (!state.trip.departureDate) next.departureDate = "Please choose your departure date."
+      else if (state.trip.arrivalDate && state.trip.departureDate < state.trip.arrivalDate)
+        next.departureDate = "Departure can't be before arrival."
     }
 
     if (current === 3) {

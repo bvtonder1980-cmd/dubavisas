@@ -50,6 +50,7 @@ export type TripDetails = {
   citizenship: string // country code
   residence: string // country code
   arrivalDate: string // ISO YYYY-MM-DD
+  departureDate: string // ISO YYYY-MM-DD
 }
 
 export type ApplicationState = {
@@ -88,6 +89,7 @@ export function makeInitialState(defaults?: {
   citizenship?: string
   residence?: string
   arrivalDate?: string
+  departureDate?: string
   planSlug?: string
 }): ApplicationState {
   return {
@@ -98,6 +100,7 @@ export function makeInitialState(defaults?: {
       citizenship: defaults?.citizenship ?? "",
       residence: defaults?.residence ?? "",
       arrivalDate: defaults?.arrivalDate ?? "",
+      departureDate: defaults?.departureDate ?? "",
     },
     applicants: [makeApplicant("adult")],
     consent: false,

@@ -59,12 +59,7 @@ export function StepTrip({
           </SelectInput>
         </Field>
 
-        <Field
-          label="Intended arrival date"
-          htmlFor="arrival"
-          error={errors.arrivalDate}
-          className="sm:col-span-2"
-        >
+        <Field label="Intended arrival date" htmlFor="arrival" error={errors.arrivalDate}>
           <TextInput
             id="arrival"
             type="date"
@@ -72,10 +67,22 @@ export function StepTrip({
             onChange={(v) => updateTrip({ arrivalDate: v })}
             invalid={Boolean(errors.arrivalDate)}
           />
-          <p className="mt-1.5 text-xs text-muted-foreground">
-            We recommend applying at least two weeks before your arrival date. Today is {today}.
-          </p>
         </Field>
+
+        <Field label="Intended departure date" htmlFor="departure" error={errors.departureDate}>
+          <TextInput
+            id="departure"
+            type="date"
+            value={state.trip.departureDate}
+            onChange={(v) => updateTrip({ departureDate: v })}
+            invalid={Boolean(errors.departureDate)}
+          />
+        </Field>
+
+        <p className="text-xs text-muted-foreground sm:col-span-2">
+          We recommend applying at least two weeks before your arrival date. Your departure date should fall within
+          your visa&apos;s validity period. Today is {today}.
+        </p>
       </div>
     </div>
   )
