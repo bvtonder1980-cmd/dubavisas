@@ -39,7 +39,7 @@ export const faqs: FaqItem[] = [
     category: "Processing & Delivery",
     question: "How long does it take to process a Dubai visa?",
     answer:
-      "Most visas are processed within 48 to 96 hours. We recommend applying at least one week before departure to allow a comfortable buffer. [PLACEHOLDER: confirm standard and express times.]",
+      "Most visas are processed within 48 to 96 hours. We recommend applying at least two weeks prior to departure to allow a comfortable buffer.",
   },
   {
     category: "Processing & Delivery",
