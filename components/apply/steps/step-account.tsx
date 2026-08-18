@@ -27,6 +27,7 @@ export function StepAccount({
   const [phone, setPhone] = useState(state.account.phone)
   const [password, setPassword] = useState("")
   const [confirm, setConfirm] = useState("")
+  const [acceptedTerms, setAcceptedTerms] = useState(false)
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [formError, setFormError] = useState<string>()
   const [busy, setBusy] = useState(false)
@@ -82,6 +83,7 @@ export function StepAccount({
       if (password && password.length < 8) next.password = "Use at least 8 characters"
       if (confirm !== password) next.confirm = "Passwords do not match"
     }
+    if (!acceptedTerms) next.terms = "You must accept the Terms of Use and Disclaimer to continue."
     setErrors(next)
     return Object.keys(next).length === 0
   }
@@ -225,6 +227,25 @@ export function StepAccount({
             />
           </Field>
         ) : null}
+      </div>
+
+      <div className="mt-6">
+        <label htmlFor="acc-terms" className="flex cursor-pointer items-start gap-3">
+          <input
+            id="acc-terms"
+            type="checkbox"
+            checked={acceptedTerms}
+            onChange={(e) => {
+              setAcceptedTerms(e.target.checked)
+              if (e.target.checked) setErrors((prev) => ({ ...prev, terms: "" }))
+            }}
+            className="mt-0.5 h-4 w-4 shrink-0 rounded border-border text-brand focus:ring-brand/30"
+          />
+          <span className="text-sm leading-relaxed text-muted-foreground">
+            I accept the Dubai Visas Online Terms of Use and Disclaimer.
+          </span>
+        </label>
+        {errors.terms ? <p className="mt-1.5 text-sm font-medium text-danger">{errors.terms}</p> : null}
       </div>
 
       {formError ? <p className="mt-4 text-sm font-medium text-danger">{formError}</p> : null}
