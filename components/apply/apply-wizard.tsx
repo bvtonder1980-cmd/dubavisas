@@ -15,7 +15,7 @@ import { StepApplicants } from "@/components/apply/steps/step-applicants"
 import { StepDocuments } from "@/components/apply/steps/step-documents"
 import { StepReview } from "@/components/apply/steps/step-review"
 
-const STEP_LABELS = ["Account", "Visa", "Trip", "Applicants", "Documents", "Review"]
+const STEP_LABELS = ["Account", "Applicants", "Visa", "Trip", "Documents", "Review"]
 
 function isValidCountry(code: string): boolean {
   return Boolean(code) && code !== "-" && code !== "--"
@@ -51,20 +51,7 @@ export function ApplyWizard({
       next.account = "Please register or log in to continue."
     }
 
-    if (current === 1 && !state.planSlug) {
-      next.plan = "Please select a visa."
-    }
-
-    if (current === 2) {
-      if (!isValidCountry(state.trip.citizenship)) next.citizenship = "Please select your citizenship."
-      if (!isValidCountry(state.trip.residence)) next.residence = "Please select your residence."
-      if (!state.trip.arrivalDate) next.arrivalDate = "Please choose your arrival date."
-      if (!state.trip.departureDate) next.departureDate = "Please choose your departure date."
-      else if (state.trip.arrivalDate && state.trip.departureDate < state.trip.arrivalDate)
-        next.departureDate = "Departure can't be before arrival."
-    }
-
-    if (current === 3) {
+    if (current === 1) {
       state.applicants.forEach((a) => {
         if (!a.surname.trim()) next[`${a.id}.surname`] = "Required"
         if (!a.givenNames.trim()) next[`${a.id}.givenNames`] = "Required"
@@ -77,6 +64,19 @@ export function ApplyWizard({
           if (!a.phone.trim()) next[`${a.id}.phone`] = "Required"
         }
       })
+    }
+
+    if (current === 2 && !state.planSlug) {
+      next.plan = "Please select a visa."
+    }
+
+    if (current === 3) {
+      if (!isValidCountry(state.trip.citizenship)) next.citizenship = "Please select your citizenship."
+      if (!isValidCountry(state.trip.residence)) next.residence = "Please select your residence."
+      if (!state.trip.arrivalDate) next.arrivalDate = "Please choose your arrival date."
+      if (!state.trip.departureDate) next.departureDate = "Please choose your departure date."
+      else if (state.trip.arrivalDate && state.trip.departureDate < state.trip.arrivalDate)
+        next.departureDate = "Departure can't be before arrival."
     }
 
     if (current === 4) {
@@ -190,9 +190,9 @@ export function ApplyWizard({
             onContinue={advance}
           />
         ) : null}
-        {step === 1 ? <StepVisa state={state} update={update} /> : null}
-        {step === 2 ? <StepTrip state={state} update={update} errors={errors} /> : null}
-        {step === 3 ? <StepApplicants state={state} update={update} errors={errors} /> : null}
+        {step === 1 ? <StepApplicants state={state} update={update} errors={errors} /> : null}
+        {step === 2 ? <StepVisa state={state} update={update} /> : null}
+        {step === 3 ? <StepTrip state={state} update={update} errors={errors} /> : null}
         {step === 4 ? <StepDocuments state={state} update={update} /> : null}
         {step === 5 ? (
           <StepReview
@@ -205,7 +205,7 @@ export function ApplyWizard({
         ) : null}
 
         {/* Step-level error hints */}
-        {step === 1 && errors.plan ? <p className="mt-4 text-sm font-medium text-danger">{errors.plan}</p> : null}
+        {step === 2 && errors.plan ? <p className="mt-4 text-sm font-medium text-danger">{errors.plan}</p> : null}
         {step === 4 && docErrorCount > 0 ? (
           <p className="mt-4 text-sm font-medium text-danger">
             Please upload all required documents for each applicant.
