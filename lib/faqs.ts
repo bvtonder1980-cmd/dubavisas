@@ -34,25 +34,6 @@ export const faqs: FaqItem[] = [
     answer:
       "Your passport must be valid for at least 6 months from your date of entry into the UAE. Applications with passports close to expiry may be rejected.",
   },
-  // Processing & delivery
-  {
-    category: "Processing & Delivery",
-    question: "How long does it take to process a Dubai visa?",
-    answer:
-      "Most visas are processed within 48 to 96 hours. We recommend applying at least two weeks prior to departure to allow a comfortable buffer.",
-  },
-  {
-    category: "Processing & Delivery",
-    question: "How will I receive my visa?",
-    answer:
-      "Once approved, your visa is emailed to you as a PDF. We recommend printing a copy or two and to keep a digital copy on your phone to present at immigration.",
-  },
-  {
-    category: "Processing & Delivery",
-    question: "Can I get a visa urgently if I'm travelling soon?",
-    answer:
-      "We get many requests for urgent service and in most cases we are able to assist, however urgent visas are never a guarantee. Please contact our team as early as possible to discuss urgent options, because we may be able to expedite your application.",
-  },
   // Visa types & validity
   {
     category: "Visa Types & Validity",
@@ -83,6 +64,25 @@ export const faqs: FaqItem[] = [
       href: "/articles/dubai-visa-overstay-fines-grace-period",
       label: "Read the guide: Dubai Visa Overstay Fines, Grace Periods & Extensions",
     },
+  },
+  // Processing & delivery
+  {
+    category: "Processing & Delivery",
+    question: "How long does it take to process a Dubai visa?",
+    answer:
+      "Most visas are processed within 48 to 96 hours. We recommend applying at least two weeks prior to departure to allow a comfortable buffer.",
+  },
+  {
+    category: "Processing & Delivery",
+    question: "How will I receive my visa?",
+    answer:
+      "Once approved, your visa is emailed to you as a PDF. We recommend printing a copy or two and to keep a digital copy on your phone to present at immigration.",
+  },
+  {
+    category: "Processing & Delivery",
+    question: "Can I get a visa urgently if I'm travelling soon?",
+    answer:
+      "We get many requests for urgent service and in most cases we are able to assist, however urgent visas are never a guarantee. Please contact our team as early as possible to discuss urgent options, because we may be able to expedite your application.",
   },
   // Payments & policies
   {
