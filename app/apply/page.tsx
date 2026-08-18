@@ -37,6 +37,8 @@ export default async function ApplyPage({
     arrivalDate: normaliseDate(firstParam(params.depart)),
   }
 
+  const initialMode = firstParam(params.mode) === "login" ? "login" : "register"
+
   return (
     <main>
       <PageHeader
@@ -50,7 +52,7 @@ export default async function ApplyPage({
       />
       <Section className="bg-background pt-10 sm:pt-12 lg:pt-14">
         <Container>
-          <ApplyWizard defaults={defaults} />
+          <ApplyWizard defaults={defaults} initialMode={initialMode} />
         </Container>
       </Section>
     </main>

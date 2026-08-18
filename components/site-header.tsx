@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { Menu, X, Phone } from "lucide-react"
+import { Menu, X, Phone, LogIn } from "lucide-react"
 import { mainNav, siteConfig } from "@/lib/site-config"
 import { ButtonLink } from "@/components/ui/button"
 
@@ -53,6 +53,12 @@ export function SiteHeader() {
           >
             Track
           </Link>
+          <Link
+            href="/apply?mode=login"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-ink/80 transition-colors hover:text-ink"
+          >
+            <LogIn className="h-4 w-4" aria-hidden="true" /> Log in
+          </Link>
           <ButtonLink href="/#apply" variant="dark" size="sm">
             Apply Now
           </ButtonLink>
@@ -89,6 +95,13 @@ export function SiteHeader() {
               className="border-b border-border py-4 font-serif text-2xl font-medium text-ink"
             >
               Track Application
+            </Link>
+            <Link
+              href="/apply?mode=login"
+              onClick={() => setOpen(false)}
+              className="border-b border-border py-4 font-serif text-2xl font-medium text-ink"
+            >
+              Log in
             </Link>
             <div className="mt-6 flex flex-col gap-3">
               <ButtonLink href="/#apply" variant="dark" size="lg" className="w-full">

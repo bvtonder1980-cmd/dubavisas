@@ -8,13 +8,14 @@ import {
   submitApplication,
   type ApplicationState,
 } from "@/lib/application"
+import { StepAccount } from "@/components/apply/steps/step-account"
 import { StepVisa } from "@/components/apply/steps/step-visa"
 import { StepTrip } from "@/components/apply/steps/step-trip"
 import { StepApplicants } from "@/components/apply/steps/step-applicants"
 import { StepDocuments } from "@/components/apply/steps/step-documents"
 import { StepReview } from "@/components/apply/steps/step-review"
 
-const STEP_LABELS = ["Visa", "Trip", "Applicants", "Documents", "Review"]
+const STEP_LABELS = ["Account", "Visa", "Trip", "Applicants", "Documents", "Review"]
 
 function isValidCountry(code: string): boolean {
   return Boolean(code) && code !== "-" && code !== "--"
@@ -26,8 +27,10 @@ function isValidEmail(email: string): boolean {
 
 export function ApplyWizard({
   defaults,
+  initialMode = "register",
 }: {
   defaults: { citizenship?: string; residence?: string; arrivalDate?: string }
+  initialMode?: "register" | "login"
 }) {
   const [state, setState] = useState<ApplicationState>(() => makeInitialState(defaults))
   const [step, setStep] = useState(0)
@@ -44,17 +47,21 @@ export function ApplyWizard({
   function validateStep(current: number): boolean {
     const next: Record<string, string> = {}
 
-    if (current === 0 && !state.planSlug) {
+    if (current === 0 && !state.account.authenticated) {
+      next.account = "Please register or log in to continue."
+    }
+
+    if (current === 1 && !state.planSlug) {
       next.plan = "Please select a visa."
     }
 
-    if (current === 1) {
+    if (current === 2) {
       if (!isValidCountry(state.trip.citizenship)) next.citizenship = "Please select your citizenship."
       if (!isValidCountry(state.trip.residence)) next.residence = "Please select your residence."
       if (!state.trip.arrivalDate) next.arrivalDate = "Please choose your arrival date."
     }
 
-    if (current === 2) {
+    if (current === 3) {
       state.applicants.forEach((a) => {
         if (!a.surname.trim()) next[`${a.id}.surname`] = "Required"
         if (!a.givenNames.trim()) next[`${a.id}.givenNames`] = "Required"
@@ -69,7 +76,7 @@ export function ApplyWizard({
       })
     }
 
-    if (current === 3) {
+    if (current === 4) {
       state.applicants.forEach((a) => {
         if (!a.docs.passportScan) next[`${a.id}.passportScan`] = "Passport page required"
         if (!a.docs.passportPhoto) next[`${a.id}.passportPhoto`] = "Photo required"
@@ -83,11 +90,18 @@ export function ApplyWizard({
     return Object.keys(next).length === 0
   }
 
+  function scrollTop() {
+    if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  /** Advance without re-validating — used by steps that gate themselves (Account). */
+  function advance() {
+    setStep((s) => Math.min(s + 1, STEP_LABELS.length - 1))
+    scrollTop()
+  }
+
   function goNext() {
-    if (validateStep(step)) {
-      setStep((s) => Math.min(s + 1, STEP_LABELS.length - 1))
-      if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" })
-    }
+    if (validateStep(step)) advance()
   }
 
   function goBack() {
@@ -119,7 +133,7 @@ export function ApplyWizard({
 
   // Missing-document summary for step 3 (shown under the step content).
   const docErrorCount = useMemo(
-    () => Object.keys(errors).filter((k) => k.includes(".") && step === 3).length,
+    () => Object.keys(errors).filter((k) => k.includes(".") && step === 4).length,
     [errors, step],
   )
 
@@ -165,11 +179,19 @@ export function ApplyWizard({
       </ol>
 
       <div className="rounded-2xl border border-border bg-card p-6 shadow-sm sm:p-8">
-        {step === 0 ? <StepVisa state={state} update={update} /> : null}
-        {step === 1 ? <StepTrip state={state} update={update} errors={errors} /> : null}
-        {step === 2 ? <StepApplicants state={state} update={update} errors={errors} /> : null}
-        {step === 3 ? <StepDocuments state={state} update={update} /> : null}
-        {step === 4 ? (
+        {step === 0 ? (
+          <StepAccount
+            state={state}
+            update={update}
+            initialMode={initialMode}
+            onContinue={advance}
+          />
+        ) : null}
+        {step === 1 ? <StepVisa state={state} update={update} /> : null}
+        {step === 2 ? <StepTrip state={state} update={update} errors={errors} /> : null}
+        {step === 3 ? <StepApplicants state={state} update={update} errors={errors} /> : null}
+        {step === 4 ? <StepDocuments state={state} update={update} /> : null}
+        {step === 5 ? (
           <StepReview
             state={state}
             update={update}
@@ -180,27 +202,23 @@ export function ApplyWizard({
         ) : null}
 
         {/* Step-level error hints */}
-        {step === 0 && errors.plan ? <p className="mt-4 text-sm font-medium text-danger">{errors.plan}</p> : null}
-        {step === 3 && docErrorCount > 0 ? (
+        {step === 1 && errors.plan ? <p className="mt-4 text-sm font-medium text-danger">{errors.plan}</p> : null}
+        {step === 4 && docErrorCount > 0 ? (
           <p className="mt-4 text-sm font-medium text-danger">
             Please upload all required documents for each applicant.
           </p>
         ) : null}
 
-        {/* Navigation */}
-        {step < 4 ? (
+        {/* Navigation — step 0 (Account) owns its own buttons */}
+        {step >= 1 && step < 5 ? (
           <div className="mt-8 flex items-center justify-between gap-4">
-            {step > 0 ? (
-              <button
-                type="button"
-                onClick={goBack}
-                className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
-              >
-                <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Back
-              </button>
-            ) : (
-              <span />
-            )}
+            <button
+              type="button"
+              onClick={goBack}
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-transparent px-5 py-2.5 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
+            >
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Back
+            </button>
             <button
               type="button"
               onClick={goNext}
@@ -209,7 +227,8 @@ export function ApplyWizard({
               Continue <ArrowRight className="h-4 w-4" aria-hidden="true" />
             </button>
           </div>
-        ) : (
+        ) : null}
+        {step === 5 ? (
           <div className="mt-6">
             <button
               type="button"
@@ -219,7 +238,7 @@ export function ApplyWizard({
               <ArrowLeft className="h-4 w-4" aria-hidden="true" /> Back
             </button>
           </div>
-        )}
+        ) : null}
       </div>
     </div>
   )

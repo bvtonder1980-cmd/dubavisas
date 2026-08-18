@@ -6,8 +6,12 @@
  */
 
 import { getVisaPlan, currencySymbol } from "@/lib/visa-plans"
+import type { AuthUser } from "@/lib/auth"
 
 export type ApplicantType = "adult" | "minor"
+
+/** The registered / logged-in customer profile that owns this application. */
+export type Account = AuthUser & { authenticated: boolean }
 
 /** A single uploaded document held in browser memory only (no server yet). */
 export type UploadedDoc = {
@@ -49,6 +53,7 @@ export type TripDetails = {
 }
 
 export type ApplicationState = {
+  account: Account
   planSlug: string
   entryType: "single" | "multiple"
   trip: TripDetails
@@ -86,6 +91,7 @@ export function makeInitialState(defaults?: {
   planSlug?: string
 }): ApplicationState {
   return {
+    account: { authenticated: false, email: "", fullName: "", phone: "" },
     planSlug: defaults?.planSlug ?? "",
     entryType: "single",
     trip: {
