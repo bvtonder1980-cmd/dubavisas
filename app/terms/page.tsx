@@ -45,7 +45,7 @@ export default function TermsPage() {
         {
           heading: "Payment options accepted",
           paragraphs: [
-            "Payment may be made online via card (Visa, MasterCard, Diners, American Express) and instant EFT, or by a manual bank transfer into the Dubai Visas Online bank account - the details of which will be provided in your application process.",
+            "Payment may be made online via card (Visa & MasterCard) and instant EFT, or by a manual bank transfer into the Dubai Visas Online bank account - the details of which will be provided in your application process.",
           ],
         },
         {
