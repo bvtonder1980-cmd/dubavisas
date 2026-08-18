@@ -20,7 +20,7 @@ export function FaqAccordion({ items, className }: { items: FaqItem[]; className
               aria-hidden="true"
             />
           </summary>
-          <div className="px-6 pb-5 text-pretty leading-relaxed text-muted-foreground">
+          <div className="whitespace-pre-line px-6 pb-5 text-pretty leading-relaxed text-muted-foreground">
             {item.answer}
             {item.link ? (
               <Link
