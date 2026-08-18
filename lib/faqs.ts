@@ -95,7 +95,7 @@ export const faqs: FaqItem[] = [
     category: "Payments & Policies",
     question: "What happens if my visa application is rejected?",
     answer:
-      "Rejections are rare when documents are correct, which is why we review every application before submission. Our refund and resubmission policy is set out in our terms. [PLACEHOLDER: confirm your rejection/refund policy.]",
+      "Rejections are rare when documents are correct, which is why we review every application before submission. That being said, the visa fee paid is for the processing of the application, and does not guarantee that your visa will be approved. Rejected applications generally do not qualify for a refund.\n\nIf your application is rejected, you can re-apply, but the second application will attract the same fees.",
   },
   {
     category: "Payments & Policies",
