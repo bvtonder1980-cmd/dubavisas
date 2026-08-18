@@ -62,6 +62,7 @@ export default function AboutPage() {
 
       <Section className="bg-background">
         <Container className="max-w-3xl">
+          <h2 className="mb-6 font-serif text-3xl font-semibold text-foreground">Our Story</h2>
           <div className="flex flex-col gap-5 text-pretty leading-relaxed text-muted-foreground">
             <p>
               {/* [PLACEHOLDER] Replace with your real company story and credentials. */}
