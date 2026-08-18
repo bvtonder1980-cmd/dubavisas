@@ -119,7 +119,7 @@ export function StepAccount({
       </h2>
       <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
         {mode === "register"
-          ? "Register a profile so you can track this application and reuse your details next time."
+          ? "Register a profile so you can track your application(s) and reuse your details next time."
           : "Log in to continue your application as a returning customer."}
       </p>
 
