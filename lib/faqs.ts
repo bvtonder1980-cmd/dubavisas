@@ -51,7 +51,7 @@ export const faqs: FaqItem[] = [
     category: "Processing & Delivery",
     question: "Can I get a visa urgently if I'm travelling soon?",
     answer:
-      "Depending on availability, we may be able to expedite your application. Please contact our team as early as possible to discuss urgent options. [PLACEHOLDER: confirm express service and fee.]",
+      "We get many requests for urgent service and in most cases we are able to assist, however urgent visas are never a guarantee. Please contact our team as early as possible to discuss urgent options, because we may be able to expedite your application.",
   },
   // Visa types & validity
   {
