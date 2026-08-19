@@ -16,6 +16,14 @@ export default function HomePage() {
     <main>
       <ServiceSchema />
       <FaqSchema items={faqs.slice(0, 6)} />
+      {/* TEMP PREVIEW — remove later */}
+      <div className="flex justify-center bg-black py-8">
+        <img
+          src="/images/women-conference-clay.png"
+          alt="Women's conference — woman being formed from clay into a dress of flowers"
+          className="h-auto w-full max-w-md"
+        />
+      </div>
       <Hero />
       <Assist />
       <HowItWorks />
