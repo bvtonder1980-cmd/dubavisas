@@ -180,10 +180,9 @@ export function isMinorApplicant(a: Applicant): boolean {
  * Rules:
  *  - Everyone: passport biodata page, passport cover, passport photo, flight ticket.
  *  - Under 18: unabridged birth certificate.
- *  - Business OR Tourism (Staying in a Hotel): hotel confirmation voucher.
- *  - Tourism (Visiting Friends/Family): host invitation letter, host residency
+ *  - 96 Hour Visit, Business, or Tourism (Staying in a Hotel): hotel confirmation voucher.
+ *  - Tourism (Staying with Friends/Family): host invitation letter, host residency
  *    visa, host rental agreement or title deed.
- *  - 96 Hour Visit: no accommodation documents.
  */
 export function requiredDocsFor(a: Applicant): DocRequirement[] {
   const docs: DocRequirement[] = [
@@ -218,7 +217,7 @@ export function requiredDocsFor(a: Applicant): DocRequirement[] {
   }
 
   const reason = a.reasonForVisit
-  if (reason === "Business" || reason === "Tourism (Staying in a Hotel)") {
+  if (reason === "96 Hour Visit" || reason === "Business" || reason === "Tourism (Staying in a Hotel)") {
     docs.push({
       key: "hotelVoucher",
       label: "Hotel Confirmation Voucher",
@@ -243,7 +242,7 @@ export function requiredDocsFor(a: Applicant): DocRequirement[] {
       },
     )
   }
-  // 96 Hour Visit: no accommodation documents required.
+
 
   return docs
 }
