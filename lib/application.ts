@@ -21,10 +21,10 @@ export type Title = (typeof TITLE_OPTIONS)[number]
 
 /** Common reasons for visiting the UAE. */
 export const REASON_OPTIONS = [
+  "96 Hour Visit",
   "Business",
   "Tourism (Staying in a Hotel)",
   "Tourism (Staying with Friends/Family)",
-  "Transit",
 ] as const
 export type ReasonForVisit = (typeof REASON_OPTIONS)[number]
 
@@ -183,7 +183,7 @@ export function isMinorApplicant(a: Applicant): boolean {
  *  - Business OR Tourism (Staying in a Hotel): hotel confirmation voucher.
  *  - Tourism (Visiting Friends/Family): host invitation letter, host residency
  *    visa, host rental agreement or title deed.
- *  - Transit: no accommodation documents.
+ *  - 96 Hour Visit: no accommodation documents.
  */
 export function requiredDocsFor(a: Applicant): DocRequirement[] {
   const docs: DocRequirement[] = [
@@ -243,7 +243,7 @@ export function requiredDocsFor(a: Applicant): DocRequirement[] {
       },
     )
   }
-  // Transit: no accommodation documents required.
+  // 96 Hour Visit: no accommodation documents required.
 
   return docs
 }
