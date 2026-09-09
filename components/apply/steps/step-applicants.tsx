@@ -55,6 +55,20 @@ export function StepApplicants({
     update({ applicants: state.applicants.filter((a) => a.id !== id) })
   }
 
+  /** Grow or shrink the applicant list to match the chosen traveller count. */
+  function setTravellerCount(count: number) {
+    const current = state.applicants
+    if (count === current.length) return
+    if (count < current.length) {
+      update({ applicants: current.slice(0, count) })
+    } else {
+      const additions = Array.from({ length: count - current.length }, () =>
+        makeApplicant("adult", state.prefill),
+      )
+      update({ applicants: [...current, ...additions] })
+    }
+  }
+
   function applyScan(id: string, result: MrzResult) {
     const nationalityGuess = icaoToCountryGuess(result.nationality)
     updateApplicant(id, {
@@ -78,6 +92,29 @@ export function StepApplicants({
             dates. Scan a passport to fill the identity details automatically.
           </p>
         </div>
+      </div>
+
+      <div className="mt-6 max-w-xs">
+        <Field
+          label="How many travellers are you applying for?"
+          htmlFor="traveller-count"
+          error={errors.travellers}
+        >
+          <SelectInput
+            id="traveller-count"
+            ariaLabel="How many travellers are you applying for?"
+            value={state.applicants.length ? String(state.applicants.length) : "-"}
+            onChange={(v) => setTravellerCount(v === "-" ? 0 : Number(v))}
+            invalid={Boolean(errors.travellers)}
+          >
+            <option value="-">Select…</option>
+            {Array.from({ length: 20 }, (_, i) => i + 1).map((n) => (
+              <option key={n} value={String(n)}>
+                {n}
+              </option>
+            ))}
+          </SelectInput>
+        </Field>
       </div>
 
       <div className="mt-6 flex flex-col gap-6">
@@ -398,13 +435,15 @@ export function StepApplicants({
         })}
       </div>
 
-      <button
-        type="button"
-        onClick={addApplicant}
-        className="mt-5 inline-flex items-center gap-2 rounded-full border border-brand bg-transparent px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand/10"
-      >
-        <UserPlus className="h-4 w-4" aria-hidden="true" /> Add another applicant
-      </button>
+      {state.applicants.length > 0 && state.applicants.length < 20 ? (
+        <button
+          type="button"
+          onClick={addApplicant}
+          className="mt-5 inline-flex items-center gap-2 rounded-full border border-brand bg-transparent px-5 py-2.5 text-sm font-semibold text-brand transition-colors hover:bg-brand/10"
+        >
+          <UserPlus className="h-4 w-4" aria-hidden="true" /> Add another applicant
+        </button>
+      ) : null}
     </div>
   )
 }

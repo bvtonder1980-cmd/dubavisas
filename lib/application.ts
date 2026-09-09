@@ -94,6 +94,8 @@ export type Applicant = {
 export type ApplicationState = {
   account: Account
   applicants: Applicant[]
+  /** Defaults captured from the URL, used to seed each new applicant. */
+  prefill: { nationality?: string; arrivalDate?: string; planSlug?: string }
   consent: boolean
 }
 
@@ -140,13 +142,12 @@ export function makeInitialState(defaults?: {
 }): ApplicationState {
   return {
     account: { authenticated: false, email: "", fullName: "", phone: "" },
-    applicants: [
-      makeApplicant("adult", {
-        nationality: defaults?.citizenship,
-        arrivalDate: defaults?.arrivalDate,
-        planSlug: defaults?.planSlug,
-      }),
-    ],
+    applicants: [],
+    prefill: {
+      nationality: defaults?.citizenship,
+      arrivalDate: defaults?.arrivalDate,
+      planSlug: defaults?.planSlug,
+    },
     consent: false,
   }
 }

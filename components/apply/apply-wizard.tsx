@@ -51,6 +51,9 @@ export function ApplyWizard({
     }
 
     if (current === 1) {
+      if (state.applicants.length === 0) {
+        next.travellers = "Please select how many travellers you're applying for."
+      }
       state.applicants.forEach((a) => {
         if (!a.planSlug) next[`${a.id}.planSlug`] = "Please select a visa"
         if (!a.title) next[`${a.id}.title`] = "Required"
