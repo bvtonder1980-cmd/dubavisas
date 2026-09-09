@@ -1,8 +1,8 @@
 "use client"
 
 import { useMemo, useState } from "react"
-import Link from "next/link"
-import { ArrowLeft, ArrowRight, Check, PartyPopper } from "lucide-react"
+import { useRouter } from "next/navigation"
+import { ArrowLeft, ArrowRight, Check } from "lucide-react"
 import {
   makeInitialState,
   submitApplication,
@@ -31,12 +31,12 @@ export function ApplyWizard({
   defaults: { citizenship?: string; arrivalDate?: string }
   initialMode?: "register" | "login"
 }) {
+  const router = useRouter()
   const [state, setState] = useState<ApplicationState>(() => makeInitialState(defaults))
   const [step, setStep] = useState(0)
   const [errors, setErrors] = useState<Record<string, string>>({})
   const [submitting, setSubmitting] = useState(false)
   const [submitError, setSubmitError] = useState<string>()
-  const [reference, setReference] = useState<string>()
 
   function update(patch: Partial<ApplicationState>) {
     setState((prev) => ({ ...prev, ...patch }))
@@ -123,13 +123,14 @@ export function ApplyWizard({
     try {
       const result = await submitApplication(state)
       if (result.ok) {
-        setReference(result.reference)
+        // Hand off to the status summary page, carrying the new reference.
+        router.push(`/applications?ref=${encodeURIComponent(result.reference)}`)
       } else {
         setSubmitError("Something went wrong. Please try again.")
+        setSubmitting(false)
       }
     } catch {
       setSubmitError("Something went wrong. Please try again.")
-    } finally {
       setSubmitting(false)
     }
   }
@@ -139,10 +140,6 @@ export function ApplyWizard({
     () => Object.keys(errors).filter((k) => k.includes(".") && step === 2).length,
     [errors, step],
   )
-
-  if (reference) {
-    return <SuccessScreen reference={reference} />
-  }
 
   return (
     <div className="mx-auto max-w-3xl">
@@ -239,45 +236,6 @@ export function ApplyWizard({
             </button>
           </div>
         ) : null}
-      </div>
-    </div>
-  )
-}
-
-function SuccessScreen({ reference }: { reference: string }) {
-  return (
-    <div className="mx-auto max-w-xl text-center">
-      <span className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-brand/15 text-brand">
-        <PartyPopper className="h-8 w-8" aria-hidden="true" />
-      </span>
-      <h2 className="mt-6 font-serif text-3xl font-semibold text-foreground">Application received</h2>
-      <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">
-        Thank you — your application has been captured. Your reference number is:
-      </p>
-      <p className="mt-4 inline-block rounded-full bg-secondary px-5 py-2 font-mono text-lg font-semibold text-foreground">
-        {reference}
-      </p>
-      <div className="mt-6 rounded-2xl border border-border bg-card p-5 text-left">
-        <h3 className="text-sm font-semibold text-foreground">What happens next</h3>
-        <ol className="mt-2 flex flex-col gap-2 text-sm leading-relaxed text-muted-foreground">
-          <li>1. Our team reviews your application and documents.</li>
-          <li>2. We&apos;ll email you secure payment instructions to complete your order.</li>
-          <li>3. Once paid, we submit to immigration and email your visa as a PDF.</li>
-        </ol>
-      </div>
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
-        <Link
-          href="/track"
-          className="inline-flex h-12 items-center justify-center rounded-full bg-brand px-6 text-sm font-semibold text-brand-foreground transition-colors hover:bg-brand/90"
-        >
-          Track your application
-        </Link>
-        <Link
-          href="/"
-          className="inline-flex h-12 items-center justify-center rounded-full border border-border bg-transparent px-6 text-sm font-semibold text-foreground transition-colors hover:bg-secondary"
-        >
-          Back to home
-        </Link>
       </div>
     </div>
   )

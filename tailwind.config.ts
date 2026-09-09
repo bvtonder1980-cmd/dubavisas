@@ -32,6 +32,7 @@ const config: Config = {
         success: {
           DEFAULT: "var(--success)",
           foreground: "var(--success-foreground)",
+          soft: "var(--success-soft)",
         },
         warning: {
           DEFAULT: "var(--warning)",

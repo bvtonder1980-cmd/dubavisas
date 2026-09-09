@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import { CheckCircle2 } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { Section, Container } from "@/components/ui/layout"
 import { ApplicationCard } from "@/components/applications/application-card"
@@ -11,7 +12,12 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
 }
 
-export default function ApplicationsPage() {
+export default async function ApplicationsPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ ref?: string }>
+}) {
+  const { ref } = await searchParams
   const applications = sampleApplications
 
   return (
@@ -28,6 +34,24 @@ export default function ApplicationsPage() {
 
       <Section className="bg-background pt-10 sm:pt-12 lg:pt-14">
         <Container className="flex flex-col gap-8">
+          {ref ? (
+            <div className="flex flex-col gap-3 rounded-3xl border border-success/40 bg-success-soft px-6 py-6 sm:flex-row sm:items-start sm:gap-4 sm:px-8">
+              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-success/15 text-success">
+                <CheckCircle2 className="h-6 w-6" aria-hidden="true" />
+              </span>
+              <div>
+                <h2 className="font-serif text-lg font-semibold text-foreground">
+                  Application received
+                </h2>
+                <p className="mt-1 text-sm leading-relaxed text-ink-muted">
+                  Thank you — your application has been captured under reference{" "}
+                  <span className="font-mono font-semibold text-foreground">{ref}</span>. Our team will
+                  review it and email you secure payment instructions to complete your order. You can follow
+                  each traveller&apos;s progress below.
+                </p>
+              </div>
+            </div>
+          ) : null}
           {applications.length === 0 ? (
             <div className="rounded-3xl border border-dashed border-border bg-surface px-6 py-16 text-center">
               <p className="text-lg font-semibold text-foreground">No applications yet</p>
