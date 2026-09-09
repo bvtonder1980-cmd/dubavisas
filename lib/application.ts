@@ -23,7 +23,7 @@ export type Title = (typeof TITLE_OPTIONS)[number]
 export const REASON_OPTIONS = [
   "Business",
   "Tourism (Staying in a Hotel)",
-  "Tourism (Visiting Friends/Family)",
+  "Tourism (Staying with Friends/Family)",
   "Transit",
 ] as const
 export type ReasonForVisit = (typeof REASON_OPTIONS)[number]
@@ -224,7 +224,7 @@ export function requiredDocsFor(a: Applicant): DocRequirement[] {
       label: "Hotel Confirmation Voucher",
       hint: "Hotel booking covering your full stay, showing every traveller's name.",
     })
-  } else if (reason === "Tourism (Visiting Friends/Family)") {
+  } else if (reason === "Tourism (Staying with Friends/Family)") {
     docs.push(
       {
         key: "hostInvitation",
