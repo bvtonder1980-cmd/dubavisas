@@ -85,6 +85,8 @@ export function StepApplicants({
           const err = (field: string) => errors[`${applicant.id}.${field}`]
           const isAdult = applicant.type === "adult"
           const unitPrice = applicantPrice(applicant)
+          const firstName = applicant.givenNames.trim().split(/\s+/)[0]
+          const displayName = firstName || `Applicant ${index + 1}`
           return (
             <div key={applicant.id} className="rounded-2xl border border-border bg-card p-5 shadow-sm">
               <div className="flex items-center justify-between gap-3">
@@ -92,7 +94,7 @@ export function StepApplicants({
                   <span className="flex h-7 w-7 items-center justify-center rounded-full bg-brand/15 text-brand">
                     <User className="h-4 w-4" aria-hidden="true" />
                   </span>
-                  Applicant {index + 1}
+                  {displayName}
                 </span>
                 {state.applicants.length > 1 ? (
                   <button
