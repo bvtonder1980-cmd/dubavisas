@@ -83,7 +83,8 @@ export function ApplyWizard({
     if (current === 2) {
       state.applicants.forEach((a) => {
         requiredDocsFor(a).forEach((req) => {
-          if (!a.docs[req.key]) next[`${a.id}.${req.key}`] = `${req.label} required`
+          const satisfied = Boolean(a.docs[req.key]) || a.deferredDocs.includes(req.key)
+          if (!satisfied) next[`${a.id}.${req.key}`] = `${req.label} required`
         })
       })
     }

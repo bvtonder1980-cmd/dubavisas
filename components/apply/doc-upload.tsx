@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useState } from "react"
-import { UploadCloud, FileCheck2, X } from "lucide-react"
+import { UploadCloud, FileCheck2, X, Clock } from "lucide-react"
 import type { UploadedDoc } from "@/lib/application"
 
 function formatSize(bytes: number): string {
@@ -18,6 +18,8 @@ export function DocUpload({
   onChange,
   required,
   className,
+  deferred,
+  onDeferChange,
 }: {
   label: string
   hint?: string
@@ -26,6 +28,8 @@ export function DocUpload({
   onChange: (doc: UploadedDoc | undefined) => void
   required?: boolean
   className?: string
+  deferred?: boolean
+  onDeferChange?: (value: boolean) => void
 }) {
   const inputRef = useRef<HTMLInputElement>(null)
   const [dragging, setDragging] = useState(false)
@@ -95,6 +99,13 @@ export function DocUpload({
             <X className="h-3.5 w-3.5" aria-hidden="true" />
           </button>
         </div>
+      ) : deferred ? (
+        <div className="mt-3 flex items-center gap-2 rounded-lg border border-dashed border-warning/50 bg-warning-soft px-3 py-2.5">
+          <Clock className="h-4 w-4 shrink-0 text-warning" aria-hidden="true" />
+          <span className="text-xs font-medium text-foreground">
+            You&apos;ve chosen to upload this later.
+          </span>
+        </div>
       ) : (
         <button
           type="button"
@@ -115,6 +126,18 @@ export function DocUpload({
           {dragging ? "Drop file here" : "Drag & drop or click to choose"}
         </button>
       )}
+
+      {onDeferChange && !doc ? (
+        <label className="mt-3 flex cursor-pointer items-center gap-2 text-xs font-medium text-muted-foreground">
+          <input
+            type="checkbox"
+            checked={Boolean(deferred)}
+            onChange={(e) => onDeferChange(e.target.checked)}
+            className="h-4 w-4 rounded border-border text-brand accent-brand"
+          />
+          I will upload this later
+        </label>
+      ) : null}
     </div>
   )
 }

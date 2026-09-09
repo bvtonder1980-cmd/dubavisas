@@ -6,6 +6,7 @@ import {
   type Applicant,
   type ApplicantDocs,
   type ApplicationState,
+  type DocKey,
   type UploadedDoc,
 } from "@/lib/application"
 
@@ -21,6 +22,21 @@ export function StepDocuments({
       applicants: state.applicants.map((a) =>
         a.id === id ? { ...a, docs: { ...a.docs, [key]: doc } } : a,
       ) as Applicant[],
+    })
+  }
+
+  function toggleDefer(id: string, key: DocKey, defer: boolean) {
+    update({
+      applicants: state.applicants.map((a) =>
+        a.id === id
+          ? {
+              ...a,
+              deferredDocs: defer
+                ? [...a.deferredDocs.filter((k) => k !== key), key]
+                : a.deferredDocs.filter((k) => k !== key),
+            }
+          : a,
+      ),
     })
   }
 
@@ -64,6 +80,8 @@ export function StepDocuments({
                     required
                     doc={applicant.docs[req.key]}
                     onChange={(doc) => updateDocs(applicant.id, req.key, doc)}
+                    deferred={applicant.deferredDocs.includes(req.key)}
+                    onDeferChange={(v) => toggleDefer(applicant.id, req.key, v)}
                   />
                 ))}
               </div>

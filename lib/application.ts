@@ -89,6 +89,8 @@ export type Applicant = {
   phone: string // contact number
   email: string
   docs: ApplicantDocs
+  /** Doc keys the applicant has chosen to upload later. */
+  deferredDocs: DocKey[]
 }
 
 export type ApplicationState = {
@@ -132,6 +134,7 @@ export function makeApplicant(
     phone: "",
     email: "",
     docs: {},
+    deferredDocs: [],
   }
 }
 
