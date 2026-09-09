@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { CheckCircle2 } from "lucide-react"
 import { PageHeader } from "@/components/page-header"
 import { Section, Container } from "@/components/ui/layout"
-import { ApplicationCard } from "@/components/applications/application-card"
+import { ApplicationsList } from "@/components/applications/applications-list"
 import { StatusBadge } from "@/components/applications/status-badge"
 import { sampleApplications, VISA_STATUSES, STATUS_META } from "@/lib/application-status"
 
@@ -18,7 +18,6 @@ export default async function ApplicationsPage({
   searchParams: Promise<{ ref?: string }>
 }) {
   const { ref } = await searchParams
-  const applications = sampleApplications
 
   return (
     <main>
@@ -52,18 +51,7 @@ export default async function ApplicationsPage({
               </div>
             </div>
           ) : null}
-          {applications.length === 0 ? (
-            <div className="rounded-3xl border border-dashed border-border bg-surface px-6 py-16 text-center">
-              <p className="text-lg font-semibold text-foreground">No applications yet</p>
-              <p className="mt-2 text-sm text-ink-muted">
-                Once you submit an application it will appear here with live status for each traveller.
-              </p>
-            </div>
-          ) : (
-            applications.map((application) => (
-              <ApplicationCard key={application.reference} application={application} />
-            ))
-          )}
+          <ApplicationsList sampleApplications={sampleApplications} highlightRef={ref} />
 
           {/* Status legend */}
           <div className="rounded-3xl border border-border bg-surface-muted/40 px-6 py-6 sm:px-8">

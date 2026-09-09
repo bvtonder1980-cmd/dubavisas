@@ -9,6 +9,7 @@ import {
   requiredDocsFor,
   type ApplicationState,
 } from "@/lib/application"
+import { saveSubmittedApplication, stateToSummary } from "@/lib/submitted-applications"
 import { StepAccount } from "@/components/apply/steps/step-account"
 import { StepApplicants } from "@/components/apply/steps/step-applicants"
 import { StepDocuments } from "@/components/apply/steps/step-documents"
@@ -123,7 +124,9 @@ export function ApplyWizard({
     try {
       const result = await submitApplication(state)
       if (result.ok) {
-        // Hand off to the status summary page, carrying the new reference.
+        // Persist the submission so it shows on the tracker, then hand off to
+        // the status summary page carrying the new reference.
+        saveSubmittedApplication(stateToSummary(state, result.reference))
         router.push(`/applications?ref=${encodeURIComponent(result.reference)}`)
       } else {
         setSubmitError("Something went wrong. Please try again.")

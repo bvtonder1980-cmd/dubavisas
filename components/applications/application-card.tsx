@@ -2,14 +2,24 @@ import { CalendarClock, Hash, Users } from "lucide-react"
 import { StatusBadge } from "@/components/applications/status-badge"
 import { applicationHeadline, formatDate, TONE_COLORS, type ApplicationSummary } from "@/lib/application-status"
 
-export function ApplicationCard({ application }: { application: ApplicationSummary }) {
+export function ApplicationCard({
+  application,
+  highlight,
+}: {
+  application: ApplicationSummary
+  highlight?: boolean
+}) {
   const { reference, submittedDate, passengers } = application
   const travellerLabel = `${passengers.length} ${passengers.length === 1 ? "traveller" : "travellers"}`
   const headline = applicationHeadline(passengers)
   const headlineColors = TONE_COLORS[headline.tone]
 
   return (
-    <article className="overflow-hidden rounded-3xl border border-border bg-surface shadow-sm">
+    <article
+      className={`overflow-hidden rounded-3xl border bg-surface shadow-sm ${
+        highlight ? "border-brand ring-2 ring-brand/30" : "border-border"
+      }`}
+    >
       {/* Card header */}
       <header className="flex flex-col gap-4 border-b border-border bg-surface-muted/40 px-5 py-5 sm:flex-row sm:items-center sm:justify-between sm:px-7">
         <div className="flex flex-col gap-1.5">
