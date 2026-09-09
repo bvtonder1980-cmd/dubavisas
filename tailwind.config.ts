@@ -32,8 +32,20 @@ const config: Config = {
         success: {
           DEFAULT: "var(--success)",
           foreground: "var(--success-foreground)",
+          soft: "var(--success-soft)",
         },
-        danger: "var(--danger)",
+        danger: {
+          DEFAULT: "var(--danger)",
+          soft: "var(--danger-soft)",
+        },
+        warning: {
+          DEFAULT: "var(--warning)",
+          soft: "var(--warning-soft)",
+        },
+        info: {
+          DEFAULT: "var(--info)",
+          soft: "var(--info-soft)",
+        },
         card: {
           DEFAULT: "var(--card)",
           foreground: "var(--card-foreground)",

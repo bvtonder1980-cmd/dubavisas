@@ -28,6 +28,14 @@
 
   --danger: #c0392b;
 
+  /* Status tones for application tracking */
+  --success-soft: #d7efe4;
+  --danger-soft: #f6ddd8;
+  --warning: #b06d16;
+  --warning-soft: #f3e4c8;
+  --info: #3c6b82;
+  --info-soft: #d9e6ec;
+
   /* Aliases used across components */
   --card: #ffffff;
   --card-foreground: #221d18;
