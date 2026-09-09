@@ -8,6 +8,7 @@ import { PassportScanner } from "@/components/apply/passport-scanner"
 import {
   makeApplicant,
   applicantPrice,
+  ageFromDob,
   TITLE_OPTIONS,
   REASON_OPTIONS,
   type Applicant,
@@ -47,6 +48,15 @@ export function StepApplicants({
     })
   }
 
+  /** Set the date of birth and auto-toggle adult/minor from the calculated age
+   *  (minor = under 18, up to the day before the 18th birthday). */
+  function updateDob(id: string, dob: string) {
+    const age = ageFromDob(dob)
+    const patch: Partial<Applicant> = { dateOfBirth: dob }
+    if (age !== null) patch.type = age >= 18 ? "adult" : "minor"
+    updateApplicant(id, patch)
+  }
+
   function addApplicant() {
     update({ applicants: [...state.applicants, makeApplicant("adult")] })
   }
@@ -71,14 +81,17 @@ export function StepApplicants({
 
   function applyScan(id: string, result: MrzResult) {
     const nationalityGuess = icaoToCountryGuess(result.nationality)
+    const scannedDob = result.dateOfBirth || ""
+    const age = ageFromDob(scannedDob)
     updateApplicant(id, {
       surname: result.surname || "",
       givenNames: result.givenNames || "",
       passportNumber: result.passportNumber || "",
-      dateOfBirth: result.dateOfBirth || "",
+      dateOfBirth: scannedDob,
       sex: result.sex,
       passportExpiry: result.expiryDate || "",
       ...(nationalityGuess ? { nationality: nationalityGuess } : {}),
+      ...(age !== null ? { type: age >= 18 ? "adult" : "minor" } : {}),
     })
   }
 
@@ -268,7 +281,7 @@ export function StepApplicants({
                     id={`${applicant.id}-dob`}
                     type="date"
                     value={applicant.dateOfBirth}
-                    onChange={(v) => updateApplicant(applicant.id, { dateOfBirth: v })}
+                    onChange={(v) => updateDob(applicant.id, v)}
                     invalid={Boolean(err("dateOfBirth"))}
                   />
                 </Field>
