@@ -128,14 +128,14 @@ export function DocUpload({
       )}
 
       {onDeferChange && !doc ? (
-        <label className="mt-3 flex cursor-pointer items-center gap-2 text-xs font-medium text-muted-foreground">
+        <label className="mt-3 flex cursor-pointer items-center gap-2 border-t border-border pt-3 text-sm font-medium text-foreground">
           <input
             type="checkbox"
             checked={Boolean(deferred)}
             onChange={(e) => onDeferChange(e.target.checked)}
             className="h-4 w-4 rounded border-border text-brand accent-brand"
           />
-          I will upload this later
+          I&apos;ll upload this later
         </label>
       ) : null}
     </div>
