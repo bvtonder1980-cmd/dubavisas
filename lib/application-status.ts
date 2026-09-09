@@ -20,7 +20,7 @@ export const VISA_STATUSES = [
 
 export type VisaStatus = (typeof VISA_STATUSES)[number]
 
-type StatusTone = "info" | "success" | "warning" | "neutral" | "brand" | "danger"
+export type StatusTone = "info" | "success" | "warning" | "neutral" | "brand" | "danger"
 
 /** Visual + descriptive metadata for each status. `tone` maps to CSS-variable
  *  colours defined in globals.css so badges stay on-palette. */
@@ -63,6 +63,24 @@ export const TONE_COLORS: Record<StatusTone, { color: string; background: string
   neutral: { color: "var(--ink-muted)", background: "var(--surface-muted)" },
   brand: { color: "var(--brand)", background: "var(--brand-soft)" },
   danger: { color: "var(--danger)", background: "var(--danger-soft)" },
+}
+
+/** Roll a set of passenger statuses up into one headline for the application. */
+export function applicationHeadline(passengers: { status: VisaStatus }[]): {
+  label: string
+  tone: StatusTone
+} {
+  const statuses = passengers.map((p) => p.status)
+  if (statuses.length > 0 && statuses.every((s) => s === "Decision - Approved")) {
+    return { label: "All approved", tone: "success" }
+  }
+  if (statuses.includes("Decision - Denied")) {
+    return { label: "Needs attention", tone: "danger" }
+  }
+  if (statuses.includes("Document Required") || statuses.includes("Application on Hold")) {
+    return { label: "Action needed", tone: "warning" }
+  }
+  return { label: "In progress", tone: "info" }
 }
 
 export type PassengerStatus = {
