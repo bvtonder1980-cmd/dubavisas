@@ -55,9 +55,9 @@ export function Prices() {
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {plans.map((plan) => (
-            <div key={plan.slug} className="flex w-full sm:w-[calc(50%-0.75rem)] lg:w-80 [&>*]:w-full">
+            <div key={plan.slug} className="flex [&>*]:w-full">
               <VisaPlanCard plan={plan} />
             </div>
           ))}
